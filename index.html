@@ -54,7 +54,7 @@
     }
     html, body {
       font-family: "Poppins", Arial, sans-serif;
-      background: #f0f2f5;
+      background: #f8f9fa;
       color: #2c3e50;
       overflow-x: hidden;
     }
@@ -75,15 +75,34 @@
     }
 
     /* ===============================
-       2) KEYFRAME ANIMATIONS
+       2) VARIABLES & BASE COLORS
+       =============================== */
+    :root {
+      --primary-blue: #0052cc;
+      --primary-blue-light: #0090ff;
+      --background-offwhite: #f8f9fa;
+      --text-dark: #1f2a38;
+      --text-secondary: #4d5a6f;
+      --shadow-light: rgba(0, 82, 204, 0.2);
+      --shadow-hover: rgba(0, 0, 0, 0.05);
+      --radius-lg: 16px;
+      --radius-xl: 28px;
+    }
+
+    /* ===============================
+       3) KEYFRAME ANIMATIONS
        =============================== */
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
       to   { opacity: 1; transform: translateY(0); }
     }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50%      { transform: scale(1.05); }
+    }
 
     /* ===============================
-       3) LAYOUT & CONTAINER
+       4) LAYOUT & CONTAINER
        =============================== */
     body {
       display: flex;
@@ -91,12 +110,13 @@
       justify-content: center;
       padding: 20px;
       margin: 0;
+      background: var(--background-offwhite);
     }
     .container {
       width: 100%;
       max-width: 920px;
       background-color: #ffffff;
-      border-radius: 12px;
+      border-radius: var(--radius-lg);
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
       overflow: hidden;
       animation: fadeInUp 0.8s ease forwards;
@@ -105,9 +125,17 @@
       padding: 48px 32px;
       text-align: center;
     }
+    .divider {
+      width: 60px;
+      height: 4px;
+      background: var(--primary-blue);
+      margin: 16px auto 32px;
+      border-radius: 2px;
+      animation: fadeInUp 1s ease forwards;
+    }
 
     /* ===============================
-       4) HEADER & TAGLINE
+       5) HEADER & SUBHEAD
        =============================== */
     header.header {
       animation: fadeInUp 1s ease forwards;
@@ -115,69 +143,63 @@
     header.header h1 {
       font-size: 3rem;
       font-weight: 600;
-      margin-bottom: 12px;
-      color: #1f2a38;
+      color: var(--text-dark);
       line-height: 1.2;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
     }
     header.header h2.tagline {
       font-size: 1.125rem;
       font-weight: 300;
-      margin-bottom: 32px;
-      color: #4d5a6f;
+      color: var(--text-secondary);
       max-width: 700px;
       margin: 0 auto 32px;
       line-height: 1.5;
     }
 
+    /* Subtle underline under heading */
+    header.header h1::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: var(--primary-blue-light);
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+
     /* ===============================
-       5) CTA BUTTON (Interactive)
+       6) CTA BUTTON (Interactive & Pulsing)
        =============================== */
     .cta-button {
       position: relative;
       display: inline-block;
-      background: linear-gradient(135deg, #0052cc 0%, #0090ff 100%);
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
       color: #ffffff;
       font-size: 1.125rem;
       font-weight: 500;
       padding: 14px 40px;
-      border-radius: 28px;
+      border-radius: var(--radius-xl);
       margin-bottom: 48px;
       overflow: hidden;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
-      box-shadow: 0 4px 16px rgba(0, 82, 204, 0.3);
-      animation: fadeInUp 1.2s ease forwards;
+      box-shadow: 0 4px 16px var(--shadow-light);
+      animation: fadeInUp 1.2s ease forwards, pulse 2.5s ease-in-out infinite 2s;
     }
     .cta-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(0, 82, 204, 0.35);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 6px 24px var(--shadow-light);
       background: linear-gradient(135deg, #0041a8 0%, #007acc 100%);
     }
     .cta-button:active {
-      transform: translateY(0);
-      box-shadow: 0 3px 12px rgba(0, 82, 204, 0.2);
+      transform: translateY(0) scale(0.98);
+      box-shadow: 0 3px 12px var(--shadow-light);
       background: linear-gradient(135deg, #003387 0%, #0066aa 100%);
-    }
-    .cta-button::after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: rgba(255, 255, 255, 0.4);
-      border-radius: 50%;
-      opacity: 0;
-      transform: scale(0);
-      transition: transform 0.4s, opacity 0.8s;
-    }
-    .cta-button:focus::after,
-    .cta-button:active::after {
-      opacity: 1;
-      transform: scale(4);
-      transition: 0s;
     }
 
     /* ===============================
-       6) SERVICES GRID
-       2 columns desktop/tablet, 1 column mobile
+       7) SERVICES GRID
+       2 columns on desktop/tablet, 1 column on mobile
        =============================== */
     .services-grid {
       display: grid;
@@ -186,61 +208,89 @@
       margin-bottom: 32px;
       width: 100%;
       justify-items: center;
+      animation: fadeInUp 1.4s ease forwards;
     }
     .service-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 16px;
-      border-radius: 16px; /* increased radius */
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-      animation: fadeInUp 1.4s ease forwards;
+      padding: 24px 16px;
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-item::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: transparent;
+      transition: background-color 0.3s ease;
     }
     .service-item:hover {
-      transform: translateY(-4px);
-      background: linear-gradient(135deg, #0052cc 0%, #0090ff 100%);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px var(--shadow-hover);
+    }
+    .service-item:hover::before {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+      opacity: 0.95;
     }
     .service-item:hover .label {
       color: #ffffff;
-      font-size: 1.125rem; /* slightly larger on hover */
+      font-size: 1.125rem;
     }
     .service-item:hover .icon-container img {
       filter: brightness(0) invert(1);
+      transform: scale(1.05);
     }
+    .service-item:nth-child(1) { animation: fadeInUp 1.6s ease forwards; }
+    .service-item:nth-child(2) { animation: fadeInUp 1.8s ease forwards; }
+    .service-item:nth-child(3) { animation: fadeInUp 2.0s ease forwards; }
+    .service-item:nth-child(4) { animation: fadeInUp 2.2s ease forwards; }
+
     .icon-container {
       width: 100%;
-      max-width: 420px;
+      max-width: 360px;
       line-height: 0;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      transition: transform 0.3s ease;
+    }
+    .icon-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      transition: filter 0.3s ease, transform 0.3s ease;
     }
     .label {
-      font-size: 1.25rem; /* increased text size */
+      font-size: 1.25rem;
       font-weight: 500;
-      color: #1f2a38;
-      margin-top: 6px;
+      color: var(--text-dark);
+      margin-top: 8px;
       line-height: 1.2;
-      transition: color 0.2s ease, font-size 0.2s ease;
+      transition: color 0.3s ease, font-size 0.3s ease;
+      z-index: 1;
     }
     .service-desc {
-      font-size: 0; /* descriptions hidden */
+      font-size: 0; /* hidden but present for SEO */
       line-height: 0;
     }
 
     /* ===============================
-       7) FOOTER
+       8) FOOTER
        =============================== */
     footer.footer p {
       font-size: 0.9rem;
-      color: #6c7a89;
+      color: var(--text-secondary);
       margin-top: 16px;
       margin-bottom: 0;
-      animation: fadeInUp 1.6s ease forwards;
+      animation: fadeInUp 2.4s ease forwards;
     }
 
     /* ===============================
-       8) MEDIA QUERIES
+       9) MEDIA QUERIES
        =============================== */
     @media (max-width: 768px) {
       .container {
@@ -263,7 +313,7 @@
         gap: 24px;
       }
       .icon-container {
-        max-width: 320px;
+        max-width: 280px;
       }
       .label {
         font-size: 1.125rem;
@@ -301,7 +351,7 @@
         gap: 16px;
       }
       .icon-container {
-        max-width: 260px;
+        max-width: 220px;
       }
       .label {
         font-size: 1rem;
@@ -317,6 +367,7 @@
       <!-- HEADER -->
       <header class="header">
         <h1>Tyozy</h1>
+        <div class="divider"></div>
         <h2 class="tagline">
           Your 24/7 solution for moving, furniture pickup, room cleaning, and packing &amp; shifting in Tampere. We promise no hidden fees, honest communication, and a worry-free experience.
         </h2>

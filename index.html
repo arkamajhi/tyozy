@@ -54,8 +54,8 @@
     }
     html, body {
       font-family: "Poppins", Arial, sans-serif;
-      background: #f8f9fa;
-      color: #2c3e50;
+      background: var(--background-offwhite);
+      color: var(--text-dark);
       overflow-x: hidden;
     }
     a {
@@ -75,7 +75,7 @@
     }
 
     /* ===============================
-       2) VARIABLES & BASE COLORS
+       2) VARIABLES & COLOR PALETTE
        =============================== */
     :root {
       --primary-blue: #0052cc;
@@ -125,20 +125,13 @@
       padding: 48px 32px;
       text-align: center;
     }
-    .divider {
-      width: 60px;
-      height: 4px;
-      background: var(--primary-blue);
-      margin: 16px auto 32px;
-      border-radius: 2px;
-      animation: fadeInUp 1s ease forwards;
-    }
 
     /* ===============================
        5) HEADER & SUBHEAD
        =============================== */
     header.header {
       animation: fadeInUp 1s ease forwards;
+      margin-bottom: 24px;
     }
     header.header h1 {
       font-size: 3rem;
@@ -148,16 +141,6 @@
       margin-bottom: 8px;
       letter-spacing: 1px;
     }
-    header.header h2.tagline {
-      font-size: 1.125rem;
-      font-weight: 300;
-      color: var(--text-secondary);
-      max-width: 700px;
-      margin: 0 auto 32px;
-      line-height: 1.5;
-    }
-
-    /* Subtle underline under heading */
     header.header h1::after {
       content: "";
       display: block;
@@ -166,6 +149,14 @@
       background: var(--primary-blue-light);
       margin: 12px auto 0;
       border-radius: 2px;
+    }
+    header.header h2.tagline {
+      font-size: 1.125rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto 32px;
+      line-height: 1.5;
     }
 
     /* ===============================
@@ -195,6 +186,23 @@
       transform: translateY(0) scale(0.98);
       box-shadow: 0 3px 12px var(--shadow-light);
       background: linear-gradient(135deg, #003387 0%, #0066aa 100%);
+    }
+    .cta-button::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.4s, opacity 0.8s;
+    }
+    .cta-button:focus::after,
+    .cta-button:active::after {
+      opacity: 1;
+      transform: scale(4);
+      transition: 0s;
     }
 
     /* ===============================
@@ -367,7 +375,6 @@
       <!-- HEADER -->
       <header class="header">
         <h1>Tyozy</h1>
-        <div class="divider"></div>
         <h2 class="tagline">
           Your 24/7 solution for moving, furniture pickup, room cleaning, and packing &amp; shifting in Tampere. We promise no hidden fees, honest communication, and a worry-free experience.
         </h2>

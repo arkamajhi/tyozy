@@ -2,43 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Tyozy – Minimal &amp; Professional Moving &amp; Cleaning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tyozy – Professional Moving &amp; Cleaning Services in Tampere</title>
+  <meta name="description" content="Tyozy offers professional moving, furniture pickup, room cleaning, and packing &amp; shifting services in Tampere, Finland. Available 24/7 with no hidden fees and a satisfaction guarantee." />
+  <meta name="keywords" content="Tyozy, Moving Services Tampere, Cleaning Services Tampere, Furniture Pickup, Packing and Shifting, Tampere Movers, Student Moving Services, Room Cleaning Finland" />
+  <link rel="canonical" href="https://www.tyozy.com/" />
+
+  <!-- Structured Data for LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Tyozy",
+    "image": "https://www.tyozy.com/assets/images/logo.png",
+    "telephone": "+358918910689698",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tampere",
+      "addressCountry": "FI"
+    },
+    "url": "https://www.tyozy.com/",
+    "description": "Tyozy offers professional moving, furniture pickup, room cleaning, and packing & shifting services in Tampere, Finland. Available 24/7 with no hidden fees and a satisfaction guarantee.",
+    "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+    "priceRange": "€€"
+  }
+  </script>
 
   <!-- GOOGLE FONT: Poppins -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
 
   <style>
-    /* ----------------------------------------
-       1) RESET & GLOBAL STYLES
-       ---------------------------------------- */
-    *,
-    *::before,
-    *::after {
+    /* ===============================
+       1) RESET & GLOBAL
+       =============================== */
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    html {
-      font-size: 16px;
-    }
-    body {
+    html, body {
+      height: 100%;
       font-family: "Poppins", Arial, sans-serif;
-      background-color: #f9fafb;
+      background: #f0f2f5;
       color: #2c3e50;
-      line-height: 1.5;
-      min-height: 100vh;
-
-      /* Center container vertically & horizontally */
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow-x: hidden;
     }
     a {
       color: inherit;
@@ -46,84 +53,142 @@
     }
     img {
       display: block;
-      max-width: 100%;
+      width: 100%;
       height: auto;
+      border-radius: 6px;
+    }
+    button, .btn {
+      cursor: pointer;
+      border: none;
+      outline: none;
     }
 
-    /* ----------------------------------------
-       2) LAYOUT CONTAINER
-       ---------------------------------------- */
+    /* ===============================
+       2) KEYFRAME ANIMATIONS
+       =============================== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===============================
+       3) LAYOUT & CONTAINER
+       =============================== */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      margin: 0;
+    }
     .container {
       width: 100%;
-      max-width: 1000px;       /* Increased max-width for desktop/tablet */
-      padding: 60px 40px;      /* Extra padding for larger screens */
-      text-align: center;
+      max-width: 920px;
       background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    .inner {
+      padding: 48px 32px;
+      text-align: center;
     }
 
-    /* ----------------------------------------
-       3) HEADER
-       ---------------------------------------- */
-    .header h1 {
-      font-size: 3.5rem;       /* Larger heading on desktop */
-      font-weight: 500;
+    /* ===============================
+       4) HEADER & TAGLINE
+       =============================== */
+    header.header {
+      animation: fadeInUp 1s ease forwards;
+    }
+    header.header h1 {
+      font-size: 3rem;
+      font-weight: 600;
       margin-bottom: 12px;
       color: #1f2a38;
+      line-height: 1.2;
     }
-    .header p.tagline {
-      font-size: 1.25rem;      /* Larger tagline */
+    header.header p.tagline {
+      font-size: 1.125rem;
       font-weight: 300;
       margin-bottom: 32px;
-      color: #555e6b;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.4;
+      color: #4d5a6f;
+      max-width: 700px;
+      margin: 0 auto 32px;
+      line-height: 1.5;
     }
 
-    /* ----------------------------------------
-       4) PROMISE LINE
-       ---------------------------------------- */
+    /* ===============================
+       5) PROMISE LINE
+       =============================== */
     .promise {
-      font-size: 1rem;         /* Slightly bigger promise text */
+      font-size: 1rem;
       font-weight: 400;
-      color: #555e6b;
-      margin: 0 0 40px;
+      color: #4d5a6f;
+      margin-bottom: 40px;
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
       line-height: 1.6;
+      animation: fadeInUp 1.2s ease forwards;
     }
 
-    /* ----------------------------------------
-       5) CTA BUTTON
-       ---------------------------------------- */
+    /* ===============================
+       6) CTA BUTTON (Interactive)
+       =============================== */
     .cta-button {
+      position: relative;
       display: inline-block;
-      background-color: #25d366;
+      background: linear-gradient(135deg, #0052cc 0%, #0090ff 100%);
       color: #ffffff;
-      font-size: 1.125rem;     /* Bigger button text */
+      font-size: 1.125rem;
       font-weight: 500;
-      padding: 16px 36px;      /* Increased padding */
-      border-radius: 24px;
-      margin-bottom: 56px;
-      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      padding: 14px 40px;
+      border-radius: 28px;
+      margin-bottom: 48px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 16px rgba(0, 82, 204, 0.3);
+      animation: fadeInUp 1.4s ease forwards;
     }
     .cta-button:hover {
-      background-color: #1ebe57;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0, 82, 204, 0.35);
+      background: linear-gradient(135deg, #0041a8 0%, #007acc 100%);
+    }
+    .cta-button:active {
+      transform: translateY(0);
+      box-shadow: 0 3px 12px rgba(0, 82, 204, 0.2);
+      background: linear-gradient(135deg, #003387 0%, #0066aa 100%);
+    }
+    .cta-button::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.4s, opacity 0.8s;
+    }
+    .cta-button:focus::after,
+    .cta-button:active::after {
+      opacity: 1;
+      transform: scale(4);
+      transition: 0s;
     }
 
-    /* ----------------------------------------
-       6) SERVICES GRID (2 per row, larger icons)
-       ---------------------------------------- */
+    /* ===============================
+       7) SERVICES GRID
+       2 columns desktop/tablet, 1 column mobile
+       =============================== */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 60px;               /* More gap between items */
+      gap: 32px;
       margin-bottom: 32px;
+      width: 100%;
       justify-items: center;
     }
     .service-item {
@@ -131,84 +196,60 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 24px;           /* Increased padding */
-      border-radius: 8px;
-      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      padding: 16px;
+      border-radius: 16px; /* increased radius */
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+      animation: fadeInUp 1.6s ease forwards;
     }
     .service-item:hover {
-      background-color: #f4f6f8;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transform: translateY(-4px);
+      background: linear-gradient(135deg, #0052cc 0%, #0090ff 100%);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     }
-    .service-item .icon-container {
-      width: 200px;            /* Enlarged icon container */
-      height: 200px;
-      margin-bottom: 16px;
+    .service-item:hover .label {
+      color: #ffffff;
+      font-size: 1.125rem; /* slightly larger on hover */
     }
-    .service-item .icon-container img {
+    .service-item:hover .icon-container img {
+      filter: brightness(0) invert(1);
+    }
+    .icon-container {
       width: 100%;
-      height: auto;
+      max-width: 420px;
+      line-height: 0;
+      margin-bottom: 8px;
     }
-    .service-item .label {
-      font-size: 1.125rem;     /* Larger service label */
+    .label {
+      font-size: 1.25rem; /* increased text size */
       font-weight: 500;
       color: #1f2a38;
+      margin-top: 6px;
+      line-height: 1.2;
+      transition: color 0.2s ease, font-size 0.2s ease;
     }
 
-    /* ----------------------------------------
-       7) FOOTER
-       ---------------------------------------- */
-    .footer p {
-      font-size: 0.95rem;      /* Slightly larger footer text */
-      color: #777e87;
+    /* ===============================
+       8) FOOTER
+       =============================== */
+    footer.footer p {
+      font-size: 0.9rem;
+      color: #6c7a89;
       margin-top: 16px;
+      margin-bottom: 0;
+      animation: fadeInUp 1.8s ease forwards;
     }
 
-    /* ----------------------------------------
-       8) MEDIA QUERIES
-       ---------------------------------------- */
-    @media (max-width: 992px) {
+    /* ===============================
+       9) MEDIA QUERIES
+       =============================== */
+    @media (max-width: 768px) {
       .container {
-        padding: 50px 30px;
+        padding: 32px 16px;
       }
-      .header h1 {
-        font-size: 3rem;
-      }
-      .header p.tagline {
-        font-size: 1.125rem;
-        max-width: 550px;
-      }
-      .promise {
-        font-size: 0.95rem;
-        max-width: 700px;
-      }
-      .cta-button {
-        font-size: 1rem;
-        padding: 14px 32px;
-        margin-bottom: 48px;
-      }
-      .services-grid {
-        gap: 48px;
-      }
-      .service-item {
-        padding: 20px;
-      }
-      .service-item .icon-container {
-        width: 180px;
-        height: 180px;
-      }
-      .service-item .label {
-        font-size: 1rem;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 40px 20px;
-      }
-      .header h1 {
+      header.header h1 {
         font-size: 2.5rem;
       }
-      .header p.tagline {
+      header.header p.tagline {
         font-size: 1rem;
         max-width: 90%;
       }
@@ -216,23 +257,52 @@
         font-size: 0.9rem;
       }
       .cta-button {
-        font-size: 0.95rem;
-        padding: 12px 28px;
-        margin-bottom: 40px;
+        font-size: 1rem;
+        padding: 12px 32px;
+        margin-bottom: 32px;
       }
       .services-grid {
-        grid-template-columns: 1fr;  /* Stacks services on narrow screens */
-        gap: 32px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
       }
-      .service-item {
-        padding: 16px;
+      .icon-container {
+        max-width: 320px;
       }
-      .service-item .icon-container {
-        width: 140px;
-        height: 140px;
+      .label {
+        font-size: 1.125rem;
+        margin-top: 6px;
       }
-      .service-item .label {
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 24px 12px;
+      }
+      header.header h1 {
+        font-size: 2rem;
+      }
+      header.header p.tagline {
         font-size: 0.95rem;
+        max-width: 100%;
+      }
+      .promise {
+        font-size: 0.85rem;
+      }
+      .cta-button {
+        font-size: 0.9rem;
+        padding: 10px 24px;
+        margin-bottom: 24px;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .icon-container {
+        max-width: 260px;
+      }
+      .label {
+        font-size: 1rem;
+        margin-top: 4px;
       }
     }
   </style>
@@ -240,81 +310,64 @@
 
 <body>
   <div class="container">
-    <!-- HEADER -->
-    <header class="header">
-      <h1>Tyozy</h1>
-      <p class="tagline">
-        Moving &amp; Cleaning Services in Tampere – 24×7
+    <div class="inner">
+      <!-- HEADER -->
+      <header class="header">
+        <h1>Tyozy</h1>
+        <p class="tagline">Professional Moving &amp; Cleaning Services in Tampere – 24×7</p>
+      </header>
+
+      <!-- PROMISE LINE -->
+      <p class="promise">
+        We promise no hidden fees, honest communication, and a worry-free experience.
       </p>
-    </header>
 
-    <!-- PROMISE LINE -->
-    <p class="promise">
-      We promise no hidden fees, honest communication, and a worry-free experience from start to finish.
-    </p>
+      <!-- CTA BUTTON (Text Unchanged) -->
+      <button class="cta-button" onclick="window.open('https://api.whatsapp.com/send?phone=+358918910689698&text=Hello%20Tyozy!%20I%27d%20like%20an%20estimate%20for%20services.', '_blank')">
+        Get Your Free WhatsApp Quote
+      </button>
 
-    <!-- CTA -->
-    <a
-      href="https://api.whatsapp.com/send?phone=+358918910689698&text=Hello%20Tyozy!%20I%27d%20like%20an%20estimate%20for%20services."
-      class="cta-button"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Get a Free Estimate on WhatsApp
-    </a>
-
-    <!-- SERVICES GRID (2 per row) -->
-    <section class="services-grid">
-      <!-- MOVING -->
-      <div class="service-item">
-        <div class="icon-container">
-          <img
-            src="assets/images/moving.png"
-            alt="Moving Service Icon"
-          />
+      <!-- SERVICES GRID -->
+      <section class="services-grid" aria-label="Our Services">
+        <!-- MOVING -->
+        <div class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/moving.png" alt="Icon: Moving Service"/>
+          </div>
+          <div class="label">Moving</div>
         </div>
-        <div class="label">Moving</div>
-      </div>
 
-      <!-- FURNITURE PICKUP -->
-      <div class="service-item">
-        <div class="icon-container">
-          <img
-            src="assets/images/furniture.png"
-            alt="Furniture Pickup Icon"
-          />
+        <!-- FURNITURE PICKUP -->
+        <div class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/furniture.png" alt="Icon: Furniture Pickup Service"/>
+          </div>
+          <div class="label">Furniture Pickup</div>
         </div>
-        <div class="label">Furniture Pickup</div>
-      </div>
 
-      <!-- ROOM CLEANING -->
-      <div class="service-item">
-        <div class="icon-container">
-          <img
-            src="assets/images/cleaning.png"
-            alt="Room Cleaning Icon"
-          />
+        <!-- ROOM CLEANING -->
+        <div class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/cleaning.png" alt="Icon: Room Cleaning Service"/>
+          </div>
+          <div class="label">Room Cleaning</div>
         </div>
-        <div class="label">Room Cleaning</div>
-      </div>
 
-      <!-- PACKING & SHIFTING -->
-      <div class="service-item">
-        <div class="icon-container">
-          <img
-            src="assets/images/packing.png"
-            alt="Packing &amp; Shifting Icon"
-          />
+        <!-- PACKING & SHIFTING -->
+        <div class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/packing.png" alt="Icon: Packing &amp; Shifting Service"/>
+          </div>
+          <div class="label">Packing &amp; Shifting</div>
         </div>
-        <div class="label">Packing &amp; Shifting</div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FOOTER / CONTACT INFO -->
-    <footer class="footer">
-      <p>Serving Students &amp; Residents of Tampere, Finland</p>
-      <p>Phone/WhatsApp: +358 918 910 689 698</p>
-    </footer>
+      <!-- FOOTER / CONTACT INFO -->
+      <footer class="footer">
+        <p>Serving Students &amp; Residents of Tampere, Finland</p>
+        <p>Phone/WhatsApp: +358 918 910 689 698</p>
+      </footer>
+    </div>
   </div>
 </body>
 </html>

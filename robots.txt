@@ -1,0 +1,5 @@
+# robots.txt for Tyozy
+User-agent: *
+Disallow:
+
+Sitemap: https://www.tyozy.com/sitemap.xml

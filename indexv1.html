@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Google tag (gtag.js) -->
   <script>
@@ -404,154 +403,33 @@
         margin-top: 4px;
       }
     }
-
-    #language-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
-  #language-modal .modal-content {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-  }
-  #language-modal button {
-    margin: 1rem;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: none;
-    background-color: #0052cc;
-    color: white;
-    cursor: pointer;
-  }
-  #language-switcher {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    display: none;
-    z-index: 10000;
-  }
-  #language-switcher button {
-    margin-left: 0.5rem;
-    padding: 0.25rem 0.75rem;
-    font-size: 0.875rem;
-  }
-
-  #language-modal .lang-btn {
-  flex: 1;
-  padding: 0.75rem 1.5rem; /* add horizontal padding */
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1.5px solid var(--primary-blue);
-  background: white;
-  color: var(--primary-blue);
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  user-select: none;
-  text-align: center;
-}
-#language-modal .lang-btn:hover,
-#language-modal .lang-btn:focus {
-  background: var(--primary-blue);
-  color: white;
-  outline: none;
-}
-
   </style>
-
-  <script>
-    const translations = {
-      fi: {
-        tagline: "24/7 ratkaisu pyykkiin, siivoukseen, huonekalujen noutoon ja muuttoon Tampereella. Ei piilokuluja, vain rehellistä ja mutkatonta palvelua.",
-        callNow: "Soita nyt ja pyydä ilmainen tarjous",
-        moving: "Pakkaus ja muutto",
-        furniture: "Huonekalujen nouto",
-        cleaning: "Huoneiden siivous",
-        laundry: "Pyykkipalvelu",
-        serving: "Palvelemme opiskelijoita ja asukkaita Tampereella.",
-        call: "Soita meille: +358 449 318 824"
-      },
-      en: {} // English is the default language
-    };
-
-    function setLanguage(lang) {
-  document.documentElement.lang = lang;
-  document.querySelectorAll('[data-translate-key]').forEach(el => {
-    const key = el.getAttribute('data-translate-key');
-    const original = el.getAttribute('data-original') || el.textContent.trim();
-    if (!el.hasAttribute('data-original')) el.setAttribute('data-original', original);
-    const translation = translations[lang][key];
-    el.textContent = translation || original;
-  });
-  localStorage.setItem('lang', lang);
-
-  // THIS IS THE PROBLEM: This line always shows the modal on language change
-  document.getElementById('language-modal').style.display = 'flex';
-  document.getElementById('language-switcher').style.display = 'block';
-}
-
-
-
-    function chooseLanguage(lang) {
-      setLanguage(lang);
-      document.getElementById('language-modal').style.display = 'none';
-    }
-
-    // Show modal only if language not set yet
-    document.addEventListener('DOMContentLoaded', () => {
-      const lang = localStorage.getItem('lang');
-      if (!lang) {
-        document.getElementById('language-modal').style.display = 'flex';
-      } else {
-        setLanguage(lang);
-      }
-    });
-  </script>
 </head>
-<body>
-  <div id="language-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" style="position: fixed; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.6); display:none; justify-content:center; align-items:center; z-index:1000;">
-  <div style="background:#fff; padding:2rem 3rem; border-radius:12px; max-width:360px; text-align:center; box-shadow: 0 4px 20px rgba(0,0,0,0.3); font-family: 'Poppins', Arial, sans-serif;">
-    <h2 style="margin-bottom: 0.25rem; font-weight: 600;">Valitse kieli</h2>
-    <p style="margin-top: 0; margin-bottom: 1.5rem; font-weight: 400; font-size: 1rem;">Choose your language</p>
-    <div style="display: flex; justify-content: center; gap: 1rem;">
-      <button class="lang-btn" onclick="chooseLanguage('en')">English</button>
-      <button class="lang-btn" onclick="chooseLanguage('fi')">Suomi</button>
-    </div>
-  </div>
-</div>
 
+<body>
   <div class="container">
-    <div id="language-switcher">
-      <button onclick="setLanguage('en')">EN</button>
-      <button onclick="setLanguage('fi')">FI</button>
-    </div>
     <div class="inner">
+      <!-- HEADER -->
       <header class="header">
-        <h1 data-translate-key="brand">Tyozy</h1>
-        <h2 class="tagline" data-translate-key="tagline">
-          Your 24/7 solution for laundry, room cleaning, furniture pickup, packing & shifting in Tampere. We promise no hidden fees, honest communication, and a worry-free experience.
+        <h1>Tyozy</h1>
+        <h2 class="tagline">
+          Your 24/7 solution for laundry, room cleaning, furniture pickup, packing &amp; shifting in Tampere. We promise no hidden fees, honest communication, and a worry-free experience.
         </h2>
       </header>
-      <button class="cta-button" onclick="window.open('tel:+358449318824', '_self')" data-translate-key="callNow">
+
+      <!-- CTA BUTTON -->
+      <button class="cta-button" onclick="window.open('tel:+358449318824', '_self')">
         Call us now for a Free Quote
       </button>
+
+      <!-- SERVICES GRID -->
       <section class="services-grid" aria-label="Our Services">
+        <!-- MOVING SERVICE DESCRIPTION -->
         <div class="service-item">
           <div class="icon-container">
-            <img src="assets/images/moving.png" alt="Illustration of a moving truck for packing and shifting in Tampere" loading="lazy"/>
+            <img src="assets/images/moving.png" alt="Tampere professional moving service icon" loading="lazy"/>
           </div>
-          <div class="label" data-translate-key="moving">Packing & Shifting</div>
+          <div class="label">Packing &amp; Shifting</div>
           <p class="service-desc">
             At Tyozy, we specialize in providing comprehensive and stress-free moving services to residents and businesses in Tampere, Finland. Our team of experienced and highly trained movers is dedicated to making your relocation process smooth, efficient, and hassle-free, whether you're moving across the street or across town. We understand that moving can be a daunting experience, especially when balancing work, studies, or family responsibilities. That’s why we’ve designed our services to be available 24/7, so you can schedule your move when it’s most convenient for you—be it early morning, late at night, or even over the weekend.
 
@@ -562,11 +440,13 @@
             For students and expats, we offer tailored solutions that consider your budget and tight timelines. We’re especially proud of the reputation we’ve built in Tampere’s academic and residential communities for being a reliable moving partner. Let Tyozy be your first call when you need a mover you can trust. With our friendly customer support, round-the-clock availability, and no-surprise pricing, we aim to be Tampere’s number one choice for moving services.
           </p>
         </div>
+
+        <!-- FURNITURE PICKUP SERVICE DESCRIPTION -->
         <div class="service-item">
           <div class="icon-container">
-            <img src="assets/images/furniture.png" alt="Illustration of a person lifting furniture for pickup service in Tampere" loading="lazy"/>
+            <img src="assets/images/furniture.png" alt="Tampere furniture pickup service icon" loading="lazy"/>
           </div>
-          <div class="label" data-translate-key="furniture">Furniture Pickup</div>
+          <div class="label">Furniture Pickup</div>
           <p class="service-desc">
             Whether you've just bought a new sofa from IKEA or need help disposing of old furniture, Tyozy's Furniture Pickup service in Tampere is your go-to solution. We offer reliable, punctual, and affordable pickup and delivery of furniture items across the Tampere region. Our services are ideal for students, busy professionals, families, and senior citizens who need a helping hand transporting furniture—without the hassle of renting a van or lifting heavy items themselves.
 
@@ -579,11 +459,13 @@
             Whether you’re a new arrival in Tampere or a long-time resident needing a dependable furniture transport partner, Tyozy delivers a smooth, professional, and transparent experience from start to finish. Reach out to us for a free quote, and let us do the heavy lifting—literally.
           </p>
         </div>
+
+        <!-- ROOM CLEANING SERVICE DESCRIPTION -->
         <div class="service-item">
           <div class="icon-container">
-            <img src="assets/images/cleaning.png" alt="Illustration showing room cleaning in a home in Tampere" loading="lazy"/>
+            <img src="assets/images/cleaning.png" alt="Tampere professional room cleaning icon" loading="lazy"/>
           </div>
-          <div class="label" data-translate-key="cleaning">Room Cleaning</div>
+          <div class="label">Room Cleaning</div>
           <p class="service-desc">
             Tyozy offers top-tier room cleaning services in Tampere, Finland, with options designed to suit every need—whether it’s a one-time deep clean, move-in/move-out cleaning, or regular weekly upkeep. We cater to students, families, working professionals, Airbnb hosts, and landlords who need reliable, thorough, and eco-friendly cleaning support.
 
@@ -596,15 +478,18 @@
             With Tyozy, cleanliness is never a concern. Our punctual, background-checked staff treat your home with respect and privacy. We bring all our own equipment, so you never have to worry about supplies. We communicate clearly about costs, timing, and scope—no surprises, no stress.
           </p>
         </div>
+
+        <!-- PACKING & SHIFTING SERVICE DESCRIPTION -->
         <div class="service-item">
           <div class="icon-container">
-            <img src="assets/images/laundry.png" alt="Illustration representing laundry and ironing service in Tampere" loading="lazy"/>
+            <img src="assets/images/laundry.png" alt="Tampere packing and shifting service icon" loading="lazy"/>
           </div>
-          <div class="label" data-translate-key="laundry">Laundry</div>
+          <div class="label">Laundry</div>
           <p class="service-desc">
             Tyozy Laundry is your local, reliable laundry solution offering fast, affordable, and high-quality washing, drying, folding, and ironing services. Whether you're a student, working professional, family, or business, we make laundry day effortless by providing doorstep pickup and delivery, flexible scheduling, and eco-friendly cleaning practices. Our modern machines and expert staff ensure your clothes are treated with care and returned clean, fresh, and neatly folded—just the way you like them. We handle everything from everyday wear to delicate garments, bedsheets, uniforms, and curtains.
           </p>
         </div>
+
       </section>
 
       <!-- FOOTER / CONTACT INFO -->

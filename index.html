@@ -541,7 +541,7 @@
       <header class="header">
         <h1 data-translate-key="brand">Tyozy</h1>
         <h2 class="tagline" data-translate-key="tagline">
-          Your 24/7 solution for laundry, room cleaning, furniture pickup, packing & shifting in Tampere and Finland. We promise no hidden fees, honest communication, and a worry-free experience.
+          Your 24/7 solution for room cleaning, furniture pickup, packing & shifting, and laundry in Tampere and Finland. We promise no hidden fees, honest communication, and a worry-free experience.
         </h2>
       </header>
       <button class="cta-button" onclick="window.open('tel:+358449318824', '_self')" data-translate-key="callNow">
@@ -621,7 +621,37 @@
       <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script-->
 
 
-      <div class="sk-ww-google-reviews" data-embed-id="25685224"></div><script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
+      <style>
+      .sk_branding,
+      .sk_branding *,
+      a.tutorial_link,
+      .--custom-branding{
+          display:none !important;
+          visibility:hidden !important;
+          opacity:0 !important;
+          height:0 !important;
+          overflow:hidden !important;
+      }
+      </style>
+
+      <div class="sk-ww-google-reviews" data-embed-id="25685224"></div>
+      <script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
+
+      <script>
+      function removeBranding() {
+          document.querySelectorAll('.sk_branding').forEach(el => el.remove());
+          document.querySelectorAll('.tutorial_link').forEach(el => el.remove());
+          document.querySelectorAll('.--custom-branding').forEach(el => el.remove());
+      }
+
+      window.addEventListener('load', removeBranding);
+
+      const observer = new MutationObserver(removeBranding);
+      observer.observe(document.body, {
+          childList: true,
+          subtree: true
+      });
+      </script>
 
 
       <!-- FOOTER / CONTACT INFO -->
@@ -651,8 +681,5 @@
 
     </div>
   </div>
-  <script>
-document.querySelector('.sk_branding')?.remove();
-</script>
 </body>
 </html>

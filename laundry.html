@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tyozy Laundry Pickup & Delivery Services Tampere</title>
+
+<meta name="description" content="Laundry pickup and delivery services in Tampere. Wash & fold, bedding laundry, commercial laundry, and convenient doorstep pickup by Tyozy.">
+
+<meta name="keywords" content="laundry service tampere, laundry pickup tampere, wash and fold tampere, commercial laundry tampere">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://www.tyozy.com/laundry">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+  .back-button{
+
+top:12px;
+left:12px;
+
+padding:8px 14px;
+
+font-size:13px;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+:root{
+--bg:#f5f7fb;
+--text:#111827;
+--muted:#5b6472;
+--primary:#2563eb;
+--line:rgba(0,0,0,0.08);
+}
+
+body{
+font-family:'Inter',sans-serif;
+font-size:18px;
+line-height:1.8;
+background:var(--bg);
+color:var(--text);
+overflow-x:hidden;
+}
+
+img{
+width:100%;
+display:block;
+object-fit:cover;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+/* LANGUAGE */
+
+.language-switcher{
+position:fixed;
+top:20px;
+right:20px;
+z-index:999999;
+display:flex;
+gap:8px;
+}
+
+.language-switcher button{
+border:none;
+padding:10px 18px;
+border-radius:100px;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(12px);
+font-weight:700;
+cursor:pointer;
+box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+
+.language-switcher button.active{
+background:#111827;
+color:#fff;
+}
+
+/* CTA */
+
+.floating-cta{
+position:fixed;
+left:50%;
+bottom:20px;
+transform:translateX(-50%);
+width:calc(100% - 24px);
+max-width:760px;
+z-index:999999;
+}
+
+.cta-bar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 20px;
+border-radius:24px;
+background:rgba(17,24,39,.95);
+backdrop-filter:blur(16px);
+}
+
+.cta-phone{
+font-size:28px;
+font-weight:800;
+color:#fff;
+}
+
+.cta-btn{
+background:#2563eb;
+padding:16px 22px;
+border-radius:16px;
+font-weight:700;
+color:#fff;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+.hero-slide{
+position:absolute;
+inset:0;
+opacity:0;
+animation:heroSlider 24s infinite;
+}
+
+.hero-slide img{
+height:100%;
+}
+
+.hero-slide:nth-child(1){animation-delay:0s;}
+.hero-slide:nth-child(2){animation-delay:6s;}
+.hero-slide:nth-child(3){animation-delay:12s;}
+.hero-slide:nth-child(4){animation-delay:18s;}
+
+@keyframes heroSlider{
+0%,100%{opacity:0;}
+8%,25%{opacity:1;}
+33%{opacity:0;}
+}
+
+.hero-overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.7));
+}
+
+.hero-content{
+position:relative;
+z-index:10;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:0 7%;
+color:white;
+}
+
+.hero-brand{
+font-size:22px;
+font-weight:800;
+letter-spacing:2px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:clamp(3.5rem,7vw,7rem);
+line-height:.95;
+max-width:1000px;
+margin-bottom:24px;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:850px;
+line-height:1.8;
+}
+
+.trust-strip{
+display:flex;
+flex-wrap:wrap;
+gap:24px;
+margin-top:30px;
+}
+
+/* SECTION */
+
+.section{
+padding:110px 7%;
+}
+
+.section-title{
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:clamp(2.6rem,5vw,4.5rem);
+line-height:1.05;
+margin-bottom:20px;
+}
+
+.section-title p{
+max-width:900px;
+color:var(--muted);
+}
+
+.room-grid{
+display:grid;
+grid-template-columns:1fr 1.1fr;
+gap:80px;
+align-items:center;
+}
+
+.room-grid.reverse .text-side{
+order:2;
+}
+
+.room-grid.reverse .image-layout{
+order:1;
+}
+
+.clean-list{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.clean-item{
+display:flex;
+gap:16px;
+padding-bottom:18px;
+border-bottom:1px solid var(--line);
+}
+
+.clean-icon{
+color:#16a34a;
+font-weight:700;
+}
+
+.image-layout{
+display:grid;
+grid-template-columns:1.4fr 1fr;
+gap:18px;
+}
+
+.image-main img{
+height:620px;
+border-radius:30px;
+}
+
+.image-side{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.image-side img{
+height:301px;
+border-radius:30px;
+}
+
+.seo-block h3{
+font-size:clamp(2.2rem,4vw,3.5rem);
+margin-bottom:28px;
+}
+
+.seo-block p{
+margin-bottom:22px;
+color:var(--muted);
+max-width:1000px;
+}
+
+footer{
+padding:100px 7% 180px;
+text-align:center;
+}
+
+footer h2{
+font-size:clamp(2.5rem,5vw,4rem);
+margin-bottom:20px;
+}
+
+footer p{
+color:var(--muted);
+margin-bottom:10px;
+}
+
+@media(max-width:950px){
+
+.room-grid{
+grid-template-columns:1fr;
+gap:50px;
+}
+
+.room-grid.reverse .text-side,
+.room-grid.reverse .image-layout{
+order:unset;
+}
+
+.image-layout{
+grid-template-columns:1fr;
+}
+
+.image-main img{
+height:320px;
+}
+
+.image-side{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.image-side img{
+height:160px;
+}
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.section{
+padding:70px 22px;
+}
+
+.cta-phone{
+font-size:20px;
+}
+
+.cta-btn{
+font-size:14px;
+padding:14px 16px;
+}
+
+}
+
+/* BACK BUTTON */
+
+.back-button{
+
+position:fixed;
+
+top:20px;
+left:20px;
+
+z-index:999999;
+
+display:flex;
+align-items:center;
+gap:8px;
+
+padding:10px 18px;
+
+border-radius:100px;
+
+background:rgba(255,255,255,0.94);
+
+backdrop-filter:blur(14px);
+
+font-size:14px;
+font-weight:700;
+
+color:var(--text);
+
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+
+transition:0.3s ease;
+}
+
+.back-button:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 10px 28px rgba(0,0,0,0.12);
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <!-- BACK BUTTON -->
+
+<a href="index.html" class="back-button">
+
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+<path d="M15 18L9 12L15 6"
+stroke="currentColor"
+stroke-width="2.5"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+</svg>
+
+<span
+data-en="Back"
+data-fi="Takaisin">
+Back
+</span>
+
+</a>
+
+<div class="language-switcher">
+<button class="active" id="en-btn" onclick="setLanguage('en')">EN</button>
+<button id="fi-btn" onclick="setLanguage('fi')">FI</button>
+</div>
+
+<header class="hero">
+
+<div class="hero-slide"><img src="assets/images/laundry/hero/hero-1.png"></div>
+<div class="hero-slide"><img src="assets/images/laundry/hero/hero-2.png"></div>
+<div class="hero-slide"><img src="assets/images/laundry/hero/hero-3.png"></div>
+<div class="hero-slide"><img src="assets/images/laundry/hero/hero-4.png"></div>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<div class="hero-brand">TYOZY</div>
+
+<h1
+data-en="Laundry Pickup & Delivery Services in Tampere"
+data-fi="Pyykin Nouto- ja Toimituspalvelut Tampereella">
+Laundry Pickup & Delivery Services in Tampere
+</h1>
+
+<p
+data-en="Professional wash, fold, pickup, and delivery laundry services for students, families, Airbnb hosts, and businesses across Tampere."
+data-fi="Ammattimaiset pyykinpesu-, taittelu-, nouto- ja toimituspalvelut opiskelijoille, perheille, Airbnb-majoittajille ja yrityksille Tampereella.">
+Professional wash, fold, pickup, and delivery laundry services.
+</p>
+
+<div class="trust-strip">
+
+<div data-en="✓ Doorstep Pickup" data-fi="✓ Nouto Ovelta">✓ Doorstep Pickup</div>
+
+<div data-en="✓ Fast Turnaround" data-fi="✓ Nopea Palvelu">✓ Fast Turnaround</div>
+
+<div data-en="✓ Student Friendly" data-fi="✓ Opiskelijaystävällinen">✓ Student Friendly</div>
+
+<div data-en="✓ Reliable Service" data-fi="✓ Luotettava Palvelu">✓ Reliable Service</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- PICKUP -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2 data-en="Laundry Pickup & Delivery" data-fi="Pyykin Nouto ja Toimitus">
+Laundry Pickup & Delivery
+</h2>
+
+<p
+data-en="We collect laundry directly from your home, apartment, office, or student housing and return it clean and folded."
+data-fi="Noudamme pyykit suoraan kodista, asunnosta, toimistosta tai opiskelija-asunnosta ja palautamme ne puhtaina ja taiteltuina.">
+Laundry collected directly from your location.
+</p>
+
+</div>
+
+<div class="room-grid">
+
+<div class="text-side">
+
+<div class="clean-list">
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Doorstep pickup service." data-fi="Noutopalvelu kotiovelta.">Doorstep pickup service.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Convenient for busy professionals." data-fi="Kätevä kiireisille ammattilaisille.">Convenient for busy professionals.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Ideal for students and families." data-fi="Sopii opiskelijoille ja perheille.">Ideal for students and families.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Scheduled delivery available." data-fi="Aikataulutettu toimitus saatavilla.">Scheduled delivery available.</div></div>
+
+</div>
+
+</div>
+
+<div class="image-layout">
+
+<div class="image-main">
+<img src="assets/images/laundry/pickup/pickup-1.png">
+</div>
+
+<div class="image-side">
+<img src="assets/images/laundry/pickup/pickup-2.png">
+<img src="assets/images/laundry/pickup/pickup-3.png">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WASH FOLD -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2 data-en="Wash & Fold Service" data-fi="Pesu- ja Taittelupalvelu">
+Wash & Fold Service
+</h2>
+
+</div>
+
+<div class="room-grid reverse">
+
+<div class="text-side">
+
+<div class="clean-list">
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Professionally washed and dried." data-fi="Ammattimaisesti pesty ja kuivattu.">Professionally washed and dried.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Folded neatly before delivery." data-fi="Taitellaan huolellisesti ennen toimitusta.">Folded neatly before delivery.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Everyday clothing and textiles." data-fi="Vaatteet ja kodintekstiilit.">Everyday clothing and textiles.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Saves valuable time." data-fi="Säästää arvokasta aikaa.">Saves valuable time.</div></div>
+
+</div>
+
+</div>
+
+<div class="image-layout">
+
+<div class="image-main">
+<img src="assets/images/laundry/washfold/washfold-1.png">
+</div>
+
+<div class="image-side">
+<img src="assets/images/laundry/washfold/washfold-2.png">
+<img src="assets/images/laundry/washfold/washfold-3.png">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BEDDING -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2 data-en="Bedding & Household Laundry" data-fi="Vuodevaatteiden ja Kodintekstiilien Pesu">
+Bedding & Household Laundry
+</h2>
+
+</div>
+
+<div class="room-grid">
+
+<div class="text-side">
+
+<div class="clean-list">
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Bed sheets and duvet covers." data-fi="Lakanat ja pussilakanat.">Bed sheets and duvet covers.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Towels and bath linens." data-fi="Pyyhkeet ja kylpytekstiilit.">Towels and bath linens.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Blankets and household textiles." data-fi="Peitot ja kodintekstiilit.">Blankets and household textiles.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Large loads handled efficiently." data-fi="Suuret määrät käsitellään tehokkaasti.">Large loads handled efficiently.</div></div>
+
+</div>
+
+</div>
+
+<div class="image-layout">
+
+<div class="image-main">
+<img src="assets/images/laundry/bedding/bedding-1.png">
+</div>
+
+<div class="image-side">
+<img src="assets/images/laundry/bedding/bedding-2.png">
+<img src="assets/images/laundry/bedding/bedding-3.png">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- COMMERCIAL -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2 data-en="Business & Commercial Laundry" data-fi="Yritys- ja Ammattipesulapalvelut">
+Business & Commercial Laundry
+</h2>
+
+</div>
+
+<div class="room-grid reverse">
+
+<div class="text-side">
+
+<div class="clean-list">
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Airbnb laundry support." data-fi="Airbnb-pyykkipalvelut.">Airbnb laundry support.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Small business laundry services." data-fi="Pyykkipalvelut pienyrityksille.">Small business laundry services.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Restaurant textiles and uniforms." data-fi="Ravintolatekstiilit ja työasut.">Restaurant textiles and uniforms.</div></div>
+
+<div class="clean-item"><div class="clean-icon">✓</div><div data-en="Regular pickup schedules available." data-fi="Säännölliset noutoaikataulut saatavilla.">Regular pickup schedules available.</div></div>
+
+</div>
+
+</div>
+
+<div class="image-layout">
+
+<div class="image-main">
+<img src="assets/images/laundry/commercial/commercial-1.png">
+</div>
+
+<div class="image-side">
+<img src="assets/images/laundry/commercial/commercial-2.png">
+<img src="assets/images/laundry/commercial/commercial-3.png">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SEO -->
+
+<section class="section">
+
+<div class="seo-block">
+
+<h3
+data-en="Laundry Pickup & Delivery Services Across Tampere"
+data-fi="Pyykin Nouto- ja Toimituspalvelut Tampereella">
+Laundry Pickup & Delivery Services Across Tampere
+</h3>
+
+<p
+data-en="Tyozy provides laundry pickup and delivery services in Tampere for students, families, Airbnb hosts, professionals, and businesses."
+data-fi="Tyozy tarjoaa pyykin nouto- ja toimituspalveluita Tampereella opiskelijoille, perheille, Airbnb-majoittajille ja yrityksille.">
+Laundry pickup and delivery services across Tampere.
+</p>
+
+<p
+data-en="We help customers save time by collecting laundry directly from their location and returning it clean, fresh, and folded."
+data-fi="Autamme asiakkaita säästämään aikaa noutamalla pyykit suoraan heidän luotaan ja palauttamalla ne puhtaina ja taiteltuina.">
+We help customers save time.
+</p>
+
+<p
+data-en="Available across Tampere and nearby areas with convenient scheduling and reliable service."
+data-fi="Saatavilla Tampereella ja lähialueilla joustavilla aikatauluilla ja luotettavalla palvelulla.">
+Available across Tampere and nearby areas.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>TYOZY</h2>
+
+<p
+data-en="Laundry Pickup & Delivery Services in Tampere"
+data-fi="Pyykin Nouto- ja Toimituspalvelut Tampereella">
+Laundry Pickup & Delivery Services in Tampere
+</p>
+
+<br>
+
+<p>+358 449 318 824</p>
+
+<p>Business ID: 3549202-5</p>
+
+<p>Tampere, Finland</p>
+
+</footer>
+
+<div class="floating-cta">
+
+<a href="tel:+358449318824" class="cta-bar">
+
+<div class="cta-phone">
++358 449 318 824
+</div>
+
+<div class="cta-btn"
+data-en="Get Free Quote"
+data-fi="Pyydä Tarjous">
+Get Free Quote
+</div>
+
+</a>
+
+</div>
+
+<script>
+
+function setLanguage(lang){
+
+localStorage.setItem('tyozy-language',lang);
+
+document.querySelectorAll('[data-en]').forEach(el=>{
+
+el.innerHTML =
+lang==='fi'
+? el.getAttribute('data-fi')
+: el.getAttribute('data-en');
+
+});
+
+document.getElementById('en-btn').classList.toggle('active',lang==='en');
+document.getElementById('fi-btn').classList.toggle('active',lang==='fi');
+
+}
+
+const savedLanguage =
+localStorage.getItem('tyozy-language') || 'en';
+
+setLanguage(savedLanguage);
+
+</script>
+
+</body>
+</html>

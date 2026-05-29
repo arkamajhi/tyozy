@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tyozy | Moving, Cleaning, Furniture Moving & Laundry Services in Tampere</title>
+
+<meta name="description" content="Tyozy provides professional moving, house cleaning, furniture moving, and laundry services in Tampere. Fast booking, transparent pricing, and local support.">
+
+<meta name="keywords" content="moving services tampere, house cleaning tampere, furniture moving tampere, laundry service tampere">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+--bg:#f5f7fb;
+--text:#111827;
+--muted:#5b6472;
+--primary:#2563eb;
+--line:rgba(0,0,0,0.08);
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:var(--bg);
+color:var(--text);
+overflow-x:hidden;
+}
+
+img{
+width:100%;
+display:block;
+object-fit:cover;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+/* LANGUAGE */
+
+.language-switcher{
+position:fixed;
+top:20px;
+right:20px;
+z-index:99999;
+display:flex;
+gap:8px;
+}
+
+.language-switcher button{
+border:none;
+padding:10px 18px;
+border-radius:999px;
+cursor:pointer;
+font-weight:700;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(12px);
+box-shadow:0 8px 24px rgba(0,0,0,.08);
+}
+
+.language-switcher button.active{
+background:#111827;
+color:#fff;
+}
+
+/* CTA */
+
+.floating-cta{
+position:fixed;
+left:50%;
+bottom:20px;
+transform:translateX(-50%);
+width:calc(100% - 24px);
+max-width:760px;
+z-index:99999;
+}
+
+.cta-bar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 20px;
+border-radius:24px;
+background:rgba(17,24,39,.95);
+backdrop-filter:blur(16px);
+}
+
+.cta-phone{
+color:white;
+font-size:28px;
+font-weight:800;
+}
+
+.cta-btn{
+background:var(--primary);
+color:white;
+padding:16px 22px;
+border-radius:16px;
+font-weight:700;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+.hero-slide{
+position:absolute;
+inset:0;
+opacity:0;
+animation:heroSlider 24s infinite;
+}
+
+.hero-slide img{
+height:100%;
+}
+
+.hero-slide:nth-child(1){animation-delay:0s;}
+.hero-slide:nth-child(2){animation-delay:6s;}
+.hero-slide:nth-child(3){animation-delay:12s;}
+.hero-slide:nth-child(4){animation-delay:18s;}
+
+@keyframes heroSlider{
+0%,100%{opacity:0;}
+8%,25%{opacity:1;}
+33%{opacity:0;}
+}
+
+.hero-overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.7));
+}
+
+.hero-content{
+position:relative;
+z-index:10;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:0 7%;
+color:white;
+}
+
+.hero-brand{
+font-size:22px;
+font-weight:800;
+margin-bottom:20px;
+letter-spacing:2px;
+}
+
+.hero h1{
+font-size:clamp(3.5rem,7vw,7rem);
+line-height:.95;
+max-width:1000px;
+margin-bottom:24px;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:800px;
+line-height:1.8;
+}
+
+.trust-strip{
+display:flex;
+gap:24px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+/* SECTIONS */
+
+.section{
+padding:110px 7%;
+}
+
+.section-title{
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:clamp(2.5rem,5vw,4.5rem);
+line-height:1.05;
+margin-bottom:18px;
+}
+
+.section-title p{
+max-width:850px;
+color:var(--muted);
+}
+
+.room-grid{
+display:grid;
+grid-template-columns:1fr 1.1fr;
+gap:80px;
+align-items:center;
+}
+
+.room-grid.reverse .text-side{
+order:2;
+}
+
+.room-grid.reverse .image-layout{
+order:1;
+}
+
+.clean-list{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.clean-item{
+display:flex;
+gap:16px;
+padding-bottom:18px;
+border-bottom:1px solid var(--line);
+}
+
+.clean-icon{
+color:#16a34a;
+font-weight:700;
+}
+
+.image-layout{
+display:grid;
+grid-template-columns:1.4fr 1fr;
+gap:18px;
+}
+
+.image-main img{
+height:620px;
+border-radius:28px;
+}
+
+.image-side{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.image-side img{
+height:301px;
+border-radius:28px;
+}
+
+/* REVIEWS */
+
+.reviews{
+padding:110px 7%;
+text-align:center;
+background:white;
+}
+
+.reviews h2{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+padding:100px 7% 180px;
+text-align:center;
+}
+
+footer h2{
+font-size:clamp(2.5rem,5vw,4rem);
+margin-bottom:20px;
+}
+
+footer p{
+color:var(--muted);
+margin-bottom:10px;
+}
+
+/* MOBILE */
+
+@media(max-width:950px){
+
+.room-grid{
+grid-template-columns:1fr;
+}
+
+.room-grid.reverse .text-side,
+.room-grid.reverse .image-layout{
+order:unset;
+}
+
+.image-layout{
+grid-template-columns:1fr;
+}
+
+.image-main img{
+height:320px;
+}
+
+.image-side{
+display:grid;
+grid-template-columns:1fr 1fr;
+}
+
+.image-side img{
+height:160px;
+}
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.section{
+padding:70px 22px;
+}
+
+.floating-cta{
+bottom:10px;
+}
+
+.cta-phone{
+font-size:20px;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="language-switcher">
+<button id="en-btn" class="active" onclick="setLanguage('en')">EN</button>
+<button id="fi-btn" onclick="setLanguage('fi')">FI</button>
+</div>
+
+<header class="hero">
+
+<div class="hero-slide">
+<img src="assets/images/homepage/moving.png" alt="">
+</div>
+
+<div class="hero-slide">
+<img src="assets/images/homepage/cleaning.png" alt="">
+</div>
+
+<div class="hero-slide">
+<img src="assets/images/homepage/laundry.png" alt="">
+</div>
+
+<div class="hero-slide">
+<img src="assets/images/homepage/furniture.png" alt="">
+</div>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<div class="hero-brand">TYOZY</div>
+
+<h1
+data-en="Moving, Cleaning & Laundry Services in Tampere"
+data-fi="Muutto-, Siivous- ja Pesulapalvelut Tampereella">
+Moving, Cleaning & Laundry Services in Tampere
+</h1>
+
+<p
+data-en="Professional local services for students, families and businesses across Tampere."
+data-fi="Ammattimaiset paikalliset palvelut opiskelijoille, perheille ja yrityksille Tampereella.">
+Professional local services for students, families and businesses across Tampere.
+</p>
+
+<div class="trust-strip">
+<div>✓ Tampere</div>
+<div>✓ Student Friendly</div>
+<div>✓ Transparent Pricing</div>
+<div>✓ Fast Response</div>
+</div>
+
+</div>
+
+</header>
+
+<!-- MOVING -->
+
+<section class="section">
+
+<div class="section-title">
+<h2 data-en="Moving Services" data-fi="Muuttopalvelut">Moving Services</h2>
+<p data-en="Apartment moving, student moving and full relocation support."
+data-fi="Asuntomuutot, opiskelijamuutot ja täydellinen muuttoapu.">
+Apartment moving, student moving and full relocation support.
+</p>
+</div>
+
+<div class="room-grid">
+
+<div class="text-side">
+<div class="clean-list">
+
+<div class="clean-item"><div class="clean-icon">✓</div><div>Apartment Moving</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div>Student Moving</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div>Packing Assistance</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div><a href="/moving">View Full Moving Service →</a></div></div>
+
+</div>
+</div>
+
+<div class="image-layout">
+<div class="image-main"><img src="assets/images/homepage/moving.png"></div>
+<div class="image-side">
+<img src="assets/images/homepage/cleaning.png">
+<img src="assets/images/homepage/furniture.png">
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- CLEANING -->
+
+<section class="section">
+
+<div class="section-title">
+<h2 data-en="House Cleaning" data-fi="Kotisiivous">House Cleaning</h2>
+<p data-en="Deep cleaning, move-out cleaning and regular home cleaning."
+data-fi="Syväsiivous, muuttosiivous ja säännöllinen kotisiivous.">
+Deep cleaning, move-out cleaning and regular home cleaning.
+</p>
+</div>
+
+<div class="room-grid reverse">
+
+<div class="text-side">
+<div class="clean-list">
+
+<div class="clean-item"><div class="clean-icon">✓</div><div>Kitchen Cleaning</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div>Bathroom Cleaning</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div>Bedroom Cleaning</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div><a href="/house-cleaning">View Full Cleaning Service →</a></div></div>
+
+</div>
+</div>
+
+<div class="image-layout">
+<div class="image-main"><img src="assets/images/homepage/cleaning.png"></div>
+<div class="image-side">
+<img src="assets/images/homepage/moving.png">
+<img src="assets/images/homepage/laundry.png">
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- FURNITURE -->
+
+<section class="section">
+
+<div class="section-title">
+<h2 data-en="Furniture Moving" data-fi="Huonekalujen Muutto">Furniture Moving</h2>
+<p data-en="Heavy lifting, furniture transport and assembly support."
+data-fi="Raskaiden huonekalujen kuljetus ja kokoamisapu.">
+Heavy lifting, furniture transport and assembly support.
+</p>
+</div>
+
+<div class="room-grid">
+
+<div class="text-side">
+<div class="clean-list">
+
+<div class="clean-item"><div class="clean-icon">✓</div><div>Sofas & Beds</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div>IKEA Furniture</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div>Appliances</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div><a href="/furniture-moving">View Full Furniture Service →</a></div></div>
+
+</div>
+</div>
+
+<div class="image-layout">
+<div class="image-main"><img src="assets/images/homepage/furniture.png"></div>
+<div class="image-side">
+<img src="assets/images/homepage/moving.png">
+<img src="assets/images/homepage/cleaning.png">
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- LAUNDRY -->
+
+<section class="section">
+
+<div class="section-title">
+<h2 data-en="Laundry Pickup & Delivery" data-fi="Pesulan Nouto ja Toimitus">
+Laundry Pickup & Delivery
+</h2>
+</div>
+
+<div class="room-grid reverse">
+
+<div class="text-side">
+<div class="clean-list">
+
+<div class="clean-item"><div class="clean-icon">✓</div><div>Pickup From Home</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div>Professional Washing</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div>Delivery Back To You</div></div>
+<div class="clean-item"><div class="clean-icon">✓</div><div><a href="/laundry">View Laundry Service →</a></div></div>
+
+</div>
+</div>
+
+<div class="image-layout">
+<div class="image-main"><img src="assets/images/homepage/laundry.png"></div>
+<div class="image-side">
+<img src="assets/images/homepage/moving.png">
+<img src="assets/images/homepage/furniture.png">
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="reviews">
+
+<h2>Google Reviews</h2>
+
+<div class="sk-ww-google-reviews" data-embed-id="25685224"></div>
+<script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
+
+</section>
+
+<footer>
+
+<h2>Tyozy</h2>
+
+<p>Moving • Cleaning • Furniture Moving • Laundry</p>
+
+<p>+358 449 318 824</p>
+
+<p>Business ID: 3549202-5</p>
+
+<p>Tampere, Finland</p>
+
+</footer>
+
+<div class="floating-cta">
+
+<a href="tel:+358449318824" class="cta-bar">
+
+<div class="cta-phone">
++358 449 318 824
+</div>
+
+<div class="cta-btn"
+data-en="Get Free Quote"
+data-fi="Pyydä Tarjous">
+Get Free Quote
+</div>
+
+</a>
+
+</div>
+
+<script>
+
+function setLanguage(lang){
+
+localStorage.setItem('tyozy-language',lang);
+
+document.querySelectorAll('[data-en]').forEach(el=>{
+
+el.innerHTML =
+lang === 'fi'
+? el.getAttribute('data-fi')
+: el.getAttribute('data-en');
+
+});
+
+document.getElementById('en-btn').classList.toggle('active',lang==='en');
+document.getElementById('fi-btn').classList.toggle('active',lang==='fi');
+
+}
+
+const savedLanguage = localStorage.getItem('tyozy-language') || 'en';
+setLanguage(savedLanguage);
+
+</script>
+
+</body>
+</html>

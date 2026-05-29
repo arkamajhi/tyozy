@@ -471,54 +471,80 @@
   </style>
 
   <script>
-    const translations = {
-      fi: {
+
+const translations = {
+    fi: {
         tagline: "24/7 ratkaisu pyykkiin, siivoukseen, huonekalujen noutoon ja muuttoon Tampereella. Ei piilokuluja, vain rehellistä ja mutkatonta palvelua.",
         callNow: "Soita nyt ja pyydä ilmainen tarjous",
         moving: "Pakkaus ja muutto",
         furniture: "Huonekalujen nouto",
-        cleaning: "Huoneiden ja kodin siivous",
+        cleaning: "Kodin siivous",
         laundry: "Pesulapalvelut nouto ja toimitus kotiovellesi",
         serving: "Palvelemme opiskelijoita ja asukkaita Tampereella ja muualla Suomessa.",
         call: "Soita meille: +358 449 318 824",
-        id: "Y-tunnus: 3549202-5"
-      },
-      en: {} // English is the default language
-    };
+        id: "Y-tunnus: 3549202-5",
+        googlerevh1: "Luotettavat muutto- ja siivouspalvelut Tampereella",
+        googlerevh2: "Lue aitoja Google-arvosteluja asiakkailtamme Tampereella"
+    },
+    en: {}
+};
 
-    function setLanguage(lang) {
-  document.documentElement.lang = lang;
-  document.querySelectorAll('[data-translate-key]').forEach(el => {
-    const key = el.getAttribute('data-translate-key');
-    const original = el.getAttribute('data-original') || el.textContent.trim();
-    if (!el.hasAttribute('data-original')) el.setAttribute('data-original', original);
-    const translation = translations[lang][key];
-    el.textContent = translation || original;
-  });
-  localStorage.setItem('lang', lang);
+function applyLanguage(lang){
 
-  // THIS IS THE PROBLEM: This line always shows the modal on language change
-  document.getElementById('language-modal').style.display = 'flex';
-  document.getElementById('language-switcher').style.display = 'block';
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll('[data-translate-key]').forEach(el => {
+
+        const key = el.dataset.translateKey;
+
+        const original =
+            el.dataset.original ||
+            el.textContent.trim();
+
+        if(!el.dataset.original){
+            el.dataset.original = original;
+        }
+
+        el.textContent =
+            translations[lang]?.[key] || original;
+
+    });
+
+    localStorage.getItem('tyozy-language')
+    localStorage.setItem('tyozy-language', lang)
+
 }
 
+function chooseLanguage(lang){
 
+    applyLanguage(lang);
 
-    function chooseLanguage(lang) {
-      setLanguage(lang);
-      document.getElementById('language-modal').style.display = 'none';
+    document.getElementById('language-modal').style.display = 'none';
+
+    document.getElementById('language-switcher').style.display = 'block';
+
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const savedLanguage =
+        localStorage.getItem('tyozy-language');
+
+    if(savedLanguage){
+
+        applyLanguage(savedLanguage);
+
+        document.getElementById('language-switcher').style.display = 'block';
+
+    }else{
+
+        document.getElementById('language-modal').style.display = 'flex';
+
     }
 
-    // Show modal only if language not set yet
-    document.addEventListener('DOMContentLoaded', () => {
-      const lang = localStorage.getItem('lang');
-      if (!lang) {
-        document.getElementById('language-modal').style.display = 'flex';
-      } else {
-        setLanguage(lang);
-      }
-    });
-  </script>
+});
+
+</script>
 </head>
 <body>
   <div id="language-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" style="position: fixed; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.6); display:none; justify-content:center; align-items:center; z-index:1000;">
@@ -534,8 +560,15 @@
 
   <div class="container">
     <div id="language-switcher">
-      <button onclick="setLanguage('en')">EN</button>
-      <button onclick="setLanguage('fi')">FI</button>
+
+      <button onclick="applyLanguage('en')">
+      EN
+      </button>
+
+      <button onclick="applyLanguage('fi')">
+      FI
+      </button>
+
     </div>
     <div class="inner">
       <header class="header">
@@ -548,9 +581,10 @@
         Call us now for a Free Quote
       </button>
       <section class="services-grid" aria-label="Our Services">
-        <div class="service-item">
+
+        <a href="moving.html" class="service-item">
           <div class="icon-container">
-            <img src="assets/images/moving.png" alt="Illustration of a moving truck for packing and shifting in Tampere" loading="lazy"/>
+            <img src="assets/images/homepage/moving.png" alt="Illustration of a moving truck for packing and shifting in Tampere" loading="lazy"/>
           </div>
 
           <div class="label" data-translate-key="moving">Packing & Moving</div>
@@ -563,11 +597,11 @@
 
             For students and expats, we offer tailored solutions that consider your budget and tight timelines. We’re especially proud of the reputation we’ve built in Tampere’s academic and residential communities for being a reliable moving partner. Let Tyozy be your first call when you need a mover you can trust. With our friendly customer support, round-the-clock availability, and no-surprise pricing, we aim to be Tampere’s number one choice for moving services.
           </p>
-        </div>
+        </a>
 
-        <div class="service-item">
+        <a href="moving.html" class="service-item">
           <div class="icon-container">
-            <img src="assets/images/furniture.png" alt="Illustration of a person lifting furniture for pickup service in Tampere" loading="lazy"/>
+            <img src="assets/images/homepage/furniture.png" alt="Illustration of a person lifting furniture for pickup service in Tampere" loading="lazy"/>
           </div>
           <div class="label" data-translate-key="furniture">Furniture Moving & Shifting</div>
           <p class="service-desc">
@@ -581,11 +615,11 @@
 
             Whether you’re a new arrival in Tampere or a long-time resident needing a dependable furniture transport partner, Tyozy delivers a smooth, professional, and transparent experience from start to finish. Reach out to us for a free quote, and let us do the heavy lifting—literally.
           </p>
-        </div>
+        </a>
 
-        <div class="service-item">
+        <a href="house-cleaning.html" class="service-item">
           <div class="icon-container">
-            <img src="assets/images/cleaning.png" alt="Illustration showing room cleaning in a home in Tampere" loading="lazy"/>
+            <img src="assets/images/homepage/cleaning.png" alt="Illustration showing room cleaning in a home in Tampere" loading="lazy"/>
           </div>
           <div class="label" data-translate-key="cleaning">Room & House Cleaning</div>
           <p class="service-desc">
@@ -599,17 +633,18 @@
 
             With Tyozy, cleanliness is never a concern. Our punctual, background-checked staff treat your home with respect and privacy. We bring all our own equipment, so you never have to worry about supplies. We communicate clearly about costs, timing, and scope—no surprises, no stress.
           </p>
-        </div>
+        </a>
 
-        <div class="service-item">
+        <a href="laundry.html" class="service-item">
           <div class="icon-container">
-            <img src="assets/images/laundry.png" alt="Illustration representing laundry and ironing service in Tampere" loading="lazy"/>
+            <img src="assets/images/homepage/laundry.png" alt="Illustration representing laundry and ironing service in Tampere" loading="lazy"/>
           </div>
           <div class="label" data-translate-key="laundry">Laundry Doorstep Pickup & Delivery</div>
           <p class="service-desc">
             Tyozy Laundry is your local, reliable laundry solution offering fast, affordable, and high-quality washing, drying, folding, and ironing services. Whether you're a student, working professional, family, or business, we make laundry day effortless by providing doorstep pickup and delivery, flexible scheduling, and eco-friendly cleaning practices. Our modern machines and expert staff ensure your clothes are treated with care and returned clean, fresh, and neatly folded—just the way you like them. We handle everything from everyday wear to delicate garments, bedsheets, uniforms, and curtains.
           </p>
-        </div>
+        </a>
+
       </section>
 
       <!--div class="embedsocial-hashtag" data-ref="c7bb47409e40c1843f504112419395111497defe" data-dynamicload="yes" data-lazyload="yes">
@@ -621,37 +656,59 @@
       <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script-->
 
 
-      <style>
-      .sk_branding,
-      .sk_branding *,
-      a.tutorial_link,
-      .--custom-branding{
-          display:none !important;
-          visibility:hidden !important;
-          opacity:0 !important;
-          height:0 !important;
-          overflow:hidden !important;
-      }
-      </style>
+      <section>
+        <h1 data-translate-key="googlerevh1">
+          Trusted by Customers Across Tampere
+        </h1>
 
-      <div class="sk-ww-google-reviews" data-embed-id="25685224"></div>
-      <script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
+        <h2 data-translate-key="googlerevh2">
+          Top-rated moving and cleaning services in Tampere
+        </h2>
 
-      <script>
-      function removeBranding() {
-          document.querySelectorAll('.sk_branding').forEach(el => el.remove());
-          document.querySelectorAll('.tutorial_link').forEach(el => el.remove());
-          document.querySelectorAll('.--custom-branding').forEach(el => el.remove());
-      }
 
-      window.addEventListener('load', removeBranding);
 
-      const observer = new MutationObserver(removeBranding);
-      observer.observe(document.body, {
-          childList: true,
-          subtree: true
-      });
-      </script>
+
+        <div class="sk-ww-google-reviews" data-embed-id="25685224"></div>
+
+        <style>
+        .sk_branding,
+        .sk_branding *,
+        a.tutorial_link,
+        .--custom-branding{
+            display:none !important;
+            visibility:hidden !important;
+            opacity:0 !important;
+            height:0 !important;
+            overflow:hidden !important;
+        }
+        </style>
+
+
+        <script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
+
+        <script>
+        function removeBranding() {
+            document.querySelectorAll('.sk_branding').forEach(el => el.remove());
+            document.querySelectorAll('.tutorial_link').forEach(el => el.remove());
+            document.querySelectorAll('.--custom-branding').forEach(el => el.remove());
+
+            // Add padding-bottom style
+            document.querySelectorAll('.sk-post__body').forEach(el => {
+                el.style.paddingBottom = '15px';
+            });
+        }
+
+        window.addEventListener('load', removeBranding);
+
+        const observer = new MutationObserver(removeBranding);
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+        </script>
+      </section>
+
 
 
       <!-- FOOTER / CONTACT INFO -->

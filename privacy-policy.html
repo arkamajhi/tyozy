@@ -1,0 +1,387 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Tyozy</title>
+
+<style>
+:root{
+    --primary:#0052cc;
+    --primary-light:#0090ff;
+    --bg:#f8f9fa;
+    --card:#ffffff;
+    --text:#1f2a38;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Poppins",Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+    min-height:100vh;
+    padding:20px;
+}
+
+.back-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:1000;
+
+    background:white;
+    color:var(--primary);
+
+    text-decoration:none;
+    font-weight:600;
+
+    padding:12px 18px;
+
+    border-radius:999px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
+
+    transition:.2s;
+}
+
+.back-btn:hover{
+    transform:translateY(-2px);
+}
+
+.language-switcher{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:1000;
+
+    display:flex;
+    gap:8px;
+}
+
+.lang-btn{
+    border:none;
+    background:white;
+    color:var(--primary);
+
+    padding:12px 18px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
+
+    transition:.2s;
+}
+
+.lang-btn:hover{
+    transform:translateY(-2px);
+}
+
+.lang-btn.active{
+    background:var(--primary);
+    color:white;
+}
+
+.container{
+    max-width:900px;
+    margin:80px auto 40px;
+}
+
+.card{
+    background:var(--card);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 8px 32px rgba(0,0,0,.08);
+}
+
+h1{
+    font-size:2.2rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:var(--muted);
+    margin-bottom:30px;
+}
+
+p{
+    margin-bottom:16px;
+}
+
+.contact-box{
+    background:#f1f5f9;
+    padding:20px;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+.contact-box a{
+    color:var(--primary);
+    text-decoration:none;
+}
+
+.contact-box a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+    text-align:center;
+    color:var(--muted);
+}
+
+.lang-content{
+    display:none;
+}
+
+.lang-content.active{
+    display:block;
+}
+
+@media(max-width:768px){
+
+    .container{
+        margin-top:90px;
+    }
+
+    .card{
+        padding:24px;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    .back-btn{
+        top:15px;
+        left:15px;
+        padding:10px 14px;
+    }
+
+    .language-switcher{
+        top:15px;
+        right:15px;
+    }
+
+    .lang-btn{
+        padding:10px 14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="back-btn" id="backButton">
+    Back
+</a>
+
+<div class="language-switcher">
+
+    <button
+        class="lang-btn"
+        data-lang="en"
+        onclick="showLanguage('en')">
+        EN
+    </button>
+
+    <button
+        class="lang-btn"
+        data-lang="fi"
+        onclick="showLanguage('fi')">
+        FI
+    </button>
+
+</div>
+
+<div class="container">
+
+    <div class="card">
+
+        <div id="en" class="lang-content">
+
+            <h1>Privacy Policy</h1>
+
+            <p class="subtitle">
+                Last updated: 02.06.2026
+            </p>
+
+            <p>
+                Tyozy processes personal data in accordance with the EU General Data Protection Regulation (GDPR).
+            </p>
+
+            <p>
+                We may collect your phone number, service address, and information related to your moving or cleaning service request.
+            </p>
+
+            <p>
+                The information is used to provide quotes, arrange services, communicate with customers, and fulfil legal obligations.
+            </p>
+
+            <p>
+                We do not sell personal data to third parties.
+            </p>
+
+            <p>
+                You may request access to, correction of, or deletion of your personal data by contacting us.
+            </p>
+
+            <div class="contact-box">
+
+                <strong>Contact Information</strong>
+
+                <br><br>
+
+                Tyozy
+
+                <br>
+
+                Email:
+                <a href="mailto:tyozyoy@gmail.com">
+                    tyozyoy@gmail.com
+                </a>
+
+                <br>
+
+                Phone:
+                <a href="tel:+358449318824">
+                    +358 44 931 8824
+                </a>
+
+            </div>
+
+        </div>
+
+        <div id="fi" class="lang-content">
+
+            <h1>Tietosuojaseloste</h1>
+
+            <p class="subtitle">
+                Viimeksi päivitetty: 02.06.2026
+            </p>
+
+            <p>
+                Tyozy käsittelee henkilötietoja EU:n yleisen tietosuoja-asetuksen (GDPR) mukaisesti.
+            </p>
+
+            <p>
+                Voimme kerätä puhelinnumeron, palvelukohteen osoitteen sekä muutto- tai siivouspalveluun liittyviä tietoja.
+            </p>
+
+            <p>
+                Tietoja käytetään tarjousten laatimiseen, palveluiden järjestämiseen, asiakasviestintään sekä lakisääteisten velvoitteiden täyttämiseen.
+            </p>
+
+            <p>
+                Emme myy henkilötietoja kolmansille osapuolille.
+            </p>
+
+            <p>
+                Voit pyytää omien tietojesi tarkastamista, korjaamista tai poistamista ottamalla meihin yhteyttä.
+            </p>
+
+            <div class="contact-box">
+
+                <strong>Yhteystiedot</strong>
+
+                <br><br>
+
+                Tyozy
+
+                <br>
+
+                Sähköposti:
+                <a href="mailto:tyozyoy@gmail.com">
+                    tyozyoy@gmail.com
+                </a>
+
+                <br>
+
+                Puhelin:
+                <a href="tel:+358449318824">
+                    +358 44 931 8824
+                </a>
+
+            </div>
+
+        </div>
+
+        <footer>
+            © 2026 Tyozy. All rights reserved.
+        </footer>
+
+    </div>
+
+</div>
+
+<script>
+
+function showLanguage(lang){
+
+    localStorage.setItem('tyozy-language', lang);
+
+    document
+        .querySelectorAll('.lang-content')
+        .forEach(el => el.classList.remove('active'));
+
+    document
+        .querySelectorAll('.lang-btn')
+        .forEach(el => el.classList.remove('active'));
+
+    document
+        .getElementById(lang)
+        .classList.add('active');
+
+    document
+        .querySelector(`[data-lang="${lang}"]`)
+        .classList.add('active');
+
+    document.documentElement.lang = lang;
+
+    const backButton =
+        document.getElementById('backButton');
+
+    if(lang === 'fi'){
+
+        backButton.textContent = 'Takaisin';
+
+        document.title =
+            'Tietosuojaseloste | Tyozy';
+
+    }else{
+
+        backButton.textContent = 'Back';
+
+        document.title =
+            'Privacy Policy | Tyozy';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const savedLanguage =
+        localStorage.getItem('tyozy-language') || 'en';
+
+    showLanguage(savedLanguage);
+
+});
+
+</script>
+
+</body>
+</html>
+```

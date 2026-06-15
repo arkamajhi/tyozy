@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tyozy House Cleaning Services Vantaa</title>
+
+<meta name="description" content="Professional house cleaning services in Vantaa including deep cleaning, move out cleaning, kitchen cleaning, bathroom sanitization, bedroom cleaning, and apartment cleaning by Tyozy.">
+
+<meta name="keywords" content="house cleaning tampere, apartment cleaning tampere, deep cleaning finland, bathroom cleaning tampere, move out cleaning">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://www.tyozy.com/house-cleaning">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+  @media(max-width:768px){
+
+.back-button{
+top:12px;
+left:12px;
+padding:8px 14px;
+font-size:13px;
+}
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+:root{
+
+--bg:#f5f7fb;
+--text:#111827;
+--muted:#5b6472;
+--primary:#2563eb;
+--line:rgba(0,0,0,0.08);
+
+}
+
+body{
+font-family:'Inter',sans-serif;
+font-size:18px;
+line-height:1.8;
+background:var(--bg);
+color:var(--text);
+overflow-x:hidden;
+-webkit-font-smoothing:antialiased;
+}
+
+img{
+width:100%;
+display:block;
+object-fit:cover;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+/* ====================================
+LANGUAGE SWITCHER
+==================================== */
+
+.language-switcher{
+
+position:fixed;
+
+top:20px;
+right:20px;
+
+z-index:999999;
+
+display:flex;
+
+gap:8px;
+}
+
+.language-switcher button{
+
+border:none;
+
+padding:10px 18px;
+
+border-radius:100px;
+
+background:rgba(255,255,255,0.94);
+
+backdrop-filter:blur(14px);
+
+font-size:14px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:0.3s ease;
+
+color:var(--text);
+
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+.language-switcher button.active{
+
+background:var(--text);
+
+color:white;
+}
+
+/* ====================================
+CTA
+==================================== */
+
+.floating-cta{
+
+position:fixed;
+
+left:50%;
+
+bottom:20px;
+
+transform:translateX(-50%);
+
+width:calc(100% - 24px);
+
+max-width:760px;
+
+z-index:999999;
+}
+
+.cta-bar{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:18px;
+
+padding:18px 20px;
+
+border-radius:24px;
+
+background:rgba(17,24,39,0.94);
+
+backdrop-filter:blur(18px);
+
+box-shadow:
+0 10px 40px rgba(0,0,0,0.22),
+0 2px 8px rgba(0,0,0,0.12);
+
+border:1px solid rgba(255,255,255,0.08);
+
+transition:0.3s ease;
+}
+
+.cta-bar:hover{
+
+transform:translateY(-2px);
+}
+
+.cta-left{
+
+display:flex;
+
+flex-direction:column;
+
+gap:4px;
+}
+
+.cta-small{
+
+font-size:13px;
+
+font-weight:600;
+
+color:rgba(255,255,255,0.7);
+}
+
+.cta-phone{
+
+font-size:30px;
+
+font-weight:800;
+
+color:white;
+
+letter-spacing:-1px;
+
+line-height:1;
+}
+
+.cta-right{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+background:var(--primary);
+
+padding:16px 22px;
+
+border-radius:18px;
+
+font-size:16px;
+
+font-weight:700;
+
+color:white;
+
+white-space:nowrap;
+
+transition:0.3s;
+}
+
+.cta-right:hover{
+
+background:#1d4ed8;
+}
+
+/* ====================================
+HERO
+==================================== */
+
+.hero{
+
+position:relative;
+
+height:100vh;
+
+overflow:hidden;
+}
+
+.hero-slide{
+
+position:absolute;
+
+inset:0;
+
+opacity:0;
+
+animation:heroSlider 24s infinite;
+}
+
+.hero-slide img{
+
+width:100%;
+height:100%;
+}
+
+.hero-slide:nth-child(1){
+animation-delay:0s;
+}
+
+.hero-slide:nth-child(2){
+animation-delay:6s;
+}
+
+.hero-slide:nth-child(3){
+animation-delay:12s;
+}
+
+.hero-slide:nth-child(4){
+animation-delay:18s;
+}
+
+@keyframes heroSlider{
+
+0%{
+opacity:0;
+}
+
+8%{
+opacity:1;
+}
+
+25%{
+opacity:1;
+}
+
+33%{
+opacity:0;
+}
+
+100%{
+opacity:0;
+}
+
+}
+
+.hero-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:linear-gradient(
+to bottom,
+rgba(0,0,0,0.38),
+rgba(0,0,0,0.62)
+);
+
+z-index:2;
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:10;
+
+height:100%;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+padding:0 7%;
+}
+
+.hero h1{
+
+font-size:clamp(3.7rem,7vw,7rem);
+
+line-height:0.95;
+
+letter-spacing:-3px;
+
+font-weight:800;
+
+color:white;
+
+max-width:1050px;
+
+margin-bottom:28px;
+}
+
+.hero p{
+
+font-size:1.25rem;
+
+line-height:1.9;
+
+color:white;
+
+max-width:850px;
+
+margin-bottom:40px;
+
+opacity:0.96;
+}
+
+.trust-strip{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:24px;
+}
+
+.trust-strip div{
+
+color:white;
+
+font-size:1rem;
+
+opacity:0.95;
+}
+
+/* ====================================
+SECTION
+==================================== */
+
+.section{
+
+padding:110px 7%;
+}
+
+.section-title{
+
+margin-bottom:70px;
+}
+
+.section-title h2{
+
+font-size:clamp(2.7rem,5vw,4.5rem);
+
+line-height:1.05;
+
+letter-spacing:-2px;
+
+font-weight:800;
+
+margin-bottom:20px;
+}
+
+.section-title p{
+
+font-size:1.16rem;
+
+line-height:1.9;
+
+color:var(--muted);
+
+max-width:900px;
+}
+
+/* ====================================
+GRID
+==================================== */
+
+.room-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1.1fr;
+
+gap:80px;
+
+align-items:center;
+}
+
+.room-grid.reverse .text-side{
+order:2;
+}
+
+.room-grid.reverse .image-layout{
+order:1;
+}
+
+/* ====================================
+CHECKLIST
+==================================== */
+
+.clean-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:22px;
+}
+
+.clean-item{
+
+display:flex;
+
+gap:18px;
+
+align-items:flex-start;
+
+padding-bottom:20px;
+
+border-bottom:1px solid var(--line);
+
+font-size:1.08rem;
+}
+
+.clean-icon{
+
+color:#16a34a;
+
+font-weight:700;
+
+margin-top:2px;
+}
+
+/* ====================================
+IMAGE LAYOUT
+==================================== */
+
+.image-layout{
+
+display:grid;
+
+grid-template-columns:1.4fr 1fr;
+
+gap:18px;
+}
+
+.image-main img{
+
+height:620px;
+
+border-radius:30px;
+}
+
+.image-side{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+}
+
+.image-side img{
+
+height:301px;
+
+border-radius:30px;
+}
+
+/* ====================================
+SEO
+==================================== */
+
+.seo-block{
+
+padding-top:30px;
+}
+
+.seo-block h3{
+
+font-size:clamp(2.2rem,4vw,3.5rem);
+
+line-height:1.1;
+
+letter-spacing:-1px;
+
+margin-bottom:28px;
+}
+
+.seo-block p{
+
+max-width:980px;
+
+color:var(--muted);
+
+margin-bottom:26px;
+}
+
+/* ====================================
+FOOTER
+==================================== */
+
+footer{
+
+padding:120px 7% 170px;
+}
+
+footer h2{
+
+font-size:clamp(3rem,6vw,5rem);
+
+line-height:1;
+
+letter-spacing:-2px;
+
+margin-bottom:24px;
+}
+
+footer p{
+
+max-width:900px;
+
+color:var(--muted);
+}
+
+/* ====================================
+MOBILE
+==================================== */
+
+@media(max-width:950px){
+
+.room-grid{
+
+grid-template-columns:1fr;
+
+gap:50px;
+}
+
+.room-grid.reverse .text-side{
+order:1;
+}
+
+.room-grid.reverse .image-layout{
+order:2;
+}
+
+.image-layout{
+
+grid-template-columns:1fr;
+
+gap:14px;
+}
+
+.image-main img{
+
+height:320px;
+}
+
+.image-side{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+}
+
+.image-side img{
+
+height:160px;
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+font-size:16px;
+}
+
+.hero{
+height:90vh;
+}
+
+.hero-content{
+padding:0 22px;
+}
+
+.hero h1{
+
+font-size:3rem;
+
+line-height:0.96;
+
+margin-bottom:22px;
+
+letter-spacing:-2px;
+}
+
+.hero p{
+
+font-size:1.02rem;
+
+line-height:1.8;
+
+margin-bottom:34px;
+}
+
+.section{
+padding:70px 22px;
+}
+
+.section-title{
+margin-bottom:45px;
+}
+
+.section-title h2{
+font-size:2.5rem;
+}
+
+.section-title p{
+font-size:1rem;
+}
+
+.clean-item{
+font-size:1rem;
+}
+
+.trust-strip{
+gap:14px;
+}
+
+.trust-strip div{
+font-size:0.92rem;
+}
+
+.floating-cta{
+
+width:calc(100% - 14px);
+
+bottom:10px;
+}
+
+.cta-bar{
+
+padding:14px;
+
+border-radius:20px;
+
+gap:12px;
+}
+
+.cta-phone{
+font-size:22px;
+}
+
+.cta-small{
+font-size:12px;
+}
+
+.cta-right{
+
+padding:14px 16px;
+
+font-size:14px;
+
+border-radius:14px;
+}
+
+footer{
+padding:90px 22px 170px;
+}
+
+footer h2{
+font-size:2.8rem;
+}
+
+}
+
+/* BACK BUTTON */
+
+.back-button{
+
+position:fixed;
+
+top:20px;
+left:20px;
+
+z-index:999999;
+
+display:flex;
+align-items:center;
+gap:8px;
+
+padding:10px 18px;
+
+border-radius:100px;
+
+background:rgba(255,255,255,0.94);
+
+backdrop-filter:blur(14px);
+
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+
+font-size:14px;
+font-weight:700;
+
+transition:.3s ease;
+}
+
+.back-button:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 10px 28px rgba(0,0,0,.12);
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <a href="index.html" class="back-button">
+
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+  <path d="M15 18L9 12L15 6"
+  stroke="currentColor"
+  stroke-width="2.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"/>
+  </svg>
+
+  <span
+  data-en="Back"
+  data-fi="Takaisin">
+  Back
+  </span>
+
+  </a>
+
+<!-- LANGUAGE -->
+
+<div class="language-switcher">
+
+<button class="active" onclick="setLanguage('en')" id="en-btn">
+EN
+</button>
+
+<button onclick="setLanguage('fi')" id="fi-btn">
+FI
+</button>
+
+</div>
+
+<!-- CTA -->
+
+<div class="floating-cta">
+
+<a href="tel:+358449318824" class="cta-bar">
+
+<div class="cta-left">
+
+<div class="cta-small"
+data-en="Professional Cleaning Service"
+data-fi="Ammattimainen Siivouspalvelu">
+Professional Cleaning Service
+</div>
+
+<div class="cta-phone">
++358 449 318 824
+</div>
+
+</div>
+
+<div class="cta-right">
+
+<span
+data-en="Get Free Quote"
+data-fi="Pyydä Tarjous">
+Get Free Quote
+</span>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-slide">
+<img src="assets/images/house-cleaning/hero/hero-1.png">
+</div>
+
+<div class="hero-slide">
+<img src="assets/images/house-cleaning/hero/hero-2.png">
+</div>
+
+<div class="hero-slide">
+<img src="assets/images/house-cleaning/hero/hero-3.png">
+</div>
+
+<div class="hero-slide">
+<img src="assets/images/house-cleaning/hero/hero-4.png">
+</div>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h1
+data-en="Professional House Cleaning Services in Vantaa"
+data-fi="Ammattimaiset Kotisiivouspalvelut Vantaalla">
+Professional House Cleaning Services in Vantaa
+</h1>
+
+<p
+data-en="Deep cleaning, move-out cleaning, bathroom sanitization, kitchen cleaning, bedroom cleaning, and apartment cleaning services across Vantaa."
+data-fi="Syväsiivous, muuttosiivous, kylpyhuoneiden desinfiointi, keittiön puhdistus, makuuhuoneiden siivous ja asuntosiivous Vantaalla.">
+Deep cleaning and apartment cleaning services across Vantaa.
+</p>
+
+<div class="trust-strip">
+
+<div
+data-en="✓ Trusted in Vantaa"
+data-fi="✓ Luotettu Vantaalla">
+✓ Trusted in Vantaa
+</div>
+
+<div
+data-en="✓ Deep Cleaning Experts"
+data-fi="✓ Syväsiivouksen Asiantuntijat">
+✓ Deep Cleaning Experts
+</div>
+
+<div
+data-en="✓ Student Friendly"
+data-fi="✓ Opiskelijaystävällinen">
+✓ Student Friendly
+</div>
+
+<div
+data-en="✓ Move-Out Cleaning"
+data-fi="✓ Muuttosiivous">
+✓ Move-Out Cleaning
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- KITCHEN -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2
+data-en="Kitchen Deep Cleaning"
+data-fi="Keittiön Syväpuhdistus">
+Kitchen Deep Cleaning
+</h2>
+
+<p
+data-en="Kitchens collect grease, food residue, hidden dust, and bacteria over time. We focus on deep cleaning difficult areas often ignored during routine cleaning."
+data-fi="Keittiöihin kertyy rasvaa, pölyä ja bakteereja ajan myötä. Keskitymme syväpuhdistukseen myös vaikeasti saavutettavissa paikoissa.">
+Kitchen deep cleaning services in Vantaa.
+</p>
+
+</div>
+
+<div class="room-grid">
+
+<div class="text-side">
+
+<div class="clean-list">
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Defrost the fridge and clean each compartment thoroughly."
+data-fi="Sulata jääkaappi ja puhdista kaikki osat huolellisesti.">
+Defrost the fridge and clean each compartment thoroughly.
+</div>
+</div>
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Move the oven and clean underneath and behind."
+data-fi="Siirrämme uunin ja puhdistamme sen alta ja takaa.">
+Move the oven and clean underneath and behind.
+</div>
+</div>
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Deep clean dishwasher surfaces and filters."
+data-fi="Puhdistamme astianpesukoneen pinnat ja suodattimet perusteellisesti.">
+Deep clean dishwasher surfaces and filters.
+</div>
+</div>
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Clean sinks, taps, counters, and remove grease buildup."
+data-fi="Puhdistamme altaat, hanat, tasot ja poistamme rasvan.">
+Clean sinks, taps, counters, and remove grease buildup.
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="image-layout">
+
+<div class="image-main">
+<img src="assets/images/house-cleaning/kitchen/kitchen-1.png">
+</div>
+
+<div class="image-side">
+<img src="assets/images/house-cleaning/kitchen/kitchen-2.png">
+<img src="assets/images/house-cleaning/kitchen/kitchen-3.png">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BATHROOM -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2
+data-en="Bathroom Cleaning & Sanitization"
+data-fi="Kylpyhuoneen Puhdistus ja Desinfiointi">
+Bathroom Cleaning & Sanitization
+</h2>
+
+<p
+data-en="Bathrooms require more than surface cleaning. Moisture buildup creates bacteria, mold, soap residue, and hidden dirt."
+data-fi="Kylpyhuoneet tarvitsevat enemmän kuin pintasiivouksen. Kosteus kerää bakteereja, hometta ja likaa.">
+Bathroom cleaning services in Vantaa.
+</p>
+
+</div>
+
+<div class="room-grid reverse">
+
+<div class="text-side">
+
+<div class="clean-list">
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Scrub and disinfect toilets thoroughly."
+data-fi="Puhdistamme ja desinfioimme wc:t perusteellisesti.">
+Scrub and disinfect toilets thoroughly.
+</div>
+</div>
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Remove limescale and soap buildup from showers."
+data-fi="Poistamme kalkin ja saippuajäämät suihkuista.">
+Remove limescale and soap buildup from showers.
+</div>
+</div>
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Deep clean bathroom tiles and grout."
+data-fi="Puhdistamme kylpyhuoneen laatat ja saumat syväpuhdistuksella.">
+Deep clean bathroom tiles and grout.
+</div>
+</div>
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Sanitize sinks, mirrors, and cabinets."
+data-fi="Desinfioimme altaat, peilit ja kaapit.">
+Sanitize sinks, mirrors, and cabinets.
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="image-layout">
+
+<div class="image-main">
+<img src="assets/images/house-cleaning/bathroom/bathroom-1.png">
+</div>
+
+<div class="image-side">
+<img src="assets/images/house-cleaning/bathroom/bathroom-2.png">
+<img src="assets/images/house-cleaning/bathroom/bathroom-3.png">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BEDROOM -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2
+data-en="Bedroom Cleaning"
+data-fi="Makuuhuoneen Siivous">
+Bedroom Cleaning
+</h2>
+
+<p
+data-en="Bedrooms should feel clean, calm, and comfortable. We remove hidden dust and buildup from commonly ignored areas."
+data-fi="Makuuhuoneiden tulee tuntua puhtailta ja rauhallisilta. Poistamme pölyn myös usein unohdetuista paikoista.">
+Bedroom cleaning services in Vantaa.
+</p>
+
+</div>
+
+<div class="room-grid">
+
+<div class="text-side">
+
+<div class="clean-list">
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Vacuum underneath beds and furniture."
+data-fi="Imuroimme sänkyjen ja huonekalujen alta.">
+Vacuum underneath beds and furniture.
+</div>
+</div>
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Dust shelves, lamps, and wardrobes."
+data-fi="Pyyhimme pölyt hyllyistä, lampuista ja vaatekaapeista.">
+Dust shelves, lamps, and wardrobes.
+</div>
+</div>
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Clean mirrors and surfaces thoroughly."
+data-fi="Puhdistamme peilit ja pinnat huolellisesti.">
+Clean mirrors and surfaces thoroughly.
+</div>
+</div>
+
+<div class="clean-item">
+<div class="clean-icon">✓</div>
+<div data-en="Remove dust from corners and edges."
+data-fi="Poistamme pölyn kulmista ja reunoista.">
+Remove dust from corners and edges.
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="image-layout">
+
+<div class="image-main">
+<img src="assets/images/house-cleaning/bedroom/bedroom-1.png">
+</div>
+
+<div class="image-side">
+<img src="assets/images/house-cleaning/bedroom/bedroom-2.png">
+<img src="assets/images/house-cleaning/bedroom/bedroom-3.png">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SEO -->
+
+<section class="section">
+
+<div class="seo-block">
+
+<h3
+data-en="Deep Cleaning & Apartment Cleaning Services in Vantaa"
+data-fi="Syväsiivous ja Asuntosiivous Vantaalla">
+Deep Cleaning & Apartment Cleaning Services in Vantaa
+</h3>
+
+<p
+data-en="Tyozy provides professional house cleaning services in Vantaa for apartments, homes, student housing, offices, and move-out cleaning projects."
+data-fi="Tyozy tarjoaa ammattimaisia siivouspalveluita Vantaalla asuntoihin, koteihin, opiskelija-asuntoihin ja toimistoihin.">
+Professional house cleaning services in Vantaa.
+</p>
+
+<p
+data-en="Our cleaning professionals remove grease, dust, stains, soap buildup, bacteria, and hidden dirt from kitchens, bathrooms, bedrooms, and living areas."
+data-fi="Siivousammattilaisemme poistavat rasvan, pölyn, tahrat ja lian keittiöistä, kylpyhuoneista ja makuuhuoneista.">
+Our cleaning professionals remove grease and hidden dirt.
+</p>
+
+<p
+data-en="We provide move-out cleaning, apartment cleaning, recurring cleaning, and deep sanitization services across Vantaa and nearby areas."
+data-fi="Tarjoamme muuttosiivousta, asuntosiivousta, säännöllistä siivousta ja syvädesinfiointia Vantaalla ja lähialueilla.">
+We provide apartment cleaning and move-out cleaning services.
+</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>TYOZY</h2>
+
+<p
+data-en="Professional House Cleaning Services in Vantaa"
+data-fi="Ammattimaiset Kotisiivouspalvelut Vantaalla">
+Professional House Cleaning Services in Vantaa
+</p>
+
+<br>
+
+<p>+358 449 318 824</p>
+
+<p>Business ID: 3549202-5</p>
+
+<p>Vantaa, Finland</p>
+
+</footer>
+
+<script>
+
+function setLanguage(lang){
+
+localStorage.setItem('tyozy-language',lang);
+
+document.documentElement.lang=lang;
+
+document.querySelectorAll('[data-en]').forEach(el=>{
+
+if(lang==='fi'){
+el.innerHTML=el.getAttribute('data-fi');
+}else{
+el.innerHTML=el.getAttribute('data-en');
+}
+
+});
+
+document.getElementById('en-btn').classList.remove('active');
+document.getElementById('fi-btn').classList.remove('active');
+
+document.getElementById(lang+'-btn').classList.add('active');
+
+}
+
+const savedLanguage=localStorage.getItem('tyozy-language') || 'en';
+
+setLanguage(savedLanguage);
+
+</script>
+
+</body>
+</html>

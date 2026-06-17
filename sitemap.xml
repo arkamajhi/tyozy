@@ -231,4 +231,11 @@
     <url><loc>https://www.tyozy.com/tyozylondon/westminster-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
     <url><loc>https://www.tyozy.com/tyozylondon/wimbledon-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
 
+
+    <url>
+        <loc>https://www.tyozy.com/tampere_juhannus_cleanup_2026.html</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
 </urlset>

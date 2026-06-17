@@ -2,1241 +2,743 @@
 <html lang="en">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Tyozy House Cleaning Services Vaasa</title>
-
-<meta name="description" content="Professional house cleaning services in Vaasa including deep cleaning, move out cleaning, kitchen cleaning, bathroom sanitization, bedroom cleaning, and apartment cleaning by Tyozy.">
-
-<meta name="keywords" content="house cleaning tampere, apartment cleaning tampere, deep cleaning finland, bathroom cleaning tampere, move out cleaning">
-
-<meta name="robots" content="index, follow">
-
-<link rel="canonical" href="https://www.tyozy.com/cleaning-services-vaasa.html">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-  @media(max-width:768px){
-
-.back-button{
-top:12px;
-left:12px;
-padding:8px 14px;
-font-size:13px;
-}
-
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-:root{
-
---bg:#f5f7fb;
---text:#111827;
---muted:#5b6472;
---primary:#2563eb;
---line:rgba(0,0,0,0.08);
-
-}
-
-body{
-font-family:'Inter',sans-serif;
-font-size:18px;
-line-height:1.8;
-background:var(--bg);
-color:var(--text);
-overflow-x:hidden;
--webkit-font-smoothing:antialiased;
-}
-
-img{
-width:100%;
-display:block;
-object-fit:cover;
-}
-
-a{
-text-decoration:none;
-color:inherit;
-}
-
-/* ====================================
-LANGUAGE SWITCHER
-==================================== */
-
-.language-switcher{
-
-position:fixed;
-
-top:20px;
-right:20px;
-
-z-index:999999;
-
-display:flex;
-
-gap:8px;
-}
-
-.language-switcher button{
-
-border:none;
-
-padding:10px 18px;
-
-border-radius:100px;
-
-background:rgba(255,255,255,0.94);
-
-backdrop-filter:blur(14px);
-
-font-size:14px;
-
-font-weight:700;
-
-cursor:pointer;
-
-transition:0.3s ease;
-
-color:var(--text);
-
-box-shadow:0 6px 20px rgba(0,0,0,0.08);
-}
-
-.language-switcher button.active{
-
-background:var(--text);
-
-color:white;
-}
-
-/* ====================================
-CTA
-==================================== */
-
-.floating-cta{
-
-position:fixed;
-
-left:50%;
-
-bottom:20px;
-
-transform:translateX(-50%);
-
-width:calc(100% - 24px);
-
-max-width:760px;
-
-z-index:999999;
-}
-
-.cta-bar{
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-gap:18px;
-
-padding:18px 20px;
-
-border-radius:24px;
-
-background:rgba(17,24,39,0.94);
-
-backdrop-filter:blur(18px);
-
-box-shadow:
-0 10px 40px rgba(0,0,0,0.22),
-0 2px 8px rgba(0,0,0,0.12);
-
-border:1px solid rgba(255,255,255,0.08);
-
-transition:0.3s ease;
-}
-
-.cta-bar:hover{
-
-transform:translateY(-2px);
-}
-
-.cta-left{
-
-display:flex;
-
-flex-direction:column;
-
-gap:4px;
-}
-
-.cta-small{
-
-font-size:13px;
-
-font-weight:600;
-
-color:rgba(255,255,255,0.7);
-}
-
-.cta-phone{
-
-font-size:30px;
-
-font-weight:800;
-
-color:white;
-
-letter-spacing:-1px;
-
-line-height:1;
-}
-
-.cta-right{
-
-display:flex;
-
-align-items:center;
-
-gap:10px;
-
-background:var(--primary);
-
-padding:16px 22px;
-
-border-radius:18px;
-
-font-size:16px;
-
-font-weight:700;
-
-color:white;
-
-white-space:nowrap;
-
-transition:0.3s;
-}
-
-.cta-right:hover{
-
-background:#1d4ed8;
-}
-
-/* ====================================
-HERO
-==================================== */
-
-.hero{
-
-position:relative;
-
-height:100vh;
-
-overflow:hidden;
-}
-
-.hero-slide{
-
-position:absolute;
-
-inset:0;
-
-opacity:0;
-
-animation:heroSlider 24s infinite;
-}
-
-.hero-slide img{
-
-width:100%;
-height:100%;
-}
-
-.hero-slide:nth-child(1){
-animation-delay:0s;
-}
-
-.hero-slide:nth-child(2){
-animation-delay:6s;
-}
-
-.hero-slide:nth-child(3){
-animation-delay:12s;
-}
-
-.hero-slide:nth-child(4){
-animation-delay:18s;
-}
-
-@keyframes heroSlider{
-
-0%{
-opacity:0;
-}
-
-8%{
-opacity:1;
-}
-
-25%{
-opacity:1;
-}
-
-33%{
-opacity:0;
-}
-
-100%{
-opacity:0;
-}
-
-}
-
-.hero-overlay{
-
-position:absolute;
-
-inset:0;
-
-background:linear-gradient(
-to bottom,
-rgba(0,0,0,0.38),
-rgba(0,0,0,0.62)
-);
-
-z-index:2;
-}
-
-.hero-content{
-
-position:relative;
-
-z-index:10;
-
-height:100%;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-padding:0 7%;
-}
-
-.hero h1{
-
-font-size:clamp(3.7rem,7vw,7rem);
-
-line-height:0.95;
-
-letter-spacing:-3px;
-
-font-weight:800;
-
-color:white;
-
-max-width:1050px;
-
-margin-bottom:28px;
-}
-
-.hero p{
-
-font-size:1.25rem;
-
-line-height:1.9;
-
-color:white;
-
-max-width:850px;
-
-margin-bottom:40px;
-
-opacity:0.96;
-}
-
-.trust-strip{
-
-display:flex;
-
-flex-wrap:wrap;
-
-gap:24px;
-}
-
-.trust-strip div{
-
-color:white;
-
-font-size:1rem;
-
-opacity:0.95;
-}
-
-/* ====================================
-SECTION
-==================================== */
-
-.section{
-
-padding:110px 7%;
-}
-
-.section-title{
-
-margin-bottom:70px;
-}
-
-.section-title h2{
-
-font-size:clamp(2.7rem,5vw,4.5rem);
-
-line-height:1.05;
-
-letter-spacing:-2px;
-
-font-weight:800;
-
-margin-bottom:20px;
-}
-
-.section-title p{
-
-font-size:1.16rem;
-
-line-height:1.9;
-
-color:var(--muted);
-
-max-width:900px;
-}
-
-/* ====================================
-GRID
-==================================== */
-
-.room-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1.1fr;
-
-gap:80px;
-
-align-items:center;
-}
-
-.room-grid.reverse .text-side{
-order:2;
-}
-
-.room-grid.reverse .image-layout{
-order:1;
-}
-
-/* ====================================
-CHECKLIST
-==================================== */
-
-.clean-list{
-
-display:flex;
-
-flex-direction:column;
-
-gap:22px;
-}
-
-.clean-item{
-
-display:flex;
-
-gap:18px;
-
-align-items:flex-start;
-
-padding-bottom:20px;
-
-border-bottom:1px solid var(--line);
-
-font-size:1.08rem;
-}
-
-.clean-icon{
-
-color:#16a34a;
-
-font-weight:700;
-
-margin-top:2px;
-}
-
-/* ====================================
-IMAGE LAYOUT
-==================================== */
-
-.image-layout{
-
-display:grid;
-
-grid-template-columns:1.4fr 1fr;
-
-gap:18px;
-}
-
-.image-main img{
-
-height:620px;
-
-border-radius:30px;
-}
-
-.image-side{
-
-display:flex;
-
-flex-direction:column;
-
-gap:18px;
-}
-
-.image-side img{
-
-height:301px;
-
-border-radius:30px;
-}
-
-/* ====================================
-SEO
-==================================== */
-
-.seo-block{
-
-padding-top:30px;
-}
-
-.seo-block h3{
-
-font-size:clamp(2.2rem,4vw,3.5rem);
-
-line-height:1.1;
-
-letter-spacing:-1px;
-
-margin-bottom:28px;
-}
-
-.seo-block p{
-
-max-width:980px;
-
-color:var(--muted);
-
-margin-bottom:26px;
-}
-
-/* ====================================
-FOOTER
-==================================== */
-
-footer{
-
-padding:120px 7% 170px;
-}
-
-footer h2{
-
-font-size:clamp(3rem,6vw,5rem);
-
-line-height:1;
-
-letter-spacing:-2px;
-
-margin-bottom:24px;
-}
-
-footer p{
-
-max-width:900px;
-
-color:var(--muted);
-}
-
-/* ====================================
-MOBILE
-==================================== */
-
-@media(max-width:950px){
-
-.room-grid{
-
-grid-template-columns:1fr;
-
-gap:50px;
-}
-
-.room-grid.reverse .text-side{
-order:1;
-}
-
-.room-grid.reverse .image-layout{
-order:2;
-}
-
-.image-layout{
-
-grid-template-columns:1fr;
-
-gap:14px;
-}
-
-.image-main img{
-
-height:320px;
-}
-
-.image-side{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:12px;
-}
-
-.image-side img{
-
-height:160px;
-}
-
-}
-
-@media(max-width:768px){
-
-body{
-font-size:16px;
-}
-
-.hero{
-height:90vh;
-}
-
-.hero-content{
-padding:0 22px;
-}
-
-.hero h1{
-
-font-size:3rem;
-
-line-height:0.96;
-
-margin-bottom:22px;
-
-letter-spacing:-2px;
-}
-
-.hero p{
-
-font-size:1.02rem;
-
-line-height:1.8;
-
-margin-bottom:34px;
-}
-
-.section{
-padding:70px 22px;
-}
-
-.section-title{
-margin-bottom:45px;
-}
-
-.section-title h2{
-font-size:2.5rem;
-}
-
-.section-title p{
-font-size:1rem;
-}
-
-.clean-item{
-font-size:1rem;
-}
-
-.trust-strip{
-gap:14px;
-}
-
-.trust-strip div{
-font-size:0.92rem;
-}
-
-.floating-cta{
-
-width:calc(100% - 14px);
-
-bottom:10px;
-}
-
-.cta-bar{
-
-padding:14px;
-
-border-radius:20px;
-
-gap:12px;
-}
-
-.cta-phone{
-font-size:22px;
-}
-
-.cta-small{
-font-size:12px;
-}
-
-.cta-right{
-
-padding:14px 16px;
-
-font-size:14px;
-
-border-radius:14px;
-}
-
-footer{
-padding:90px 22px 170px;
-}
-
-footer h2{
-font-size:2.8rem;
-}
-
-}
-
-/* BACK BUTTON */
-
-.back-button{
-
-position:fixed;
-
-top:20px;
-left:20px;
-
-z-index:999999;
-
-display:flex;
-align-items:center;
-gap:8px;
-
-padding:10px 18px;
-
-border-radius:100px;
-
-background:rgba(255,255,255,0.94);
-
-backdrop-filter:blur(14px);
-
-box-shadow:0 6px 20px rgba(0,0,0,0.08);
-
-font-size:14px;
-font-weight:700;
-
-transition:.3s ease;
-}
-
-.back-button:hover{
-
-transform:translateY(-2px);
-
-box-shadow:0 10px 28px rgba(0,0,0,.12);
-}
-
-</style>
-
-</head>
-
-<body>
-
-  <a href="tyozy-homepage-vaasa.html" class="back-button">
-
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-  <path d="M15 18L9 12L15 6"
-  stroke="currentColor"
-  stroke-width="2.5"
-  stroke-linecap="round"
-  stroke-linejoin="round"/>
-  </svg>
-
-  <span
-  data-en="Back"
-  data-fi="Takaisin">
-  Back
-  </span>
-
-  </a>
-
-<!-- LANGUAGE -->
-
-<div class="language-switcher">
-
-<button class="active" onclick="setLanguage('en')" id="en-btn">
-EN
-</button>
-
-<button onclick="setLanguage('fi')" id="fi-btn">
-FI
-</button>
-
-</div>
-
-<!-- CTA -->
-
-<div class="floating-cta">
-
-<a href="tel:+358449318824" class="cta-bar">
-
-<div class="cta-left">
-
-<div class="cta-small"
-data-en="Professional Cleaning Service"
-data-fi="Ammattimainen Siivouspalvelu">
-Professional Cleaning Service
-</div>
-
-<div class="cta-phone">
-+358 449 318 824
-</div>
-
-</div>
-
-<div class="cta-right">
-
-<span
-data-en="Get Free Quote"
-data-fi="Pyydä Tarjous">
-Get Free Quote
-</span>
-
-</div>
-
-</a>
-
-</div>
-
-<!-- HERO -->
-
-<header class="hero">
-
-<div class="hero-slide">
-<img src="assets/images/house-cleaning/hero/hero-1.png">
-</div>
-
-<div class="hero-slide">
-<img src="assets/images/house-cleaning/hero/hero-2.png">
-</div>
-
-<div class="hero-slide">
-<img src="assets/images/house-cleaning/hero/hero-3.png">
-</div>
-
-<div class="hero-slide">
-<img src="assets/images/house-cleaning/hero/hero-4.png">
-</div>
-
-<div class="hero-overlay"></div>
-
-<div class="hero-content">
-
-<h1
-data-en="Professional House Cleaning Services in Vaasa"
-data-fi="Ammattimaiset Kotisiivouspalvelut Vaasassa">
-Professional House Cleaning Services in Vaasa
-</h1>
-
-<p
-data-en="Deep cleaning, move-out cleaning, bathroom sanitization, kitchen cleaning, bedroom cleaning, and apartment cleaning services across Vaasa."
-data-fi="Syväsiivous, muuttosiivous, kylpyhuoneiden desinfiointi, keittiön puhdistus, makuuhuoneiden siivous ja asuntosiivous Vaasassa.">
-Deep cleaning and apartment cleaning services across Vaasa.
-</p>
-
-<div class="trust-strip">
-
-<div
-data-en="✓ Trusted in Vaasa"
-data-fi="✓ Luotettu Vaasassa">
-✓ Trusted in Vaasa
-</div>
-
-<div
-data-en="✓ Deep Cleaning Experts"
-data-fi="✓ Syväsiivouksen Asiantuntijat">
-✓ Deep Cleaning Experts
-</div>
-
-<div
-data-en="✓ Student Friendly"
-data-fi="✓ Opiskelijaystävällinen">
-✓ Student Friendly
-</div>
-
-<div
-data-en="✓ Move-Out Cleaning"
-data-fi="✓ Muuttosiivous">
-✓ Move-Out Cleaning
-</div>
-
-</div>
-
-</div>
-
-</header>
-
-<!-- KITCHEN -->
-
-<section class="section">
-
-<div class="section-title">
-
-<h2
-data-en="Kitchen Deep Cleaning"
-data-fi="Keittiön Syväpuhdistus">
-Kitchen Deep Cleaning
-</h2>
-
-<p
-data-en="Kitchens collect grease, food residue, hidden dust, and bacteria over time. We focus on deep cleaning difficult areas often ignored during routine cleaning."
-data-fi="Keittiöihin kertyy rasvaa, pölyä ja bakteereja ajan myötä. Keskitymme syväpuhdistukseen myös vaikeasti saavutettavissa paikoissa.">
-Kitchen deep cleaning services in Vaasa.
-</p>
-
-</div>
-
-<div class="room-grid">
-
-<div class="text-side">
-
-<div class="clean-list">
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Defrost the fridge and clean each compartment thoroughly."
-data-fi="Sulata jääkaappi ja puhdista kaikki osat huolellisesti.">
-Defrost the fridge and clean each compartment thoroughly.
-</div>
-</div>
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Move the oven and clean underneath and behind."
-data-fi="Siirrämme uunin ja puhdistamme sen alta ja takaa.">
-Move the oven and clean underneath and behind.
-</div>
-</div>
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Deep clean dishwasher surfaces and filters."
-data-fi="Puhdistamme astianpesukoneen pinnat ja suodattimet perusteellisesti.">
-Deep clean dishwasher surfaces and filters.
-</div>
-</div>
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Clean sinks, taps, counters, and remove grease buildup."
-data-fi="Puhdistamme altaat, hanat, tasot ja poistamme rasvan.">
-Clean sinks, taps, counters, and remove grease buildup.
-</div>
-</div>
-
-</div>
-
-</div>
-
-<div class="image-layout">
-
-<div class="image-main">
-<img src="assets/images/house-cleaning/kitchen/kitchen-1.png">
-</div>
-
-<div class="image-side">
-<img src="assets/images/house-cleaning/kitchen/kitchen-2.png">
-<img src="assets/images/house-cleaning/kitchen/kitchen-3.png">
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- BATHROOM -->
-
-<section class="section">
-
-<div class="section-title">
-
-<h2
-data-en="Bathroom Cleaning & Sanitization"
-data-fi="Kylpyhuoneen Puhdistus ja Desinfiointi">
-Bathroom Cleaning & Sanitization
-</h2>
-
-<p
-data-en="Bathrooms require more than surface cleaning. Moisture buildup creates bacteria, mold, soap residue, and hidden dirt."
-data-fi="Kylpyhuoneet tarvitsevat enemmän kuin pintasiivouksen. Kosteus kerää bakteereja, hometta ja likaa.">
-Bathroom cleaning services in Vaasa.
-</p>
-
-</div>
-
-<div class="room-grid reverse">
-
-<div class="text-side">
-
-<div class="clean-list">
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Scrub and disinfect toilets thoroughly."
-data-fi="Puhdistamme ja desinfioimme wc:t perusteellisesti.">
-Scrub and disinfect toilets thoroughly.
-</div>
-</div>
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Remove limescale and soap buildup from showers."
-data-fi="Poistamme kalkin ja saippuajäämät suihkuista.">
-Remove limescale and soap buildup from showers.
-</div>
-</div>
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Deep clean bathroom tiles and grout."
-data-fi="Puhdistamme kylpyhuoneen laatat ja saumat syväpuhdistuksella.">
-Deep clean bathroom tiles and grout.
-</div>
-</div>
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Sanitize sinks, mirrors, and cabinets."
-data-fi="Desinfioimme altaat, peilit ja kaapit.">
-Sanitize sinks, mirrors, and cabinets.
-</div>
-</div>
-
-</div>
-
-</div>
-
-<div class="image-layout">
-
-<div class="image-main">
-<img src="assets/images/house-cleaning/bathroom/bathroom-1.png">
-</div>
-
-<div class="image-side">
-<img src="assets/images/house-cleaning/bathroom/bathroom-2.png">
-<img src="assets/images/house-cleaning/bathroom/bathroom-3.png">
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- BEDROOM -->
-
-<section class="section">
-
-<div class="section-title">
-
-<h2
-data-en="Bedroom Cleaning"
-data-fi="Makuuhuoneen Siivous">
-Bedroom Cleaning
-</h2>
-
-<p
-data-en="Bedrooms should feel clean, calm, and comfortable. We remove hidden dust and buildup from commonly ignored areas."
-data-fi="Makuuhuoneiden tulee tuntua puhtailta ja rauhallisilta. Poistamme pölyn myös usein unohdetuista paikoista.">
-Bedroom cleaning services in Vaasa.
-</p>
-
-</div>
-
-<div class="room-grid">
-
-<div class="text-side">
-
-<div class="clean-list">
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Vacuum underneath beds and furniture."
-data-fi="Imuroimme sänkyjen ja huonekalujen alta.">
-Vacuum underneath beds and furniture.
-</div>
-</div>
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Dust shelves, lamps, and wardrobes."
-data-fi="Pyyhimme pölyt hyllyistä, lampuista ja vaatekaapeista.">
-Dust shelves, lamps, and wardrobes.
-</div>
-</div>
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Clean mirrors and surfaces thoroughly."
-data-fi="Puhdistamme peilit ja pinnat huolellisesti.">
-Clean mirrors and surfaces thoroughly.
-</div>
-</div>
-
-<div class="clean-item">
-<div class="clean-icon">✓</div>
-<div data-en="Remove dust from corners and edges."
-data-fi="Poistamme pölyn kulmista ja reunoista.">
-Remove dust from corners and edges.
-</div>
-</div>
-
-</div>
-
-</div>
-
-<div class="image-layout">
-
-<div class="image-main">
-<img src="assets/images/house-cleaning/bedroom/bedroom-1.png">
-</div>
-
-<div class="image-side">
-<img src="assets/images/house-cleaning/bedroom/bedroom-2.png">
-<img src="assets/images/house-cleaning/bedroom/bedroom-3.png">
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SEO -->
-
-<section class="section">
-
-<div class="seo-block">
-
-<h3
-data-en="Deep Cleaning & Apartment Cleaning Services in Vaasa"
-data-fi="Syväsiivous ja Asuntosiivous Vaasassa">
-Deep Cleaning & Apartment Cleaning Services in Vaasa
-</h3>
-
-<p
-data-en="Tyozy provides professional house cleaning services in Vaasa for apartments, homes, student housing, offices, and move-out cleaning projects."
-data-fi="Tyozy tarjoaa ammattimaisia siivouspalveluita Vaasassa asuntoihin, koteihin, opiskelija-asuntoihin ja toimistoihin.">
-Professional house cleaning services in Vaasa.
-</p>
-
-<p
-data-en="Our cleaning professionals remove grease, dust, stains, soap buildup, bacteria, and hidden dirt from kitchens, bathrooms, bedrooms, and living areas."
-data-fi="Siivousammattilaisemme poistavat rasvan, pölyn, tahrat ja lian keittiöistä, kylpyhuoneista ja makuuhuoneista.">
-Our cleaning professionals remove grease and hidden dirt.
-</p>
-
-<p
-data-en="We provide move-out cleaning, apartment cleaning, recurring cleaning, and deep sanitization services across Vaasa and nearby areas."
-data-fi="Tarjoamme muuttosiivousta, asuntosiivousta, säännöllistä siivousta ja syvädesinfiointia Vaasassa ja lähialueilla.">
-We provide apartment cleaning and move-out cleaning services.
-</p>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<!-- FOOTER -->
-
-<footer>
-
-<h2>TYOZY</h2>
-
-<p
-data-en="Professional House Cleaning Services in Vaasa"
-data-fi="Ammattimaiset Kotisiivouspalvelut Vaasassa">
-Professional House Cleaning Services in Vaasa
-</p>
-
-<br>
-
-<p>+358 449 318 824</p>
-
-<p>Business ID: 3549202-5</p>
-
-<p>Vaasa, Finland</p>
-
-</footer>
-
-<script>
-
-function setLanguage(lang){
-
-localStorage.setItem('tyozy-language',lang);
-
-document.documentElement.lang=lang;
-
-document.querySelectorAll('[data-en]').forEach(el=>{
-
-if(lang==='fi'){
-el.innerHTML=el.getAttribute('data-fi');
-}else{
-el.innerHTML=el.getAttribute('data-en');
-}
+  <!-- Google tag (gtag.js) -->
+  <script>
+    (function() {
+      // If protocol is "file:", we’re viewing locally—so don’t load gtag
+      if (window.location.protocol === 'file:') return;
+
+      // Otherwise load gtag.js and initialize
+      const gtagScript = document.createElement('script');
+      gtagScript.async = true;
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-JJG4L8LD2N';
+      document.head.appendChild(gtagScript);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-JJG4L8LD2N');
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Primary Meta Tags -->
+  <title>Tyozy – 24/7 Moving, Cleaning, Furniture Shifting & Laundry Services in Vaasa</title>
+  <meta name="description" content="Tyozy offers professional moving, furniture pickup, laundry, and room cleaning services in Vaasa, Finland. Reliable, affordable, and available 24/7 with no hidden fees." />
+  <meta name="keywords" content="Tyozy Vaasa, Tyozy services Finland, Local moving services Vaasa, 24/7 moving service Vaasa, Affordable relocation Vaasa, Student moving help Vaasa, Apartment movers in Vaasa, Packing and shifting Vaasa, Furniture movers Vaasa, IKEA furniture delivery Vaasa, Furniture assembly service Vaasa, Old furniture disposal Vaasa, Room cleaning Vaasa, Deep cleaning Vaasa, Move-out cleaning Vaasa, Home cleaning Vaasa, Weekly cleaning services Vaasa, Laundry services Vaasa, Laundry pickup and delivery Vaasa, Wash and fold laundry Vaasa, Ironing service Vaasa, Eco-friendly laundry Vaasa, Fast laundry service Vaasa" />
+  <link rel="canonical" href="https://www.tyozy.com/tyozy-homepage-vaasa.html" />
+  <meta name="robots" content="index, follow" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.tyozy.com/sitemap.xml" />
+
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.tyozy.com/" />
+  <meta property="og:title" content="Tyozy – Reliable Moving & Cleaning in Vaasa" />
+  <meta property="og:description" content="Looking for a trusted cleaning, laundry, or moving service in Vaasa? Tyozy offers 24/7 support with no hidden charges. Call today!" />
+  <meta property="og:image" content="https://www.tyozy.com/assets/images/logo.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.tyozy.com/" />
+  <meta name="twitter:title" content="Tyozy – Vaasa's 24/7 Moving & Laundry Services" />
+  <meta name="twitter:description" content="Fast, friendly, and affordable. Tyozy handles all your moving, cleaning, and laundry needs in Vaasa, Finland." />
+  <meta name="twitter:image" content="https://www.tyozy.com/assets/images/logo.png" />
+
+
+  <!-- Structured Data for LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Tyozy",
+    "image": "https://www.tyozy.com/assets/images/logo.png",
+    "telephone": "+358918910689698",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vaasa",
+      "addressCountry": "FI",
+      "addressRegion": "Pohjanmaa"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 61.4978,
+      "longitude": 23.7610
+    },
+    "url": "https://www.tyozy.com/",
+    "description": "Tyozy offers professional moving, furniture pickup, room cleaning, and packing & shifting services in Vaasa, Finland. Available 24/7 with no hidden fees and a satisfaction guarantee.",
+    "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+    "priceRange": "€€",
+    "paymentAccepted": "Cash, Credit Card, MobilePay",
+    "areaServed": {
+      "@type": "City",
+      "name": "Vaasa"
+    }
+  }
+  </script>
+
+  <!-- GOOGLE FONT: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* ===============================
+       1) RESET & GLOBAL
+       =============================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: var(--background-offwhite);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    button, .btn {
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
+    /* ===============================
+       2) VARIABLES & COLOR PALETTE
+       =============================== */
+    :root {
+      --primary-blue: #0052cc;
+      --primary-blue-light: #0090ff;
+      --background-offwhite: #f8f9fa;
+      --text-dark: #1f2a38;
+      --text-secondary: #4d5a6f;
+      --shadow-light: rgba(0, 82, 204, 0.2);
+      --shadow-hover: rgba(0, 0, 0, 0.05);
+      --radius-lg: 16px;
+      --radius-xl: 28px;
+    }
+
+    /* ===============================
+       3) KEYFRAME ANIMATIONS
+       =============================== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50%      { transform: scale(1.05); }
+    }
+
+    /* ===============================
+       4) LAYOUT & CONTAINER
+       =============================== */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      margin: 0;
+      background: var(--background-offwhite);
+    }
+    .container {
+      width: 100%;
+      max-width: 920px;
+      background-color: #ffffff;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    .inner {
+      padding: 48px 32px;
+      text-align: center;
+    }
+
+    /* ===============================
+       5) HEADER & SUBHEAD
+       =============================== */
+    header.header {
+      animation: fadeInUp 1s ease forwards;
+      margin-bottom: 24px;
+    }
+    header.header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.2;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    header.header h1::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: var(--primary-blue-light);
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+    header.header h2.tagline {
+      font-size: 1.125rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto 32px;
+      line-height: 1.5;
+    }
+
+    /* ===============================
+       6) CTA BUTTON (Interactive & Pulsing)
+       =============================== */
+    .cta-button {
+      position: relative;
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+      color: #ffffff;
+      font-size: 1.125rem;
+      font-weight: 500;
+      padding: 14px 40px;
+      border-radius: var(--radius-xl);
+      margin-bottom: 48px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 16px var(--shadow-light);
+      animation: fadeInUp 1.2s ease forwards, pulse 2.5s ease-in-out infinite 2s;
+    }
+    .cta-button:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 6px 24px var(--shadow-light);
+      background: linear-gradient(135deg, #0041a8 0%, #007acc 100%);
+    }
+    .cta-button:active {
+      transform: translateY(0) scale(0.98);
+      box-shadow: 0 3px 12px var(--shadow-light);
+      background: linear-gradient(135deg, #003387 0%, #0066aa 100%);
+    }
+    .cta-button::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.4s, opacity 0.8s;
+    }
+    .cta-button:focus::after,
+    .cta-button:active::after {
+      opacity: 1;
+      transform: scale(4);
+      transition: 0s;
+    }
+
+    /* ===============================
+       7) SERVICES GRID
+       2 columns on desktop/tablet, 1 column on mobile
+       =============================== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-bottom: 32px;
+      width: 100%;
+      justify-items: center;
+      animation: fadeInUp 1.4s ease forwards;
+    }
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 24px 16px;
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-item::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: transparent;
+      transition: background-color 0.3s ease;
+    }
+    .service-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px var(--shadow-hover);
+    }
+    .service-item:hover::before {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+      opacity: 0.95;
+    }
+    .service-item:hover .label {
+      color: #ffffff;
+      font-size: 1.125rem;
+    }
+    .service-item:hover .icon-container img {
+      filter: brightness(0) invert(1);
+      transform: scale(1.05);
+    }
+    .service-item:nth-child(1) { animation: fadeInUp 1.6s ease forwards; }
+    .service-item:nth-child(2) { animation: fadeInUp 1.8s ease forwards; }
+    .service-item:nth-child(3) { animation: fadeInUp 2.0s ease forwards; }
+    .service-item:nth-child(4) { animation: fadeInUp 2.2s ease forwards; }
+
+    .icon-container {
+      width: 100%;
+      max-width: 360px;
+      line-height: 0;
+      margin-bottom: 12px;
+      transition: transform 0.3s ease;
+    }
+    .icon-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      transition: filter 0.3s ease, transform 0.3s ease;
+    }
+    .label {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text-dark);
+      margin-top: 8px;
+      line-height: 1.2;
+      transition: color 0.3s ease, font-size 0.3s ease;
+      z-index: 1;
+    }
+    .service-desc {
+      font-size: 0; /* hidden but present for SEO */
+      line-height: 0;
+    }
+
+    /* ===============================
+       8) FOOTER
+       =============================== */
+    footer.footer p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-top: 16px;
+      margin-bottom: 0;
+      animation: fadeInUp 2.4s ease forwards;
+    }
+
+    /* ===============================
+       9) MEDIA QUERIES
+       =============================== */
+    @media (max-width: 768px) {
+      .container {
+        padding: 32px 16px;
+      }
+      header.header h1 {
+        font-size: 2.5rem;
+      }
+      header.header h2.tagline {
+        font-size: 1rem;
+        max-width: 90%;
+      }
+      .cta-button {
+        font-size: 1rem;
+        padding: 12px 32px;
+        margin-bottom: 32px;
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+      .icon-container {
+        max-width: 280px;
+      }
+      .label {
+        font-size: 1.125rem;
+        margin-top: 6px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* Disable vertical centering on mobile */
+      body {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+      }
+      header.header h1 {
+        font-size: 2rem;
+      }
+      header.header h2.tagline {
+        font-size: 0.95rem;
+        max-width: 100%;
+      }
+      .cta-button {
+        font-size: 0.9rem;
+        padding: 10px 24px;
+        margin-bottom: 24px;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .icon-container {
+        max-width: 220px;
+      }
+      .label {
+        font-size: 1rem;
+        margin-top: 4px;
+      }
+    }
+
+    #language-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  #language-modal .modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+  #language-modal button {
+    margin: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #0052cc;
+    color: white;
+    cursor: pointer;
+  }
+  #language-switcher {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    z-index: 10000;
+  }
+  #language-switcher button {
+    margin-left: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  #language-modal .lang-btn {
+  flex: 1;
+  padding: 0.75rem 1.5rem; /* add horizontal padding */
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--primary-blue);
+  background: white;
+  color: var(--primary-blue);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  user-select: none;
+  text-align: center;
+}
+#language-modal .lang-btn:hover,
+#language-modal .lang-btn:focus {
+  background: var(--primary-blue);
+  color: white;
+  outline: none;
+}
+
+  </style>
+
+  <script>
+
+const translations = {
+    fi: {
+        tagline: "24/7 ratkaisu pyykkiin, siivoukseen, huonekalujen noutoon ja muuttoon Vaasassa. Ei piilokuluja, vain rehellistä ja mutkatonta palvelua.",
+        callNow: "Soita nyt ja pyydä ilmainen tarjous",
+        moving: "Pakkaus ja muutto",
+        furniture: "Huonekalujen nouto",
+        cleaning: "Kodin siivous",
+        laundry: "Pesulapalvelut nouto ja toimitus kotiovellesi",
+        serving: "Palvelemme opiskelijoita ja asukkaita Vaasassa ja muualla Suomessa.",
+        call: "Soita meille: +358 449 318 824",
+        id: "Y-tunnus: 3549202-5",
+        privacy: "Tietosuojaseloste",
+        googlerevh1: "Luotettavat muutto- ja siivouspalvelut Vaasassa",
+        googlerevh2: "Lue aitoja Google-arvosteluja asiakkailtamme Vaasassa"
+    },
+    en: {}
+};
+
+function applyLanguage(lang){
+
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll('[data-translate-key]').forEach(el => {
+
+        const key = el.dataset.translateKey;
+
+        const original =
+            el.dataset.original ||
+            el.textContent.trim();
+
+        if(!el.dataset.original){
+            el.dataset.original = original;
+        }
+
+        el.textContent =
+            translations[lang]?.[key] || original;
+
+    });
+
+    localStorage.getItem('tyozy-language')
+    localStorage.setItem('tyozy-language', lang)
+
+}
+
+function chooseLanguage(lang){
+
+    applyLanguage(lang);
+
+    document.getElementById('language-modal').style.display = 'none';
+
+    document.getElementById('language-switcher').style.display = 'block';
+
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const savedLanguage =
+        localStorage.getItem('tyozy-language');
+
+    if(savedLanguage){
+
+        applyLanguage(savedLanguage);
+
+        document.getElementById('language-switcher').style.display = 'block';
+
+    }else{
+
+        document.getElementById('language-modal').style.display = 'flex';
+
+    }
 
 });
 
-document.getElementById('en-btn').classList.remove('active');
-document.getElementById('fi-btn').classList.remove('active');
-
-document.getElementById(lang+'-btn').classList.add('active');
-
-}
-
-const savedLanguage=localStorage.getItem('tyozy-language') || 'en';
-
-setLanguage(savedLanguage);
-
 </script>
+</head>
+<body>
+  <div id="language-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" style="position: fixed; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.6); display:none; justify-content:center; align-items:center; z-index:1000;">
+  <div style="background:#fff; padding:2rem 3rem; border-radius:12px; max-width:360px; text-align:center; box-shadow: 0 4px 20px rgba(0,0,0,0.3); font-family: 'Poppins', Arial, sans-serif;">
+    <h2 style="margin-bottom: 0.25rem; font-weight: 600;">Valitse kieli</h2>
+    <p style="margin-top: 0; margin-bottom: 1.5rem; font-weight: 400; font-size: 1rem;">Choose your language</p>
+    <div style="display: flex; justify-content: center; gap: 1rem;">
+      <button class="lang-btn" onclick="chooseLanguage('en')">English</button>
+      <button class="lang-btn" onclick="chooseLanguage('fi')">Suomi</button>
+    </div>
+  </div>
+</div>
 
+  <div class="container">
+    <div id="language-switcher">
+
+      <button onclick="applyLanguage('en')">
+      EN
+      </button>
+
+      <button onclick="applyLanguage('fi')">
+      FI
+      </button>
+
+    </div>
+    <div class="inner">
+      <header class="header">
+        <h1 data-translate-key="brand">Tyozy</h1>
+        <h2 class="tagline" data-translate-key="tagline">
+          Your 24/7 solution for room cleaning, furniture pickup, packing & shifting, and laundry in Vaasa and Finland. We promise no hidden fees, honest communication, and a worry-free experience.
+        </h2>
+      </header>
+      <button class="cta-button" onclick="window.open('tel:+358449318824', '_self')" data-translate-key="callNow">
+        Call us now for a Free Quote
+      </button>
+      <section class="services-grid" aria-label="Our Services">
+
+        <a href="moving-services-vaasa.html" class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/homepage/moving.png" alt="Illustration of a moving truck for packing and shifting in Vaasa" loading="lazy"/>
+          </div>
+
+          <div class="label" data-translate-key="moving">Packing & Moving</div>
+          <p class="service-desc">
+            At Tyozy, we specialize in providing comprehensive and stress-free moving services to residents and businesses in Vaasa, Finland. Our team of experienced and highly trained movers is dedicated to making your relocation process smooth, efficient, and hassle-free, whether you're moving across the street or across town. We understand that moving can be a daunting experience, especially when balancing work, studies, or family responsibilities. That’s why we’ve designed our services to be available 24/7, so you can schedule your move when it’s most convenient for you—be it early morning, late at night, or even over the weekend.
+
+            What sets us apart from others is our commitment to transparency and reliability. We promise absolutely no hidden fees. The quote you receive is the price you pay. Our free, no-obligation quote process is quick and easy, and we take the time to understand the scope of your move in order to offer the most accurate estimate. We offer a range of options to suit your specific needs—from basic loading and unloading to full-service moves that include packing, transportation, unpacking, and furniture assembly.
+
+            Our fleet of moving vehicles is clean, well-maintained, and equipped with the necessary tools and equipment to ensure that your belongings are protected throughout the journey. We also provide protective wrapping for fragile items, secure straps, dollies, and ramps to handle bulky items safely. Whether you’re moving a studio apartment, a multi-bedroom flat, or an office space, we handle your possessions with the utmost care.
+
+            For students and expats, we offer tailored solutions that consider your budget and tight timelines. We’re especially proud of the reputation we’ve built in Vaasa's academic and residential communities for being a reliable moving partner. Let Tyozy be your first call when you need a mover you can trust. With our friendly customer support, round-the-clock availability, and no-surprise pricing, we aim to be Vaasa's number one choice for moving services.
+          </p>
+        </a>
+
+        <a href="moving-services-vaasa.html" class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/homepage/furniture.png" alt="Illustration of a person lifting furniture for pickup service in Vaasa" loading="lazy"/>
+          </div>
+          <div class="label" data-translate-key="furniture">Furniture Moving & Shifting</div>
+          <p class="service-desc">
+            Whether you've just bought a new sofa from IKEA or need help disposing of old furniture, Tyozy's Furniture Pickup service in Vaasa is your go-to solution. We offer reliable, punctual, and affordable pickup and delivery of furniture items across the Vaasa region. Our services are ideal for students, busy professionals, families, and senior citizens who need a helping hand transporting furniture—without the hassle of renting a van or lifting heavy items themselves.
+
+            At Tyozy, we know that buying and moving furniture can often become an overwhelming task, especially when coordinating logistics with stores, navigating narrow apartment hallways, or dealing with complex furniture assembly. That’s why we take care of the entire process for you—from picking up your new or second-hand furniture from the store or seller, securely loading and transporting it, and delivering it to your doorstep. If you need help assembling your furniture, our team is happy to help at no additional cost.
+
+            We also offer furniture removal and disposal services, following all Vaasa city guidelines for recycling and waste disposal. Have an old mattress, sofa, table, or chair you want to get rid of? We’ll collect it and either donate it (if it's in usable condition), or responsibly dispose of it at the appropriate facilities.
+
+            Every Tyozy vehicle is equipped with padded blankets, trolleys, and securing straps to ensure that your furniture is transported safely and without damage. We also offer flexible same-day and next-day pickup slots to accommodate last-minute needs, including emergency removals for tenants who are ending their lease or moving out.
+
+            Whether you’re a new arrival in Vaasa or a long-time resident needing a dependable furniture transport partner, Tyozy delivers a smooth, professional, and transparent experience from start to finish. Reach out to us for a free quote, and let us do the heavy lifting—literally.
+          </p>
+        </a>
+
+        <a href="cleaning-services-vaasa.html" class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/homepage/cleaning.png" alt="Illustration showing room cleaning in a home in Vaasa" loading="lazy"/>
+          </div>
+          <div class="label" data-translate-key="cleaning">Room & House Cleaning</div>
+          <p class="service-desc">
+            Tyozy offers top-tier room cleaning services in Vaasa, Finland, with options designed to suit every need—whether it’s a one-time deep clean, move-in/move-out cleaning, or regular weekly upkeep. We cater to students, families, working professionals, Airbnb hosts, and landlords who need reliable, thorough, and eco-friendly cleaning support.
+
+            Our team of professional cleaners is trained in European hygiene standards and uses environmentally friendly, non-toxic cleaning products that are safe for children, pets, and the planet. Whether it’s a student dorm room, a small apartment, or a large home, we leave every corner spotless—from ceiling to floor, including behind furniture, under beds, and inside cupboards. We scrub and sanitize kitchens, polish bathrooms, vacuum carpets, mop floors, wipe surfaces, and deodorize rooms using pleasant, allergy-safe fragrances.
+
+            For tenants moving in or out of a property, we offer specialized deep-cleaning packages that meet landlords’ expectations and help ensure the return of security deposits. For landlords or property managers, we provide post-tenant cleanups and turnover cleaning to get the unit ready for the next occupant quickly and professionally.
+
+            We understand that every space is different, which is why we offer customizable cleaning plans. You can schedule a one-time service, set up recurring cleanings (weekly, bi-weekly, or monthly), or request specific tasks like fridge cleaning, oven degreasing, window washing, or laundry folding. We also offer emergency cleaning services for unexpected guests, events, or post-party cleanups.
+
+            With Tyozy, cleanliness is never a concern. Our punctual, background-checked staff treat your home with respect and privacy. We bring all our own equipment, so you never have to worry about supplies. We communicate clearly about costs, timing, and scope—no surprises, no stress.
+          </p>
+        </a>
+
+        <a href="laundry.html" class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/homepage/laundry.png" alt="Illustration representing laundry and ironing service in Vaasa" loading="lazy"/>
+          </div>
+          <div class="label" data-translate-key="laundry">Laundry Doorstep Pickup & Delivery</div>
+          <p class="service-desc">
+            Tyozy Laundry is your local, reliable laundry solution offering fast, affordable, and high-quality washing, drying, folding, and ironing services. Whether you're a student, working professional, family, or business, we make laundry day effortless by providing doorstep pickup and delivery, flexible scheduling, and eco-friendly cleaning practices. Our modern machines and expert staff ensure your clothes are treated with care and returned clean, fresh, and neatly folded—just the way you like them. We handle everything from everyday wear to delicate garments, bedsheets, uniforms, and curtains.
+          </p>
+        </a>
+
+      </section>
+
+      <!--div class="embedsocial-hashtag" data-ref="c7bb47409e40c1843f504112419395111497defe" data-dynamicload="yes" data-lazyload="yes">
+        <a class="feed-powered-by-es feed-powered-by-es-feed-img es-widget-branding" href="https://embedsocial.com/google-reviews-widget/" target="_blank" title="Embed Google reviews" >
+          <img src="https://embedsocial.com/cdn/icon/embedsocial-logo.webp" alt="EmbedSocial">
+          <div class="es-widget-branding-text">Embed Google reviews</div>
+        </a>
+      </div>
+      <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script-->
+
+
+      <section>
+        <h1 data-translate-key="googlerevh1">
+          Trusted by Customers Across Vaasa
+        </h1>
+
+        <h2 data-translate-key="googlerevh2">
+          Top-rated moving and cleaning services in Vaasa
+        </h2>
+
+
+
+
+        <div class="sk-ww-google-reviews" data-embed-id="25685224"></div>
+
+        <style>
+        .sk_branding,
+        .sk_branding *,
+        a.tutorial_link,
+        .--custom-branding{
+            display:none !important;
+            visibility:hidden !important;
+            opacity:0 !important;
+            height:0 !important;
+            overflow:hidden !important;
+        }
+        </style>
+
+
+        <script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
+
+        <script>
+        function removeBranding() {
+            document.querySelectorAll('.sk_branding').forEach(el => el.remove());
+            document.querySelectorAll('.tutorial_link').forEach(el => el.remove());
+            document.querySelectorAll('.--custom-branding').forEach(el => el.remove());
+
+            // Add padding-bottom style
+            document.querySelectorAll('.sk-post__body').forEach(el => {
+                el.style.paddingBottom = '15px';
+            });
+        }
+
+        window.addEventListener('load', removeBranding);
+
+        const observer = new MutationObserver(removeBranding);
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+        </script>
+      </section>
+
+
+
+      <!-- FOOTER / CONTACT INFO -->
+      <footer class="footer">
+        <p data-translate-key="serving">Serving Students &amp; Residents of Vaasa, Finland.</p>
+        <p><a href='tel:+358449318824' data-translate-key="call">Call us now: +358 449 318 824</a></p>
+        <p><a href="http://bit.ly/4kKDQOC" target="_blank" data-translate-key="id">Business ID: 3549202-5</a></p>
+        <p><a href="privacy-policy.html" data-translate-key="privacy">Privacy Policy</a></p>
+      </footer>
+
+      <div style="font-size:0">
+        Vaasa, Kaleva, Hervanta, Tammela, Pyynikki, Amuri, Kissanmaa, Tesoma, Hatanpää, Pispala, Lielahti, Linnainmaa, Vuores, Kaukajärvi, Nekala, Janka, Rahola, Annala, Messukylä, Takahuhti, Multisilta, Härmälä, Hallila, Atala, Vehmainen, Koivistonkylä, Vuohenoja, Ikuri, Epilä, Hyhky, Lentävänniemi, Niemenranta, Lintulampi, Kaarila, Reuharinniemi, Rantaperkiö, Ruutana, Olkahinen, Rusko, Sorila, Aitolahti, Teisko, Myllypuro, Aakkula, Hyhkynlahti, Iso-Vilunen, Ryydynpohja, Epilänharju, Kalevanrinne, Alasjärvi, Turtola, Tohloppi, Myllyoja, Kaukaniemi, Iides, Hiedanranta, Rautaharkko, Annankatu area, Keskustori, Tampella, Finlayson, Särkänniemi area, Sampo, Hervantajärvi, Lukonmäki, Hallila, Asemantausta, Pirkkala, Nokia, Ylöjärvi, Kangasala, Lempäälä, Orivesi, Valkeakoski, Vesilahti, Sastamala, Hämeenkyrö, Akaa, Ikaalinen, Pälkäne, Ruovesi, Mänttä-Vilppula, Juupajoki
+
+      </div>
+      <div style="font-size:0; line-height:0; height:0">
+        <!-- English Version -->
+        <div lang="en">
+          Tyozy is your trusted 24/7 moving, cleaning, packing, and furniture pickup service provider in Vaasa, Finland. We serve all areas of Vaasa including Kaleva, Hervanta, Tammela, Pyynikki, Amuri, Tesoma, Kissanmaa, Pispala, Hatanpää, and more. Whether you are a student relocating between dormitories, a family moving into a new apartment, or a business shifting offices, Tyozy offers reliable, transparent, and affordable services with no hidden charges. Our moving services include packing and unpacking, secure transport, and furniture assembly. We also provide deep cleaning for apartments, move-in/move-out cleaning, eco-friendly cleaning, and furniture removal. Trusted by locals and international students alike, Tyozy is Vaasa's go-to for emergency moves, same-day furniture delivery, and thorough cleaning services. Contact us for a free quote anytime—morning, night, or weekend.
+        </div>
+
+        <!-- Finnish Version -->
+        <div lang="fi">
+          Tyozy on luotettava 24/7 muutto-, siivous-, pakkaus- ja huonekalujen noutopalvelu Vaasassa, Suomessa. Palvelemme kaikkia Vaasaen alueita, mukaan lukien Kaleva, Hervanta, Tammela, Pyynikki, Amuri, Tesoma, Kissanmaa, Pispala, Hatanpää ja monet muut. Olitpa opiskelija, joka muuttaa asuntolasta toiseen, perhe, joka etsii uutta kotia, tai yritys, joka tarvitsee toimistosiirtoa – Tyozy tarjoaa läpinäkyvää ja edullista palvelua ilman piilokuluja. Muuttopalveluihimme kuuluu pakkaus ja purku, turvallinen kuljetus ja huonekalujen kokoaminen. Tarjoamme myös syväsiivousta, muutto- ja muuttosiivouksia, ympäristöystävällisiä siivouksia ja huonekalujen poistoa. Paikallisten ja kansainvälisten opiskelijoiden suosima Tyozy on Vaasaen ykkösvalinta hätämuutoissa, saman päivän huonekalutoimituksissa ja perusteellisessa siivouksessa. Ota yhteyttä ja pyydä ilmainen tarjous – aamulla, illalla tai viikonloppuna.
+          toimisto | koti | ikkuna | siivous
+        </div>
+      </div>
+
+
+    </div>
+  </div>
 </body>
 </html>

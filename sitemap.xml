@@ -8,6 +8,13 @@
         <changefreq>daily</changefreq>
     </url>
 
+
+
+
+
+
+
+
     <url>
         <loc>https://www.tyozy.com/tyozy-homepage-tampere.html</loc>
         <priority>1.0</priority>
@@ -43,6 +50,17 @@
         <priority>1.0</priority>
         <changefreq>daily</changefreq>
     </url>
+    <url>
+        <loc>https://www.tyozy.com/tyozy-homepage-vaasa.html</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+
+
+
+
+
 
     <url>
         <loc>https://www.tyozy.com/moving-services-tampere.html</loc>
@@ -79,6 +97,16 @@
         <priority>1.0</priority>
         <changefreq>daily</changefreq>
     </url>
+    <url>
+        <loc>https://www.tyozy.com/moving-services-vaasa.html</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+
+
+
+
 
     <url>
         <loc>https://www.tyozy.com/cleaning-services-tampere.html</loc>
@@ -115,6 +143,16 @@
         <priority>1.0</priority>
         <changefreq>daily</changefreq>
     </url>
+    <url>
+        <loc>https://www.tyozy.com/cleaning-services-vaasa.html</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+
+
+
+
 
     <url>
         <loc>https://www.tyozy.com/laundry.html</loc>

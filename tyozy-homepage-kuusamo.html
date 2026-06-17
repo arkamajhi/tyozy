@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script>
+    (function() {
+      // If protocol is "file:", we’re viewing locally—so don’t load gtag
+      if (window.location.protocol === 'file:') return;
+
+      // Otherwise load gtag.js and initialize
+      const gtagScript = document.createElement('script');
+      gtagScript.async = true;
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-JJG4L8LD2N';
+      document.head.appendChild(gtagScript);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-JJG4L8LD2N');
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Primary Meta Tags -->
+  <title>Tyozy – 24/7 Moving, Cleaning, Furniture Shifting & Laundry Services in Kuusamo</title>
+  <meta name="description" content="Tyozy offers professional moving, furniture pickup, laundry, and room cleaning services in Kuusamo, Finland. Reliable, affordable, and available 24/7 with no hidden fees." />
+  <meta name="keywords" content="Tyozy Kuusamo, Tyozy services Finland, Local moving services Kuusamo, 24/7 moving service Kuusamo, Affordable relocation Kuusamo, Student moving help Kuusamo, Apartment movers in Kuusamo, Packing and shifting Kuusamo, Furniture movers Kuusamo, IKEA furniture delivery Kuusamo, Furniture assembly service Kuusamo, Old furniture disposal Kuusamo, Room cleaning Kuusamo, Deep cleaning Kuusamo, Move-out cleaning Kuusamo, Home cleaning Kuusamo, Weekly cleaning services Kuusamo, Laundry services Kuusamo, Laundry pickup and delivery Kuusamo, Wash and fold laundry Kuusamo, Ironing service Kuusamo, Eco-friendly laundry Kuusamo, Fast laundry service Kuusamo" />
+  <link rel="canonical" href="https://www.tyozy.com/tyozy-homepage-kuusamo.html" />
+  <meta name="robots" content="index, follow" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.tyozy.com/sitemap.xml" />
+
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.tyozy.com/" />
+  <meta property="og:title" content="Tyozy – Reliable Moving & Cleaning in Kuusamo" />
+  <meta property="og:description" content="Looking for a trusted cleaning, laundry, or moving service in Kuusamo? Tyozy offers 24/7 support with no hidden charges. Call today!" />
+  <meta property="og:image" content="https://www.tyozy.com/assets/images/logo.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.tyozy.com/" />
+  <meta name="twitter:title" content="Tyozy – Kuusamo’s 24/7 Moving & Laundry Services" />
+  <meta name="twitter:description" content="Fast, friendly, and affordable. Tyozy handles all your moving, cleaning, and laundry needs in Kuusamo, Finland." />
+  <meta name="twitter:image" content="https://www.tyozy.com/assets/images/logo.png" />
+
+
+  <!-- Structured Data for LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Tyozy",
+    "image": "https://www.tyozy.com/assets/images/logo.png",
+    "telephone": "+358918910689698",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kuusamo",
+      "addressCountry": "FI",
+      "addressRegion": "Pohjois-Pohjanmaa"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 61.4978,
+      "longitude": 23.7610
+    },
+    "url": "https://www.tyozy.com/",
+    "description": "Tyozy offers professional moving, furniture pickup, room cleaning, and packing & shifting services in Kuusamo, Finland. Available 24/7 with no hidden fees and a satisfaction guarantee.",
+    "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+    "priceRange": "€€",
+    "paymentAccepted": "Cash, Credit Card, MobilePay",
+    "areaServed": {
+      "@type": "City",
+      "name": "Kuusamo"
+    }
+  }
+  </script>
+
+  <!-- GOOGLE FONT: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* ===============================
+       1) RESET & GLOBAL
+       =============================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: var(--background-offwhite);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    button, .btn {
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
+    /* ===============================
+       2) VARIABLES & COLOR PALETTE
+       =============================== */
+    :root {
+      --primary-blue: #0052cc;
+      --primary-blue-light: #0090ff;
+      --background-offwhite: #f8f9fa;
+      --text-dark: #1f2a38;
+      --text-secondary: #4d5a6f;
+      --shadow-light: rgba(0, 82, 204, 0.2);
+      --shadow-hover: rgba(0, 0, 0, 0.05);
+      --radius-lg: 16px;
+      --radius-xl: 28px;
+    }
+
+    /* ===============================
+       3) KEYFRAME ANIMATIONS
+       =============================== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50%      { transform: scale(1.05); }
+    }
+
+    /* ===============================
+       4) LAYOUT & CONTAINER
+       =============================== */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      margin: 0;
+      background: var(--background-offwhite);
+    }
+    .container {
+      width: 100%;
+      max-width: 920px;
+      background-color: #ffffff;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    .inner {
+      padding: 48px 32px;
+      text-align: center;
+    }
+
+    /* ===============================
+       5) HEADER & SUBHEAD
+       =============================== */
+    header.header {
+      animation: fadeInUp 1s ease forwards;
+      margin-bottom: 24px;
+    }
+    header.header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.2;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    header.header h1::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: var(--primary-blue-light);
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+    header.header h2.tagline {
+      font-size: 1.125rem;
+      font-weight: 300;
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto 32px;
+      line-height: 1.5;
+    }
+
+    /* ===============================
+       6) CTA BUTTON (Interactive & Pulsing)
+       =============================== */
+    .cta-button {
+      position: relative;
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+      color: #ffffff;
+      font-size: 1.125rem;
+      font-weight: 500;
+      padding: 14px 40px;
+      border-radius: var(--radius-xl);
+      margin-bottom: 48px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 16px var(--shadow-light);
+      animation: fadeInUp 1.2s ease forwards, pulse 2.5s ease-in-out infinite 2s;
+    }
+    .cta-button:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 6px 24px var(--shadow-light);
+      background: linear-gradient(135deg, #0041a8 0%, #007acc 100%);
+    }
+    .cta-button:active {
+      transform: translateY(0) scale(0.98);
+      box-shadow: 0 3px 12px var(--shadow-light);
+      background: linear-gradient(135deg, #003387 0%, #0066aa 100%);
+    }
+    .cta-button::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.4s, opacity 0.8s;
+    }
+    .cta-button:focus::after,
+    .cta-button:active::after {
+      opacity: 1;
+      transform: scale(4);
+      transition: 0s;
+    }
+
+    /* ===============================
+       7) SERVICES GRID
+       2 columns on desktop/tablet, 1 column on mobile
+       =============================== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-bottom: 32px;
+      width: 100%;
+      justify-items: center;
+      animation: fadeInUp 1.4s ease forwards;
+    }
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 24px 16px;
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-item::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: transparent;
+      transition: background-color 0.3s ease;
+    }
+    .service-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px var(--shadow-hover);
+    }
+    .service-item:hover::before {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+      opacity: 0.95;
+    }
+    .service-item:hover .label {
+      color: #ffffff;
+      font-size: 1.125rem;
+    }
+    .service-item:hover .icon-container img {
+      filter: brightness(0) invert(1);
+      transform: scale(1.05);
+    }
+    .service-item:nth-child(1) { animation: fadeInUp 1.6s ease forwards; }
+    .service-item:nth-child(2) { animation: fadeInUp 1.8s ease forwards; }
+    .service-item:nth-child(3) { animation: fadeInUp 2.0s ease forwards; }
+    .service-item:nth-child(4) { animation: fadeInUp 2.2s ease forwards; }
+
+    .icon-container {
+      width: 100%;
+      max-width: 360px;
+      line-height: 0;
+      margin-bottom: 12px;
+      transition: transform 0.3s ease;
+    }
+    .icon-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      transition: filter 0.3s ease, transform 0.3s ease;
+    }
+    .label {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text-dark);
+      margin-top: 8px;
+      line-height: 1.2;
+      transition: color 0.3s ease, font-size 0.3s ease;
+      z-index: 1;
+    }
+    .service-desc {
+      font-size: 0; /* hidden but present for SEO */
+      line-height: 0;
+    }
+
+    /* ===============================
+       8) FOOTER
+       =============================== */
+    footer.footer p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-top: 16px;
+      margin-bottom: 0;
+      animation: fadeInUp 2.4s ease forwards;
+    }
+
+    /* ===============================
+       9) MEDIA QUERIES
+       =============================== */
+    @media (max-width: 768px) {
+      .container {
+        padding: 32px 16px;
+      }
+      header.header h1 {
+        font-size: 2.5rem;
+      }
+      header.header h2.tagline {
+        font-size: 1rem;
+        max-width: 90%;
+      }
+      .cta-button {
+        font-size: 1rem;
+        padding: 12px 32px;
+        margin-bottom: 32px;
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+      .icon-container {
+        max-width: 280px;
+      }
+      .label {
+        font-size: 1.125rem;
+        margin-top: 6px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* Disable vertical centering on mobile */
+      body {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+      }
+      header.header h1 {
+        font-size: 2rem;
+      }
+      header.header h2.tagline {
+        font-size: 0.95rem;
+        max-width: 100%;
+      }
+      .cta-button {
+        font-size: 0.9rem;
+        padding: 10px 24px;
+        margin-bottom: 24px;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .icon-container {
+        max-width: 220px;
+      }
+      .label {
+        font-size: 1rem;
+        margin-top: 4px;
+      }
+    }
+
+    #language-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  #language-modal .modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+  #language-modal button {
+    margin: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #0052cc;
+    color: white;
+    cursor: pointer;
+  }
+  #language-switcher {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    z-index: 10000;
+  }
+  #language-switcher button {
+    margin-left: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  #language-modal .lang-btn {
+  flex: 1;
+  padding: 0.75rem 1.5rem; /* add horizontal padding */
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--primary-blue);
+  background: white;
+  color: var(--primary-blue);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  user-select: none;
+  text-align: center;
+}
+#language-modal .lang-btn:hover,
+#language-modal .lang-btn:focus {
+  background: var(--primary-blue);
+  color: white;
+  outline: none;
+}
+
+  </style>
+
+  <script>
+
+const translations = {
+    fi: {
+        tagline: "24/7 ratkaisu pyykkiin, siivoukseen, huonekalujen noutoon ja muuttoon Kuusamossa. Ei piilokuluja, vain rehellistä ja mutkatonta palvelua.",
+        callNow: "Soita nyt ja pyydä ilmainen tarjous",
+        moving: "Pakkaus ja muutto",
+        furniture: "Huonekalujen nouto",
+        cleaning: "Kodin siivous",
+        laundry: "Pesulapalvelut nouto ja toimitus kotiovellesi",
+        serving: "Palvelemme opiskelijoita ja asukkaita Kuusamossa ja muualla Suomessa.",
+        call: "Soita meille: +358 449 318 824",
+        id: "Y-tunnus: 3549202-5",
+        privacy: "Tietosuojaseloste",
+        googlerevh1: "Luotettavat muutto- ja siivouspalvelut Kuusamossa",
+        googlerevh2: "Lue aitoja Google-arvosteluja asiakkailtamme Kuusamossa"
+    },
+    en: {}
+};
+
+function applyLanguage(lang){
+
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll('[data-translate-key]').forEach(el => {
+
+        const key = el.dataset.translateKey;
+
+        const original =
+            el.dataset.original ||
+            el.textContent.trim();
+
+        if(!el.dataset.original){
+            el.dataset.original = original;
+        }
+
+        el.textContent =
+            translations[lang]?.[key] || original;
+
+    });
+
+    localStorage.getItem('tyozy-language')
+    localStorage.setItem('tyozy-language', lang)
+
+}
+
+function chooseLanguage(lang){
+
+    applyLanguage(lang);
+
+    document.getElementById('language-modal').style.display = 'none';
+
+    document.getElementById('language-switcher').style.display = 'block';
+
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const savedLanguage =
+        localStorage.getItem('tyozy-language');
+
+    if(savedLanguage){
+
+        applyLanguage(savedLanguage);
+
+        document.getElementById('language-switcher').style.display = 'block';
+
+    }else{
+
+        document.getElementById('language-modal').style.display = 'flex';
+
+    }
+
+});
+
+</script>
+</head>
+<body>
+  <div id="language-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" style="position: fixed; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.6); display:none; justify-content:center; align-items:center; z-index:1000;">
+  <div style="background:#fff; padding:2rem 3rem; border-radius:12px; max-width:360px; text-align:center; box-shadow: 0 4px 20px rgba(0,0,0,0.3); font-family: 'Poppins', Arial, sans-serif;">
+    <h2 style="margin-bottom: 0.25rem; font-weight: 600;">Valitse kieli</h2>
+    <p style="margin-top: 0; margin-bottom: 1.5rem; font-weight: 400; font-size: 1rem;">Choose your language</p>
+    <div style="display: flex; justify-content: center; gap: 1rem;">
+      <button class="lang-btn" onclick="chooseLanguage('en')">English</button>
+      <button class="lang-btn" onclick="chooseLanguage('fi')">Suomi</button>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div id="language-switcher">
+
+      <button onclick="applyLanguage('en')">
+      EN
+      </button>
+
+      <button onclick="applyLanguage('fi')">
+      FI
+      </button>
+
+    </div>
+    <div class="inner">
+      <header class="header">
+        <h1 data-translate-key="brand">Tyozy</h1>
+        <h2 class="tagline" data-translate-key="tagline">
+          Your 24/7 solution for room cleaning, furniture pickup, packing & shifting, and laundry in Kuusamo and Finland. We promise no hidden fees, honest communication, and a worry-free experience.
+        </h2>
+      </header>
+      <button class="cta-button" onclick="window.open('tel:+358449318824', '_self')" data-translate-key="callNow">
+        Call us now for a Free Quote
+      </button>
+      <section class="services-grid" aria-label="Our Services">
+
+        <a href="moving-services-kuusamo.html" class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/homepage/moving.png" alt="Illustration of a moving truck for packing and shifting in Kuusamo" loading="lazy"/>
+          </div>
+
+          <div class="label" data-translate-key="moving">Packing & Moving</div>
+          <p class="service-desc">
+            At Tyozy, we specialize in providing comprehensive and stress-free moving services to residents and businesses in Kuusamo, Finland. Our team of experienced and highly trained movers is dedicated to making your relocation process smooth, efficient, and hassle-free, whether you're moving across the street or across town. We understand that moving can be a daunting experience, especially when balancing work, studies, or family responsibilities. That’s why we’ve designed our services to be available 24/7, so you can schedule your move when it’s most convenient for you—be it early morning, late at night, or even over the weekend.
+
+            What sets us apart from others is our commitment to transparency and reliability. We promise absolutely no hidden fees. The quote you receive is the price you pay. Our free, no-obligation quote process is quick and easy, and we take the time to understand the scope of your move in order to offer the most accurate estimate. We offer a range of options to suit your specific needs—from basic loading and unloading to full-service moves that include packing, transportation, unpacking, and furniture assembly.
+
+            Our fleet of moving vehicles is clean, well-maintained, and equipped with the necessary tools and equipment to ensure that your belongings are protected throughout the journey. We also provide protective wrapping for fragile items, secure straps, dollies, and ramps to handle bulky items safely. Whether you’re moving a studio apartment, a multi-bedroom flat, or an office space, we handle your possessions with the utmost care.
+
+            For students and expats, we offer tailored solutions that consider your budget and tight timelines. We’re especially proud of the reputation we’ve built in Kuusamo’s academic and residential communities for being a reliable moving partner. Let Tyozy be your first call when you need a mover you can trust. With our friendly customer support, round-the-clock availability, and no-surprise pricing, we aim to be Kuusamo’s number one choice for moving services.
+          </p>
+        </a>
+
+        <a href="moving-services-kuusamo.html" class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/homepage/furniture.png" alt="Illustration of a person lifting furniture for pickup service in Kuusamo" loading="lazy"/>
+          </div>
+          <div class="label" data-translate-key="furniture">Furniture Moving & Shifting</div>
+          <p class="service-desc">
+            Whether you've just bought a new sofa from IKEA or need help disposing of old furniture, Tyozy's Furniture Pickup service in Kuusamo is your go-to solution. We offer reliable, punctual, and affordable pickup and delivery of furniture items across the Kuusamo region. Our services are ideal for students, busy professionals, families, and senior citizens who need a helping hand transporting furniture—without the hassle of renting a van or lifting heavy items themselves.
+
+            At Tyozy, we know that buying and moving furniture can often become an overwhelming task, especially when coordinating logistics with stores, navigating narrow apartment hallways, or dealing with complex furniture assembly. That’s why we take care of the entire process for you—from picking up your new or second-hand furniture from the store or seller, securely loading and transporting it, and delivering it to your doorstep. If you need help assembling your furniture, our team is happy to help at no additional cost.
+
+            We also offer furniture removal and disposal services, following all Kuusamo city guidelines for recycling and waste disposal. Have an old mattress, sofa, table, or chair you want to get rid of? We’ll collect it and either donate it (if it's in usable condition), or responsibly dispose of it at the appropriate facilities.
+
+            Every Tyozy vehicle is equipped with padded blankets, trolleys, and securing straps to ensure that your furniture is transported safely and without damage. We also offer flexible same-day and next-day pickup slots to accommodate last-minute needs, including emergency removals for tenants who are ending their lease or moving out.
+
+            Whether you’re a new arrival in Kuusamo or a long-time resident needing a dependable furniture transport partner, Tyozy delivers a smooth, professional, and transparent experience from start to finish. Reach out to us for a free quote, and let us do the heavy lifting—literally.
+          </p>
+        </a>
+
+        <a href="cleaning-services-kuusamo.html" class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/homepage/cleaning.png" alt="Illustration showing room cleaning in a home in Kuusamo" loading="lazy"/>
+          </div>
+          <div class="label" data-translate-key="cleaning">Room & House Cleaning</div>
+          <p class="service-desc">
+            Tyozy offers top-tier room cleaning services in Kuusamo, Finland, with options designed to suit every need—whether it’s a one-time deep clean, move-in/move-out cleaning, or regular weekly upkeep. We cater to students, families, working professionals, Airbnb hosts, and landlords who need reliable, thorough, and eco-friendly cleaning support.
+
+            Our team of professional cleaners is trained in European hygiene standards and uses environmentally friendly, non-toxic cleaning products that are safe for children, pets, and the planet. Whether it’s a student dorm room, a small apartment, or a large home, we leave every corner spotless—from ceiling to floor, including behind furniture, under beds, and inside cupboards. We scrub and sanitize kitchens, polish bathrooms, vacuum carpets, mop floors, wipe surfaces, and deodorize rooms using pleasant, allergy-safe fragrances.
+
+            For tenants moving in or out of a property, we offer specialized deep-cleaning packages that meet landlords’ expectations and help ensure the return of security deposits. For landlords or property managers, we provide post-tenant cleanups and turnover cleaning to get the unit ready for the next occupant quickly and professionally.
+
+            We understand that every space is different, which is why we offer customizable cleaning plans. You can schedule a one-time service, set up recurring cleanings (weekly, bi-weekly, or monthly), or request specific tasks like fridge cleaning, oven degreasing, window washing, or laundry folding. We also offer emergency cleaning services for unexpected guests, events, or post-party cleanups.
+
+            With Tyozy, cleanliness is never a concern. Our punctual, background-checked staff treat your home with respect and privacy. We bring all our own equipment, so you never have to worry about supplies. We communicate clearly about costs, timing, and scope—no surprises, no stress.
+          </p>
+        </a>
+
+        <a href="laundry.html" class="service-item">
+          <div class="icon-container">
+            <img src="assets/images/homepage/laundry.png" alt="Illustration representing laundry and ironing service in Kuusamo" loading="lazy"/>
+          </div>
+          <div class="label" data-translate-key="laundry">Laundry Doorstep Pickup & Delivery</div>
+          <p class="service-desc">
+            Tyozy Laundry is your local, reliable laundry solution offering fast, affordable, and high-quality washing, drying, folding, and ironing services. Whether you're a student, working professional, family, or business, we make laundry day effortless by providing doorstep pickup and delivery, flexible scheduling, and eco-friendly cleaning practices. Our modern machines and expert staff ensure your clothes are treated with care and returned clean, fresh, and neatly folded—just the way you like them. We handle everything from everyday wear to delicate garments, bedsheets, uniforms, and curtains.
+          </p>
+        </a>
+
+      </section>
+
+      <!--div class="embedsocial-hashtag" data-ref="c7bb47409e40c1843f504112419395111497defe" data-dynamicload="yes" data-lazyload="yes">
+        <a class="feed-powered-by-es feed-powered-by-es-feed-img es-widget-branding" href="https://embedsocial.com/google-reviews-widget/" target="_blank" title="Embed Google reviews" >
+          <img src="https://embedsocial.com/cdn/icon/embedsocial-logo.webp" alt="EmbedSocial">
+          <div class="es-widget-branding-text">Embed Google reviews</div>
+        </a>
+      </div>
+      <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script-->
+
+
+      <section>
+        <h1 data-translate-key="googlerevh1">
+          Trusted by Customers Across Kuusamo
+        </h1>
+
+        <h2 data-translate-key="googlerevh2">
+          Top-rated moving and cleaning services in Kuusamo
+        </h2>
+
+
+
+
+        <div class="sk-ww-google-reviews" data-embed-id="25685224"></div>
+
+        <style>
+        .sk_branding,
+        .sk_branding *,
+        a.tutorial_link,
+        .--custom-branding{
+            display:none !important;
+            visibility:hidden !important;
+            opacity:0 !important;
+            height:0 !important;
+            overflow:hidden !important;
+        }
+        </style>
+
+
+        <script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
+
+        <script>
+        function removeBranding() {
+            document.querySelectorAll('.sk_branding').forEach(el => el.remove());
+            document.querySelectorAll('.tutorial_link').forEach(el => el.remove());
+            document.querySelectorAll('.--custom-branding').forEach(el => el.remove());
+
+            // Add padding-bottom style
+            document.querySelectorAll('.sk-post__body').forEach(el => {
+                el.style.paddingBottom = '15px';
+            });
+        }
+
+        window.addEventListener('load', removeBranding);
+
+        const observer = new MutationObserver(removeBranding);
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+        </script>
+      </section>
+
+
+
+      <!-- FOOTER / CONTACT INFO -->
+      <footer class="footer">
+        <p data-translate-key="serving">Serving Students &amp; Residents of Kuusamo, Finland.</p>
+        <p><a href='tel:+358449318824' data-translate-key="call">Call us now: +358 449 318 824</a></p>
+        <p><a href="http://bit.ly/4kKDQOC" target="_blank" data-translate-key="id">Business ID: 3549202-5</a></p>
+        <p><a href="privacy-policy.html" data-translate-key="privacy">Privacy Policy</a></p>
+      </footer>
+
+      <div style="font-size:0">
+        Kuusamo, Kaleva, Hervanta, Tammela, Pyynikki, Amuri, Kissanmaa, Tesoma, Hatanpää, Pispala, Lielahti, Linnainmaa, Vuores, Kaukajärvi, Nekala, Janka, Rahola, Annala, Messukylä, Takahuhti, Multisilta, Härmälä, Hallila, Atala, Vehmainen, Koivistonkylä, Vuohenoja, Ikuri, Epilä, Hyhky, Lentävänniemi, Niemenranta, Lintulampi, Kaarila, Reuharinniemi, Rantaperkiö, Ruutana, Olkahinen, Rusko, Sorila, Aitolahti, Teisko, Myllypuro, Aakkula, Hyhkynlahti, Iso-Vilunen, Ryydynpohja, Epilänharju, Kalevanrinne, Alasjärvi, Turtola, Tohloppi, Myllyoja, Kaukaniemi, Iides, Hiedanranta, Rautaharkko, Annankatu area, Keskustori, Tampella, Finlayson, Särkänniemi area, Sampo, Hervantajärvi, Lukonmäki, Hallila, Asemantausta, Pirkkala, Nokia, Ylöjärvi, Kangasala, Lempäälä, Orivesi, Valkeakoski, Vesilahti, Sastamala, Hämeenkyrö, Akaa, Ikaalinen, Pälkäne, Ruovesi, Mänttä-Vilppula, Juupajoki
+
+      </div>
+      <div style="font-size:0; line-height:0; height:0">
+        <!-- English Version -->
+        <div lang="en">
+          Tyozy is your trusted 24/7 moving, cleaning, packing, and furniture pickup service provider in Kuusamo, Finland. We serve all areas of Kuusamo including Kaleva, Hervanta, Tammela, Pyynikki, Amuri, Tesoma, Kissanmaa, Pispala, Hatanpää, and more. Whether you are a student relocating between dormitories, a family moving into a new apartment, or a business shifting offices, Tyozy offers reliable, transparent, and affordable services with no hidden charges. Our moving services include packing and unpacking, secure transport, and furniture assembly. We also provide deep cleaning for apartments, move-in/move-out cleaning, eco-friendly cleaning, and furniture removal. Trusted by locals and international students alike, Tyozy is Kuusamo’s go-to for emergency moves, same-day furniture delivery, and thorough cleaning services. Contact us for a free quote anytime—morning, night, or weekend.
+        </div>
+
+        <!-- Finnish Version -->
+        <div lang="fi">
+          Tyozy on luotettava 24/7 muutto-, siivous-, pakkaus- ja huonekalujen noutopalvelu Kuusamossa, Suomessa. Palvelemme kaikkia Kuusamoen alueita, mukaan lukien Kaleva, Hervanta, Tammela, Pyynikki, Amuri, Tesoma, Kissanmaa, Pispala, Hatanpää ja monet muut. Olitpa opiskelija, joka muuttaa asuntolasta toiseen, perhe, joka etsii uutta kotia, tai yritys, joka tarvitsee toimistosiirtoa – Tyozy tarjoaa läpinäkyvää ja edullista palvelua ilman piilokuluja. Muuttopalveluihimme kuuluu pakkaus ja purku, turvallinen kuljetus ja huonekalujen kokoaminen. Tarjoamme myös syväsiivousta, muutto- ja muuttosiivouksia, ympäristöystävällisiä siivouksia ja huonekalujen poistoa. Paikallisten ja kansainvälisten opiskelijoiden suosima Tyozy on Kuusamoen ykkösvalinta hätämuutoissa, saman päivän huonekalutoimituksissa ja perusteellisessa siivouksessa. Ota yhteyttä ja pyydä ilmainen tarjous – aamulla, illalla tai viikonloppuna.
+          toimisto | koti | ikkuna | siivous
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+</html>

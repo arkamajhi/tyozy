@@ -55,6 +55,11 @@
         <priority>1.0</priority>
         <changefreq>daily</changefreq>
     </url>
+    <url>
+        <loc>https://www.tyozy.com/tyozy-homepage-kuusamo.html</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
 
 
 
@@ -102,6 +107,11 @@
         <priority>1.0</priority>
         <changefreq>daily</changefreq>
     </url>
+    <url>
+        <loc>https://www.tyozy.com/moving-services-kuusamo.html</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
 
 
 
@@ -145,6 +155,11 @@
     </url>
     <url>
         <loc>https://www.tyozy.com/cleaning-services-vaasa.html</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://www.tyozy.com/cleaning-services-kuusamo.html</loc>
         <priority>1.0</priority>
         <changefreq>daily</changefreq>
     </url>

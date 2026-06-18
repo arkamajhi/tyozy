@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://www.tyozy.com/index.html</loc>
+        <loc>https://www.tyozy.com/</loc>
         <priority>1.0</priority>
         <changefreq>daily</changefreq>
     </url>
@@ -233,7 +233,7 @@
 
 
     <url>
-        <loc>https://www.tyozy.com/tampere-juhannus/index.html</loc>
+        <loc>https://www.tyozy.com/tampere-juhannus/</loc>
         <priority>1.0</priority>
         <changefreq>daily</changefreq>
     </url>

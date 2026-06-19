@@ -10,29 +10,29 @@
         * { box-sizing: border-box; }
         body { margin: 0; font-family: 'Inter', sans-serif; background: var(--light); color: #1a202c; line-height: 1.6; }
 
-        /* Hero */
         .hero { min-height: 90vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('juhannuscover2026.png') center/cover; display: flex; align-items: center; justify-content: center; color: white; text-align: center; padding: 20px; }
         .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-
-        /* Headers & Cards */
         h2 { text-align: center; margin: 40px 0 20px; color: var(--dark); font-size: 2rem; }
+
         .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 20px; }
 
-        /* Stats & Progress */
         .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-bottom: 30px; }
         .stat-val { display: block; font-size: 2.2rem; font-weight: 900; color: var(--green); }
+
         .progress-bar { height: 30px; background: #edf2f7; border-radius: 15px; overflow: hidden; margin: 15px 0; }
         .progress-fill { height: 100%; width: 0%; background: var(--green); transition: width 1s ease-in-out; }
 
-        /* Timeline & Gallery */
         .timeline { border-left: 3px solid var(--green); margin: 20px auto; padding-left: 25px; max-width: 600px; }
         .timeline-item { background: white; padding: 15px; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
-        .photo-box { background: #e2e8f0; height: 200px; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: #718096; font-weight: bold; }
 
-        /* Buttons & Utility */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .gallery-item { background: white; padding: 10px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
+        .gallery-item p { font-size: 0.9rem; text-align: center; margin: 10px 0 0; color: #333; font-weight: 600; }
+
         .btn { background: var(--green); color: white; padding: 18px 32px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; transition: 0.3s; }
         .btn:hover { transform: scale(1.05); background: #258238; }
+
         .fab { display: none; position: fixed; bottom: 20px; left: 20px; right: 20px; z-index: 100; text-align: center; }
         @media (max-width: 768px) { .fab { display: block; } }
 
@@ -44,9 +44,9 @@
 
 <section class="hero">
     <div>
-        <h1>Tampere Gives Back</h1>
-        <p style="font-size: 1.25rem;">Students, expats, and locals cleaning our city together</p>
-        <p><strong>📍 Bonfire Area 🗓️ 19 June 2026</strong></p>
+        <h1>Tampere Gives Back.</h1>
+        <p style="font-size: 1.25rem;">Students, expats, and locals cleaning our city together.</p>
+        <p><strong>📍 Bonfire Area • 🗓️ 19 June 2026</strong></p>
         <a class="btn" href="https://chat.whatsapp.com/He0E38W8xpz9d64CMNwn8D">Join the WhatsApp Community</a>
     </div>
 </section>
@@ -60,16 +60,16 @@
 
     <h2>Impact Dashboard</h2>
     <div class="stats-grid">
-        <div class="card"><span class="stat-val">0</span>Volunteers</div>
+        <div class="card"><span class="stat-val">6</span>Volunteers</div>
         <div class="card"><span class="stat-val">0</span>Countries</div>
         <div class="card"><span class="stat-val">0</span>Bags</div>
     </div>
     <div class="card">
         <div style="display: flex; justify-content: space-between; font-weight: bold;">
             <span>Waste Collected</span>
-            <span id="kg-text">0 / 30 KG</span>
+            <span>0 / 30 KG</span>
         </div>
-        <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+        <div class="progress-bar"><div class="progress-fill"></div></div>
     </div>
 
     <h2>Plan for Action</h2>
@@ -83,14 +83,40 @@
 
     <h2>Event Gallery</h2>
     <div class="gallery">
-        <div class="photo-box">Before Cleanup</div>
-        <div class="photo-box">Action Shots</div>
-        <div class="photo-box">Group Success Photo</div>
+
+      <div class="gallery-item">
+          <img src="assets/images/2026/preparing-banner.jpeg" alt="Tyozy Tampere Juhannus 2026 Preparing Banner">
+          <p>Preparing Banner</p>
+      </div>
+
+      <div class="gallery-item">
+          <img src="assets/images/2026/poster-design-ideas.jpeg" alt="Tyozy Tampere Juhannus 2026 Poster Design Ideas">
+          <p>Poster Design Ideas</p>
+      </div>
+
+      <div class="gallery-item">
+          <img src="assets/images/2026/design-poster-print.jpeg" alt="Tyozy Tampere Juhannus 2026 Printing Event Posters">
+          <p>Printing Event Posters</p>
+      </div>
+
+
+
+        <!--div class="gallery-item">
+            <img src="photos/before-cleanup.jpg" alt="Before Cleanup">
+            <p>Before Cleanup</p>
+        </div>
+        <div class="gallery-item">
+            <img src="photos/action-shot.jpg" alt="Action Shot">
+            <p>Action Shot</p>
+        </div>
+        <div class="gallery-item">
+            <img src="photos/group-success.jpg" alt="Group Success">
+            <p>Group Success</p>
+        </div-->
     </div>
 
     <h2>Media & Partners</h2>
     <div class="card">
-        <p>Journalists, photographers, and local media are welcome.</p>
         <p><strong>Contact:</strong> Arka | +358 44 931 8824</p>
         <p>Supported by <strong>Tyozy</strong> | tyozy.fi</p>
     </div>
@@ -109,13 +135,6 @@
 <footer>
     <p>Tampere Gives Back • Juhannussiivous 2026</p>
 </footer>
-
-<script>
-    const currentKg = 0;
-    const goalKg = 30;
-    document.getElementById('progress').style.width = (currentKg / goalKg) * 100 + '%';
-    document.getElementById('kg-text').innerText = currentKg + ' / ' + goalKg + ' KG';
-</script>
 
 </body>
 </html>

@@ -178,6 +178,110 @@
             .hero-buttons { flex-direction: column; }
             .footer-grid { grid-template-columns: 1fr; gap: 32px; }
         }
+
+        .community-banner{
+              display:flex;
+              align-items:center;
+              justify-content:space-between;
+              gap:40px;
+
+              background:#f8faf8;
+              border:1px solid #e3ebe3;
+              border-radius:20px;
+
+              padding:30px;
+              margin:40px 0;
+
+              text-decoration:none;
+              color:#111;
+
+              overflow:hidden;
+
+              transition:all .3s ease;
+          }
+
+          .community-banner:hover{
+              transform:translateY(-3px);
+              box-shadow:0 12px 30px rgba(0,0,0,.12);
+          }
+
+          .community-content{
+              flex:1;
+          }
+
+          .community-badge{
+              display:inline-block;
+              background:#eef8ef;
+              color:#2f9e44;
+
+              padding:8px 14px;
+              border-radius:999px;
+
+              font-size:14px;
+              font-weight:600;
+
+              margin-bottom:15px;
+          }
+
+          .community-content h2{
+              font-size:48px;
+              line-height:1.1;
+              margin:0 0 15px;
+          }
+
+          .community-content p{
+              font-size:20px;
+              color:#444;
+              max-width:550px;
+              margin-bottom:20px;
+          }
+
+          .community-meta{
+              display:flex;
+              gap:20px;
+              flex-wrap:wrap;
+              color:#2f9e44;
+              font-weight:600;
+              margin-bottom:25px;
+          }
+
+          .community-btn{
+              display:inline-block;
+
+              background:#2f9e44;
+              color:white;
+
+              padding:14px 26px;
+              border-radius:10px;
+
+              font-weight:700;
+          }
+
+          .community-image{
+              flex:1;
+          }
+
+          .community-image img{
+              width:100%;
+              border-radius:15px;
+              display:block;
+          }
+
+          @media(max-width:900px){
+
+              .community-banner{
+                  flex-direction:column;
+                  padding:20px;
+              }
+
+              .community-content h2{
+                  font-size:34px;
+              }
+
+              .community-content p{
+                  font-size:18px;
+              }
+          }
     </style>
 </head>
 <body>

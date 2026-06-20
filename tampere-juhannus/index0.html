@@ -1,0 +1,3524 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Tampere Juhannus Cleanup 2026 | Community Impact Report
+</title>
+
+<meta name="description"
+content="Community impact report for the Tampere Juhannus Cleanup 2026. Four volunteers collected 3 kilograms of litter during a volunteer-driven environmental initiative supported by Tyozy.">
+
+<meta name="keywords"
+content="
+Tampere cleanup,
+Tampere volunteer event,
+Juhannus cleanup,
+community cleanup Finland,
+environmental volunteering,
+Tampere environment,
+Tyozy,
+Tampere community event,
+volunteer work Tampere
+">
+
+<meta name="author" content="Tyozy">
+
+<link rel="canonical"
+href="https://tyozy.com/tampere-juhannus/">
+
+<meta property="og:type" content="website">
+<meta property="og:title"
+content="Tampere Juhannus Cleanup 2026">
+
+<meta property="og:description"
+content="Four volunteers. Three kilograms of litter removed. One cleaner city.">
+
+<meta property="og:image"
+content="assets/images/all-volunteers.png">
+
+<meta property="og:url"
+content="https://tyozy.com/tampere-juhannus/">
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+<style>
+
+:root{
+
+--primary:#0b6bcb;
+--primary-light:#eef6ff;
+
+--dark:#111827;
+--text:#4b5563;
+
+--white:#ffffff;
+--light:#f8fafc;
+
+--border:#e5e7eb;
+
+--radius:28px;
+
+--shadow:
+0 20px 60px rgba(0,0,0,.08);
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:
+Inter,
+system-ui,
+Segoe UI,
+Arial,
+sans-serif;
+
+background:#f8fafc;
+
+color:var(--text);
+
+line-height:1.9;
+
+overflow-x:hidden;
+
+}
+
+img{
+display:block;
+max-width:100%;
+}
+
+a{
+text-decoration:none;
+}
+
+.container{
+
+width:min(1400px,92%);
+margin:auto;
+
+}
+
+section{
+
+padding:140px 0;
+
+}
+
+@media(max-width:768px){
+
+section{
+padding:90px 0;
+}
+
+}
+
+h1,h2,h3{
+
+color:var(--dark);
+line-height:1.15;
+
+}
+
+h1{
+
+font-size:
+clamp(
+3rem,
+8vw,
+6rem
+);
+
+margin-bottom:25px;
+
+}
+
+h2{
+
+font-size:
+clamp(
+2rem,
+4vw,
+3.5rem
+);
+
+margin-bottom:30px;
+
+}
+
+p{
+
+font-size:1.08rem;
+margin-bottom:22px;
+
+}
+
+.content-card{
+
+background:white;
+
+padding:60px;
+
+border-radius:32px;
+
+box-shadow:var(--shadow);
+
+}
+
+@media(max-width:768px){
+
+.content-card{
+padding:30px;
+}
+
+}
+
+/* PROGRESS BAR */
+
+#progress{
+
+position:fixed;
+
+top:0;
+left:0;
+
+height:4px;
+width:0;
+
+background:var(--primary);
+
+z-index:99999;
+
+}
+
+/* LANGUAGE */
+
+.lang-switch{
+
+position:fixed;
+
+top:20px;
+right:20px;
+
+z-index:9999;
+
+display:flex;
+gap:10px;
+
+padding:10px;
+
+background:
+rgba(255,255,255,.8);
+
+backdrop-filter:blur(20px);
+
+border-radius:18px;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.lang-switch button{
+
+border:none;
+
+padding:10px 15px;
+
+background:white;
+
+cursor:pointer;
+
+font-weight:700;
+
+border-radius:12px;
+
+}
+
+/* HERO */
+
+.hero{
+
+min-height:95vh;
+
+display:flex;
+
+align-items:center;
+
+padding-bottom:60px;
+
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:
+1.1fr 1fr;
+
+gap:80px;
+
+align-items:center;
+
+}
+
+.hero-image img{
+
+border-radius:32px;
+
+box-shadow:
+0 30px 80px rgba(0,0,0,.15);
+
+transition:.5s;
+
+}
+
+.hero-image img:hover{
+
+transform:
+scale(1.02);
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:12px 22px;
+
+background:var(--primary-light);
+
+color:var(--primary);
+
+font-weight:700;
+
+border-radius:999px;
+
+margin-bottom:30px;
+
+}
+
+.hero-subtitle{
+
+font-size:1.3rem;
+
+max-width:650px;
+
+}
+
+@media(max-width:1000px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* TOC */
+
+/* STICKY FLOATING NAV */
+
+.toc-wrapper{
+
+margin-top:-40px;
+
+position:sticky;
+
+top:0;
+
+z-index:9000;
+
+padding:15px 0;
+
+background:
+linear-gradient(
+180deg,
+rgba(248,250,252,.96),
+rgba(248,250,252,.80)
+);
+
+backdrop-filter:blur(20px);
+
+}
+
+.toc{
+
+display:flex;
+
+justify-content:center;
+
+gap:12px;
+
+overflow-x:auto;
+
+scrollbar-width:none;
+
+padding:16px;
+
+background:white;
+
+border-radius:999px;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.08);
+
+max-width:950px;
+
+margin:auto;
+
+}
+
+.toc::-webkit-scrollbar{
+display:none;
+}
+
+.toc a{
+
+padding:12px 18px;
+
+white-space:nowrap;
+
+border-radius:999px;
+
+font-weight:600;
+
+color:var(--dark);
+
+transition:.25s;
+
+}
+
+.toc a:hover{
+
+background:var(--primary-light);
+
+color:var(--primary);
+
+}
+
+.toc a{
+
+padding:12px 18px;
+
+white-space:nowrap;
+
+border-radius:12px;
+
+font-weight:600;
+
+color:var(--dark);
+
+}
+
+.toc a:hover{
+
+background:var(--primary-light);
+
+}
+
+/* REVEAL */
+
+.reveal{
+
+opacity:0;
+
+transform:
+translateY(40px);
+
+transition:
+opacity .8s ease,
+transform .8s ease;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+.en,
+.fi{
+
+display:none;
+
+}
+
+</style>
+
+<script>
+
+function setLanguage(lang){
+
+localStorage.setItem('lang',lang);
+
+document
+.querySelectorAll('.en,.fi')
+.forEach(el=>el.style.display='none');
+
+document
+.querySelectorAll('.'+lang)
+.forEach(el=>el.style.display='block');
+
+}
+
+window.onload=function(){
+
+let lang='en';
+
+if(navigator.language.startsWith('fi')){
+lang='fi';
+}
+
+lang=
+localStorage.getItem('lang')
+|| lang;
+
+setLanguage(lang);
+
+};
+
+window.addEventListener('scroll',()=>{
+
+const total=
+document.documentElement.scrollHeight
+-window.innerHeight;
+
+const progress=
+(window.scrollY/total)*100;
+
+document.getElementById('progress')
+.style.width=
+progress+'%';
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div id="progress"></div>
+
+<div class="lang-switch">
+
+<button onclick="setLanguage('en')">
+EN
+</button>
+
+<button onclick="setLanguage('fi')">
+FI
+</button>
+
+</div>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div>
+
+<div class="hero-badge en">
+Community Impact Report
+</div>
+
+<div class="hero-badge fi">
+Yhteisövaikutusraportti
+</div>
+
+<div class="en">
+
+<h1>
+Tampere Juhannus Cleanup 2026
+</h1>
+
+<p class="hero-subtitle">
+
+Four volunteers.
+
+Three kilograms of litter removed.
+
+One cleaner city.
+
+</p>
+
+</div>
+
+<div class="fi">
+
+<h1>
+Tampereen Juhannussiivous 2026
+</h1>
+
+<p class="hero-subtitle">
+
+Neljä vapaaehtoista.
+
+Kuusi kiloa roskaa.
+
+Yksi puhtaampi kaupunki.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img
+src="assets/images/all-volunteers.png"
+alt="Volunteers after Tampere Juhannus Cleanup">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="toc-wrapper">
+
+<div class="container">
+
+<nav class="toc">
+
+<a href="#results">Results</a>
+
+<a href="#story">Story</a>
+
+<a href="#impact">Impact</a>
+
+<a href="#volunteers">Volunteers</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#future">2027 Vision</a>
+
+<a href="#faq">FAQ</a>
+
+<a href="#about-tyozy">Tyozy</a>
+
+</nav>
+
+</div>
+
+</div>
+
+<!-- =====================================
+RESULTS SECTION
+===================================== -->
+
+<section id="results">
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Results At A Glance
+</h2>
+
+<p>
+The Tampere Juhannus Cleanup 2026 demonstrated that meaningful community impact does not require large budgets or large crowds. A small group of volunteers came together during one of Finland's most important holidays and created a visible improvement in their local environment.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Tulokset Yhdellä Silmäyksellä
+</h2>
+
+<p>
+Tampereen Juhannussiivous 2026 osoitti, että merkittävä vaikutus voi syntyä myös pienestä vapaaehtoisten ryhmästä.
+</p>
+
+</div>
+
+<style>
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.stat-card{
+
+background:white;
+
+border:
+1px solid var(--border);
+
+border-radius:28px;
+
+padding:40px 20px;
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.stat-card:hover{
+
+transform:
+translateY(-8px);
+
+box-shadow:
+0 25px 50px rgba(11,107,203,.12);
+
+}
+
+.stat-number{
+
+font-size:3.5rem;
+
+font-weight:800;
+
+color:var(--primary);
+
+margin-bottom:10px;
+
+}
+
+.stat-label{
+
+font-weight:600;
+
+}
+
+@media(max-width:900px){
+
+.stats-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:550px){
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<div class="stat-number">
+4
+</div>
+
+<div class="stat-label">
+Volunteers
+</div>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-number">
+3kg
+</div>
+
+<div class="stat-label">
+Litter Collected
+</div>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-number">
+1
+</div>
+
+<div class="stat-label">
+Community Event
+</div>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-number">
+100%
+</div>
+
+<div class="stat-label">
+Volunteer Driven
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+INTRODUCTION
+===================================== -->
+
+<section id="story">
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<style>
+
+.story-layout{
+
+display:grid;
+
+grid-template-columns:
+1.3fr .7fr;
+
+gap:60px;
+
+align-items:start;
+
+}
+
+.story-sidebar{
+
+position:sticky;
+
+top:120px;
+
+background:
+var(--primary-light);
+
+padding:35px;
+
+border-radius:24px;
+
+}
+
+.story-sidebar h3{
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+.story-sidebar ul{
+
+padding-left:20px;
+
+}
+
+.story-sidebar li{
+
+margin-bottom:12px;
+
+}
+
+@media(max-width:1000px){
+
+.story-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.story-sidebar{
+
+position:relative;
+
+top:auto;
+
+}
+
+}
+
+</style>
+
+<div class="story-layout">
+
+<div>
+
+<div class="en">
+
+<h2>
+A Small Event With A Bigger Purpose
+</h2>
+
+<p>
+On 19 June 2026, while many people across Finland were preparing for Juhannus celebrations, a small group of volunteers gathered in Tampere with a different objective.
+</p>
+
+<p>
+Instead of focusing solely on the holiday itself, they chose to dedicate part of their day to improving public spaces and giving something back to the community.
+</p>
+
+<p>
+The Tampere Juhannus Cleanup was built around a simple belief:
+cleaner cities are created by people who care enough to take action.
+</p>
+
+<p>
+Although only four volunteers participated, the event was never about the size of the group.
+</p>
+
+<p>
+It was about demonstrating that positive community action often begins with a handful of motivated individuals who are willing to contribute their time and energy toward a common goal.
+</p>
+
+<p>
+Together, the volunteers collected approximately three kilograms of litter from public spaces in Tampere.
+</p>
+
+<p>
+More importantly, they helped create awareness, encouraged conversations about environmental responsibility, and demonstrated that community engagement remains strong even during a national holiday.
+</p>
+
+<p>
+The cleanup was supported by Tyozy, a cleaning and moving company that believes businesses can contribute positively to the communities they serve.
+</p>
+
+<p>
+Supporting volunteer-led initiatives is one way of extending those values beyond commercial services.
+</p>
+
+<p>
+While three kilograms may seem like a modest result, the true value of the event extends far beyond the amount of litter collected.
+</p>
+
+<p>
+Every item removed from public spaces represents a small improvement to the environment and a reminder that shared spaces require shared responsibility.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Pieni Tapahtuma, Suurempi Tarkoitus
+</h2>
+
+<p>
+19. kesäkuuta 2026 neljä vapaaehtoista kokoontui Tampereella tavoitteenaan tehdä kaupungista hieman puhtaampi.
+</p>
+
+<p>
+Vaikka osallistujia oli vain neljä, tapahtuman tarkoituksena ei ollut kerätä suuria väkijoukkoja.
+</p>
+
+<p>
+Tavoitteena oli osoittaa, että yhteisöllinen vaikuttaminen voi alkaa pienestä ryhmästä motivoituneita ihmisiä.
+</p>
+
+<p>
+Vapaaehtoiset keräsivät noin kuusi kiloa roskaa ja samalla lisäsivät tietoisuutta ympäristövastuusta sekä yhteisten alueiden merkityksestä.
+</p>
+
+<p>
+Tapahtumaa tuki Tyozy, joka uskoo vahvasti yhteisöjen kehittämiseen ja ympäristövastuuseen.
+</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div class="story-sidebar">
+
+<div class="en">
+
+<h3>
+Event Summary
+</h3>
+
+<ul>
+
+<li>Held on 19 June 2026</li>
+
+<li>4 volunteers participated</li>
+
+<li>Approximately 3kg of litter collected</li>
+
+<li>Supported by Tyozy</li>
+
+<li>Focused on environmental awareness</li>
+
+<li>Community-led initiative</li>
+
+<li>Future annual event planned</li>
+
+</ul>
+
+</div>
+
+<div class="fi">
+
+<h3>
+Yhteenveto
+</h3>
+
+<ul>
+
+<li>19.6.2026</li>
+
+<li>4 vapaaehtoista</li>
+
+<li>Noin 3kg roskaa</li>
+
+<li>Tyozyn tukema</li>
+
+<li>Ympäristötietoisuus</li>
+
+<li>Yhteisölähtöinen tapahtuma</li>
+
+<li>Tavoitteena vuosittainen perinne</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+WHY WE ORGANIZED IT
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<style>
+
+.split-grid{
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.image-card img{
+
+width:100%;
+
+border-radius:32px;
+
+box-shadow:
+0 30px 80px rgba(0,0,0,.12);
+
+}
+
+@media(max-width:1000px){
+
+.split-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<div class="split-grid">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Why We Organized The Tampere Juhannus Cleanup
+</h2>
+
+<p>
+Juhannus is one of Finland’s most important celebrations. Across the country, people gather with friends and family, spend time outdoors, travel to summer cottages, enjoy lakeside saunas, and celebrate the longest days of the year.
+</p>
+
+<p>
+Public spaces play an important role in these celebrations. Parks, waterfronts, walking routes, beaches, and gathering places become locations where memories are created and communities come together.
+</p>
+
+<p>
+Unfortunately, increased activity can sometimes result in increased litter.
+</p>
+
+<p>
+The purpose of this cleanup was never to criticize celebrations or the people enjoying them.
+</p>
+
+<p>
+Instead, the objective was to encourage a culture where everyone feels responsible for preserving the spaces they enjoy.
+</p>
+
+<p>
+We wanted to create a positive event that focused on action rather than criticism.
+</p>
+
+<p>
+Instead of asking why litter exists, we asked a different question:
+</p>
+
+<h3>
+“What can we do today to make our city a little better?”
+</h3>
+
+<p>
+The answer was simple.
+</p>
+
+<p>
+Gather volunteers.
+Create awareness.
+Collect litter.
+Lead by example.
+</p>
+
+<p>
+That philosophy became the foundation of the Tampere Juhannus Cleanup.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Miksi Tapahtuma Järjestettiin
+</h2>
+
+<p>
+Juhannus on yksi Suomen tärkeimmistä juhlista. Monet ihmiset viettävät aikaa ulkona, puistoissa, rannoilla ja yhteisillä alueilla.
+</p>
+
+<p>
+Tapahtuman tavoitteena ei ollut arvostella juhlintaa vaan kannustaa huolehtimaan yhteisestä ympäristöstä.
+</p>
+
+<p>
+Halusimme keskittyä käytännön tekoihin.
+</p>
+
+<p>
+Kysymys oli yksinkertainen:
+mitä voimme tehdä tänään tehdäksemme Tampereesta hieman paremman?
+</p>
+
+<p>
+Vastaus oli tämä tapahtuma.
+</p>
+
+</div>
+
+</div>
+
+<div class="image-card">
+
+<img
+src="assets/images/organizer.png"
+alt="Organizer of Tampere Juhannus Cleanup 2026">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+WHY COMMUNITY CLEANUPS MATTER
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Why Community Cleanups Matter
+</h2>
+
+<p>
+Community cleanups are often viewed as simple volunteer activities, but their benefits extend far beyond waste collection.
+</p>
+
+<p>
+At their core, community cleanups create visible examples of civic responsibility.
+</p>
+
+<p>
+When residents actively care for shared spaces, they communicate a powerful message:
+this place matters.
+</p>
+
+<p>
+People are more likely to respect clean environments, spend time outdoors, and feel connected to their communities.
+</p>
+
+<p>
+Clean public spaces also contribute to physical and mental wellbeing.
+</p>
+
+<p>
+Parks, trails, lakeshores, and gathering places become more attractive and enjoyable when they are free from litter.
+</p>
+
+<p>
+Environmental benefits are equally important.
+</p>
+
+<p>
+Items left in public areas can eventually enter waterways, break down into smaller particles, or negatively affect wildlife.
+</p>
+
+<p>
+Community cleanups also strengthen social connections.
+</p>
+
+<p>
+Volunteers who may never have met otherwise come together around a shared purpose.
+</p>
+
+<p>
+The impact of a cleanup often continues long after the final bag of litter has been collected.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Miksi Yhteisölliset Siivoustapahtumat Ovat Tärkeitä
+</h2>
+
+<p>
+Yhteisölliset siivoustapahtumat eivät ole vain roskien keräämistä.
+</p>
+
+<p>
+Ne lisäävät yhteisöllisyyttä, ympäristövastuuta ja ylpeyttä omasta kaupungista.
+</p>
+
+<p>
+Siistit ympäristöt kannustavat ihmisiä käyttämään yhteisiä alueita ja pitämään niistä huolta myös tulevaisuudessa.
+</p>
+
+</div>
+
+<style>
+
+.feature-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:20px;
+
+margin-top:50px;
+
+}
+
+.feature-card{
+
+padding:35px;
+
+background:white;
+
+border-radius:24px;
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.05);
+
+transition:.35s;
+
+text-align:center;
+
+}
+
+.feature-card:hover{
+
+transform:
+translateY(-8px);
+
+}
+
+.feature-icon{
+
+font-size:2.5rem;
+
+margin-bottom:15px;
+
+}
+
+@media(max-width:1000px){
+
+.feature-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.feature-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🌱
+</div>
+
+<h3>
+Cleaner Environment
+</h3>
+
+<p>
+Removing litter improves public spaces immediately.
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🤝
+</div>
+
+<h3>
+Community Spirit
+</h3>
+
+<p>
+People come together around a shared purpose.
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🎓
+</div>
+
+<h3>
+Awareness
+</h3>
+
+<p>
+Visible action inspires responsible behaviour.
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+🏙️
+</div>
+
+<h3>
+Civic Pride
+</h3>
+
+<p>
+Cleaner surroundings strengthen connection to place.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+ABOUT TAMPERE
+===================================== -->
+
+<section id="impact">
+
+<div class="container">
+
+<div class="split-grid">
+
+<div class="image-card">
+
+<img
+src="assets/images/tampere.png"
+alt="Public space in Tampere during Juhannus">
+
+</div>
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Why Tampere Is Worth Protecting
+</h2>
+
+<p>
+Tampere is one of Finland’s most vibrant and livable cities.
+</p>
+
+<p>
+Located between Lake Näsijärvi and Lake Pyhäjärvi, the city combines natural beauty, industrial heritage, innovation, culture, and a strong sense of community.
+</p>
+
+<p>
+Residents and visitors enjoy parks, waterfront routes, beaches, cycling paths, forests, and public gathering spaces throughout the year.
+</p>
+
+<p>
+During the summer months these places become especially important.
+</p>
+
+<p>
+Families spend afternoons in parks. Friends gather by the lakes. Students enjoy the long evenings. Visitors discover what makes Tampere unique.
+</p>
+
+<p>
+The quality of these experiences depends heavily on the condition of public spaces.
+</p>
+
+<p>
+A clean environment creates comfort, pride, and wellbeing.
+</p>
+
+<p>
+Every piece of litter removed contributes to preserving the qualities that make Tampere special.
+</p>
+
+<p>
+Community cleanups are therefore not only environmental projects. They are investments in the future of the city and the experience of everyone who uses its public spaces.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Miksi Tampereesta Kannattaa Pitää Huolta
+</h2>
+
+<p>
+Tampere tunnetaan järvistään, puistoistaan, kulttuuristaan ja vahvasta yhteisöllisyydestään.
+</p>
+
+<p>
+Kesäisin kaupunkilaiset ja vierailijat käyttävät aktiivisesti puistoja, rantoja, kävelyreittejä ja muita yhteisiä alueita.
+</p>
+
+<p>
+Näiden alueiden puhtaus vaikuttaa suoraan siihen, kuinka viihtyisäksi kaupunki koetaan.
+</p>
+
+<p>
+Jokainen kerätty roska auttaa säilyttämään Tampereen vetovoiman ja viihtyisyyden.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+EVENT PREPARATION
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Preparing For The Event
+</h2>
+
+<p>
+Successful community events rarely happen by accident.
+</p>
+
+<p>
+Although the Tampere Juhannus Cleanup was intentionally simple and accessible, preparation still played an important role in ensuring the event ran smoothly.
+</p>
+
+<p>
+Before volunteers arrived, event materials were prepared, banners were created, meeting locations were selected, and communication efforts were made to encourage participation.
+</p>
+
+<p>
+One of the primary objectives during planning was to create a welcoming atmosphere.
+</p>
+
+<p>
+Community initiatives are most successful when people feel comfortable participating regardless of their experience level, background, or age.
+</p>
+
+<p>
+No special qualifications were required.
+No previous volunteer experience was needed.
+Participants only needed a willingness to contribute to a cleaner city.
+</p>
+
+<p>
+This simplicity was intentional.
+Many people want to help their communities but assume they need extensive resources or expertise.
+Events like this demonstrate that meaningful contributions can be made through small, practical actions.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Tapahtuman Valmistelu
+</h2>
+
+<p>
+Vaikka tapahtuma oli yksinkertainen, onnistuminen vaati valmistelua.
+</p>
+
+<p>
+Kylttejä valmisteltiin, kokoontumispaikka suunniteltiin ja osallistujia tiedotettiin tapahtumasta.
+</p>
+
+<p>
+Tavoitteena oli luoda helposti lähestyttävä vapaaehtoistapahtuma, johon kuka tahansa voisi osallistua.
+</p>
+
+<p>
+Osallistumiseen ei tarvittu erityisosaamista, ainoastaan halu tehdä hyvää yhteisen ympäristön puolesta.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+PREPARATION PHOTO STORY
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Preparing The Message
+</h2>
+
+<p>
+Every community initiative begins with an idea. Before volunteers could collect litter, awareness first needed to be created.
+</p>
+
+<p>
+The preparation phase focused on communicating the purpose of the event and encouraging people to think about the importance of shared public spaces.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Valmistelut Ja Viestin Luominen
+</h2>
+
+<p>
+Jokainen yhteisöaloite alkaa ideasta. Ennen siivousta oli tärkeää viestiä tapahtuman tarkoituksesta ja lisätä tietoisuutta ympäristövastuusta.
+</p>
+
+</div>
+
+<style>
+
+.prep-gallery{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.prep-gallery figure{
+
+background:white;
+
+border-radius:24px;
+
+overflow:hidden;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.prep-gallery img{
+
+width:100%;
+height:300px;
+
+object-fit:cover;
+
+}
+
+.prep-gallery figcaption{
+
+padding:20px;
+
+}
+
+@media(max-width:900px){
+
+.prep-gallery{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<div class="prep-gallery">
+
+<figure>
+
+<img
+src="assets/images/preparing-banner.png"
+alt="Preparing event banner">
+
+<figcaption>
+Preparing event materials before volunteers arrived.
+</figcaption>
+
+</figure>
+
+<figure>
+
+<img
+src="assets/images/tampere-juhannus-cleanup-craft-setup.png"
+alt="Creating community event materials">
+
+<figcaption>
+Creating visual materials to promote environmental awareness.
+</figcaption>
+
+</figure>
+
+<figure>
+
+<img
+src="assets/images/tampere-juhannus-siivous-tapahtuma.png"
+alt="Tampere Juhannus Cleanup poster">
+
+<figcaption>
+Public communication helped explain the purpose of the event.
+</figcaption>
+
+</figure>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+EVENT DAY TIMELINE
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Event Day Timeline
+</h2>
+
+<p>
+The cleanup itself lasted only a few hours, but each stage contributed to the overall success of the initiative.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Tapahtumapäivän Aikajana
+</h2>
+
+<p>
+Tapahtuma eteni vaiheittain valmisteluista yhteiseen siivoustyöhön ja lopuksi tulosten tarkasteluun.
+</p>
+
+</div>
+
+<style>
+
+.timeline{
+
+margin-top:60px;
+
+position:relative;
+
+}
+
+.timeline::before{
+
+content:"";
+
+position:absolute;
+
+left:32px;
+
+top:0;
+bottom:0;
+
+width:4px;
+
+background:
+linear-gradient(
+180deg,
+var(--primary),
+#60a5fa
+);
+
+border-radius:999px;
+
+}
+
+.timeline-item{
+
+position:relative;
+
+padding-left:100px;
+
+margin-bottom:60px;
+
+}
+
+.timeline-dot{
+
+position:absolute;
+
+left:14px;
+
+top:12px;
+
+width:40px;
+height:40px;
+
+border-radius:50%;
+
+background:white;
+
+border:5px solid var(--primary);
+
+}
+
+.timeline-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:24px;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.06);
+
+}
+
+.timeline-time{
+
+font-weight:800;
+
+color:var(--primary);
+
+margin-bottom:10px;
+
+}
+
+@media(max-width:768px){
+
+.timeline-item{
+
+padding-left:75px;
+
+}
+
+}
+
+</style>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<div class="timeline-time">
+Preparation
+</div>
+
+<p>
+Final preparations, volunteer coordination, and review of the cleanup plan.
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<div class="timeline-time">
+Volunteer Arrival
+</div>
+
+<p>
+Participants gathered at the meeting point and discussed the goals of the event.
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<div class="timeline-time">
+Cleanup Activities
+</div>
+
+<p>
+Volunteers walked through public spaces collecting litter and engaging with interested members of the public.
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-card">
+
+<div class="timeline-time">
+Results & Reflection
+</div>
+
+<p>
+Approximately three kilograms of litter were collected and volunteers reflected on the positive impact of the initiative.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+VOLUNTEER SPOTLIGHT
+===================================== -->
+
+<section id="volunteers">
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Volunteer Spotlight
+</h2>
+
+<p>
+The success of the Tampere Juhannus Cleanup was entirely dependent on the volunteers who chose to participate.
+</p>
+
+<p>
+Each volunteer contributed something valuable: time, effort, enthusiasm, and a willingness to help improve the community.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Vapaaehtoisten Panos
+</h2>
+
+<p>
+Tapahtuman onnistuminen perustui täysin vapaaehtoisten panokseen.
+</p>
+
+<p>
+Jokainen osallistuja käytti omaa aikaansa yhteisen hyvän puolesta.
+</p>
+
+</div>
+
+<style>
+
+.volunteer-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.volunteer-card{
+
+background:white;
+
+border-radius:28px;
+
+overflow:hidden;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.volunteer-card:hover{
+
+transform:
+translateY(-8px);
+
+}
+
+.volunteer-card img{
+
+width:100%;
+height:340px;
+
+object-fit:cover;
+
+}
+
+.volunteer-content{
+
+padding:25px;
+
+}
+
+@media(max-width:1000px){
+
+.volunteer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<div class="volunteer-grid">
+
+<div class="volunteer-card">
+
+<img
+src="assets/images/volunteer-1-and-2.png"
+alt="Volunteer participating in community cleanup">
+
+<div class="volunteer-content">
+
+<h3>
+Community Action
+</h3>
+
+<p>
+Showing that positive change begins when people choose to participate.
+</p>
+
+</div>
+
+</div>
+
+<div class="volunteer-card">
+
+<img
+src="assets/images/volunteer-2-and-3.png"
+alt="Volunteer helping clean public spaces">
+
+<div class="volunteer-content">
+
+<h3>
+Environmental Responsibility
+</h3>
+
+<p>
+Taking practical steps to improve shared public spaces.
+</p>
+
+</div>
+
+</div>
+
+<div class="volunteer-card">
+
+<img
+src="assets/images/volunteer-3-trash.png"
+alt="Volunteer supporting local initiative">
+
+<div class="volunteer-content">
+
+<h3>
+Positive Impact
+</h3>
+
+<p>
+Demonstrating that even a small group can create visible results.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+EVENT PHOTO STORY
+===================================== -->
+
+<section id="gallery">
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Event Photo Story
+</h2>
+
+<p>
+The photographs below document different stages of the Tampere Juhannus Cleanup 2026, from preparation and coordination to volunteer action and final reflections.
+</p>
+
+<p>
+Together they tell the story of how a small group of people came together to create a cleaner environment and a stronger community.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Tapahtuman Kuvatarina
+</h2>
+
+<p>
+Nämä kuvat kertovat Tampereen Juhannussiivouksen eri vaiheista valmisteluista vapaaehtoisten työskentelyyn ja tapahtuman päätökseen.
+</p>
+
+</div>
+
+<style>
+
+.gallery{
+
+columns:3 320px;
+column-gap:24px;
+
+margin-top:50px;
+
+}
+
+.gallery figure{
+
+break-inside:avoid;
+
+margin-bottom:24px;
+
+background:white;
+
+border-radius:24px;
+
+overflow:hidden;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.gallery img{
+
+width:100%;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.03);
+
+}
+
+.gallery figcaption{
+
+padding:20px;
+
+font-size:.95rem;
+
+}
+
+</style>
+
+<div class="gallery">
+
+<figure>
+
+<img
+src="assets/images/all-volunteers.png"
+alt="All volunteers after Tampere Juhannus Cleanup">
+
+<figcaption>
+The volunteers who made the event possible.
+</figcaption>
+
+</figure>
+
+<figure>
+
+<img
+src="assets/images/organizer.png"
+alt="Organizer of Tampere Juhannus Cleanup">
+
+<figcaption>
+Event coordination and planning before the cleanup.
+</figcaption>
+
+</figure>
+
+<figure>
+
+<img
+src="assets/images/setup-place.png"
+alt="Cleanup meeting point">
+
+<figcaption>
+The gathering point used during the event.
+</figcaption>
+
+</figure>
+
+<figure>
+
+<img
+src="assets/images/preparing-banner.png"
+alt="Preparing event banner">
+
+<figcaption>
+Creating visibility for the initiative.
+</figcaption>
+
+</figure>
+
+<figure>
+
+<img
+src="assets/images/volunteer-1.png"
+alt="Volunteer 1">
+
+<figcaption>
+Volunteer 1
+</figcaption>
+
+</figure>
+
+<figure>
+
+<img
+src="assets/images/volunteer-2.png"
+alt="Volunteer 2">
+
+<figcaption>
+Volunteer 2
+</figcaption>
+
+</figure>
+
+<figure>
+
+<img
+src="assets/images/volunteer-3.png"
+alt="Volunteer 3">
+
+<figcaption>
+Volunteer 3
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img
+src="assets/images/volunteer-1-and-2.png"
+alt="Volunteer helping clean public spaces">
+
+<figcaption>
+Community action in practice.
+</figcaption>
+
+</figure>
+
+
+
+<figure>
+
+<img
+src="assets/images/volunteer-2-and-3.png"
+alt="Volunteer participating">
+
+<figcaption>
+Volunteers dedicated part of their holiday to helping the community.
+</figcaption>
+
+</figure>
+
+<figure>
+
+<img
+src="assets/images/volunteer-3-trash.png"
+alt="Volunteer supporting environmental action">
+
+<figcaption>
+Positive environmental action can begin with a single person.
+</figcaption>
+
+</figure>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+ENVIRONMENTAL IMPACT
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Environmental Impact Report
+</h2>
+
+<p>
+One of the easiest mistakes when evaluating a cleanup event is focusing exclusively on the amount of litter collected.
+</p>
+
+<p>
+While approximately three kilograms of waste were removed during the Tampere Juhannus Cleanup, the true environmental impact extends far beyond a single number.
+</p>
+
+<p>
+Every item removed from public spaces represents a potential environmental problem prevented.
+</p>
+
+<p>
+Plastic waste left outdoors can break down into smaller particles and contribute to long-term pollution.
+</p>
+
+<p>
+Food containers can attract wildlife and create sanitation issues.
+</p>
+
+<p>
+Discarded waste can eventually enter drainage systems and waterways.
+</p>
+
+<p>
+By removing litter before it remains in the environment for extended periods, volunteers help reduce these risks while improving the appearance and usability of shared public spaces.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Ympäristövaikutukset
+</h2>
+
+<p>
+Kuusi kiloa kerättyä roskaa on vain yksi tapa mitata tapahtuman vaikutuksia.
+</p>
+
+<p>
+Jokainen kerätty roska vähentää ympäristökuormitusta ja parantaa yhteisten alueiden viihtyisyyttä.
+</p>
+
+<p>
+Paikalliset ympäristöteot voivat olla pieniä, mutta niiden vaikutukset ovat todellisia ja näkyviä.
+</p>
+
+</div>
+
+<style>
+
+.impact-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.impact-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:24px;
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.05);
+
+transition:.35s;
+
+}
+
+.impact-card:hover{
+
+transform:
+translateY(-8px);
+
+}
+
+@media(max-width:1000px){
+
+.impact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<div class="impact-grid">
+
+<div class="impact-card">
+
+<h3>
+🌱 Cleaner Spaces
+</h3>
+
+<p>
+Public areas immediately become more welcoming and enjoyable.
+</p>
+
+</div>
+
+<div class="impact-card">
+
+<h3>
+💧 Reduced Pollution
+</h3>
+
+<p>
+Collected waste is prevented from reaching waterways and natural habitats.
+</p>
+
+</div>
+
+<div class="impact-card">
+
+<h3>
+♻️ Greater Awareness
+</h3>
+
+<p>
+Visible volunteer action encourages responsible behaviour.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+WHAT LITTER WAS FOUND
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+What Types Of Litter Were Found?
+</h2>
+
+<p>
+The collected waste reflected the types of litter commonly found in public spaces following outdoor gatherings and recreational activities.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Millaista Roskaa Kerättiin?
+</h2>
+
+<p>
+Kerätty jäte koostui useista eri jätelajeista, joita löytyy usein julkisilta alueilta tapahtumien jälkeen.
+</p>
+
+</div>
+
+<style>
+
+.litter-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(5,1fr);
+
+gap:20px;
+
+margin-top:40px;
+
+}
+
+.litter-box{
+
+background:
+var(--primary-light);
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+}
+
+.litter-box span{
+
+display:block;
+
+font-size:2rem;
+
+margin-bottom:12px;
+
+}
+
+@media(max-width:1000px){
+
+.litter-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.litter-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<div class="litter-grid">
+
+<div class="litter-box">
+
+<span>🥤</span>
+
+Beverage Containers
+
+</div>
+
+<div class="litter-box">
+
+<span>📦</span>
+
+Food Packaging
+
+</div>
+
+<div class="litter-box">
+
+<span>🧴</span>
+
+Plastic Waste
+
+</div>
+
+<div class="litter-box">
+
+<span>📄</span>
+
+Paper Waste
+
+</div>
+
+<div class="litter-box">
+
+<span>🗑️</span>
+
+Miscellaneous Litter
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+COMMUNITY IMPACT
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Community Impact
+</h2>
+
+<p>
+Environmental initiatives create much more than environmental benefits.
+</p>
+
+<p>
+They create opportunities for people to connect, collaborate, and strengthen their relationship with the communities where they live.
+</p>
+
+<p>
+The Tampere Juhannus Cleanup brought together individuals who shared a common purpose: improving public spaces and encouraging environmental responsibility.
+</p>
+
+<p>
+Participants exchanged ideas, shared experiences, and worked together toward a visible outcome.
+</p>
+
+<p>
+Strong communities are built through participation.
+Every volunteer event helps create stronger connections between people and their surroundings.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Yhteisöllinen Vaikutus
+</h2>
+
+<p>
+Ympäristöaloitteet luovat enemmän kuin ympäristöhyötyjä.
+</p>
+
+<p>
+Ne tuovat ihmisiä yhteen ja vahvistavat yhteisöllisyyttä.
+</p>
+
+<p>
+Yhteinen tekeminen rakentaa vahvempia yhteisöjä ja lisää osallistumista tulevaisuudessa.
+</p>
+
+</div>
+
+<style>
+
+.community-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:20px;
+
+margin-top:40px;
+
+}
+
+.community-card{
+
+padding:30px;
+
+background:white;
+
+border-radius:24px;
+
+text-align:center;
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.05);
+
+}
+
+.community-card h3{
+
+font-size:2rem;
+
+margin-bottom:10px;
+
+}
+
+@media(max-width:1000px){
+
+.community-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.community-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<div class="community-grid">
+
+<div class="community-card">
+
+<h3>🤝</h3>
+
+<p>
+Community Engagement
+</p>
+
+</div>
+
+<div class="community-card">
+
+<h3>🌍</h3>
+
+<p>
+Environmental Awareness
+</p>
+
+</div>
+
+<div class="community-card">
+
+<h3>💡</h3>
+
+<p>
+Positive Examples
+</p>
+
+</div>
+
+<div class="community-card">
+
+<h3>❤️</h3>
+
+<p>
+Shared Responsibility
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+THANK YOU VOLUNTEERS
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Thank You To Every Volunteer
+</h2>
+
+<p>
+The most valuable resource in any community initiative is not funding.
+</p>
+
+<p>
+It is people.
+</p>
+
+<p>
+The volunteers who participated in the Tampere Juhannus Cleanup contributed something that cannot be purchased: their time.
+</p>
+
+<p>
+Time is one of our most valuable resources, and choosing to dedicate part of a holiday to community service demonstrates genuine commitment.
+</p>
+
+<p>
+Every volunteer helped improve public spaces, encouraged environmental responsibility, and contributed to a positive example for others.
+</p>
+
+<p>
+Your effort mattered.
+Your participation mattered.
+Your contribution mattered.
+</p>
+
+<p>
+Most importantly, your actions demonstrated that positive change often begins with individuals who are willing to step forward and help.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Kiitos Kaikille Vapaaehtoisille
+</h2>
+
+<p>
+Tapahtuman tärkein voimavara olivat vapaaehtoiset.
+</p>
+
+<p>
+Kiitos jokaiselle osallistujalle ajasta, energiasta ja halusta tehdä hyvää yhteisen ympäristön puolesta.
+</p>
+
+<p>
+Ilman vapaaehtoisia tapahtumaa ei olisi voitu toteuttaa.
+</p>
+
+<p>
+Teidän panoksenne teki tapahtumasta onnistuneen.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+MEDIA & AWARENESS
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Awareness Beyond The Cleanup
+</h2>
+
+<p>
+One of the most valuable outcomes of community events is awareness.
+</p>
+
+<p>
+Every person who notices volunteers collecting litter is exposed to a simple but powerful idea:
+public spaces matter.
+</p>
+
+<p>
+Community cleanups create visible examples of positive action.
+</p>
+
+<p>
+Rather than focusing on problems, they focus on solutions.
+</p>
+
+<p>
+Rather than asking who should act, they demonstrate action directly.
+</p>
+
+<p>
+The long-term impact of awareness is difficult to measure, but it is often one of the most important outcomes of volunteer-driven initiatives.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Tietoisuuden Lisääminen
+</h2>
+
+<p>
+Yksi tärkeimmistä tapahtuman vaikutuksista oli näkyvyys.
+</p>
+
+<p>
+Kun ihmiset näkivät vapaaehtoisten siivoavan ympäristöä, he näkivät samalla käytännön esimerkin yhteisvastuusta.
+</p>
+
+<p>
+Tällaiset tapahtumat voivat innostaa muita osallistumaan tulevaisuudessa.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+2027 VISION
+===================================== -->
+
+<section id="future">
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<div class="en">
+
+<h2>
+Looking Ahead: Tampere Juhannus Cleanup 2027
+</h2>
+
+<p>
+The 2026 cleanup was intentionally simple.
+</p>
+
+<p>
+It provided an opportunity to learn, test ideas, and understand how community members respond to environmental initiatives.
+</p>
+
+<p>
+The results were encouraging.
+</p>
+
+<p>
+Future editions of the event have the potential to become significantly larger and more impactful.
+</p>
+
+</div>
+
+<div class="fi">
+
+<h2>
+Kohti Vuotta 2027
+</h2>
+
+<p>
+Vuoden 2026 tapahtuma oli ensimmäinen askel kohti suurempaa yhteisöllistä ympäristöperinnettä.
+</p>
+
+</div>
+
+<style>
+
+.future-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.future-card{
+
+padding:35px;
+
+background:white;
+
+border-radius:24px;
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.05);
+
+}
+
+@media(max-width:1000px){
+
+.future-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<div class="future-grid">
+
+<div class="future-card">
+<h3>👥 More Volunteers</h3>
+<p>Increase participation and community engagement.</p>
+</div>
+
+<div class="future-card">
+<h3>📍 More Locations</h3>
+<p>Cover more public areas across Tampere.</p>
+</div>
+
+<div class="future-card">
+<h3>♻️ Better Tracking</h3>
+<p>Measure litter categories and environmental impact.</p>
+</div>
+
+<div class="future-card">
+<h3>🏫 Partnerships</h3>
+<p>Collaborate with schools and organizations.</p>
+</div>
+
+<div class="future-card">
+<h3>📊 Better Data</h3>
+<p>Gather environmental insights over time.</p>
+</div>
+
+<div class="future-card">
+<h3>🌟 Annual Tradition</h3>
+<p>Create a recurring yearly community event.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+FAQ
+===================================== -->
+
+<section id="faq">
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+<details>
+<summary><strong>How many volunteers participated?</strong></summary>
+<p>Four volunteers participated in the event.</p>
+</details>
+
+<details>
+<summary><strong>How much litter was collected?</strong></summary>
+<p>Approximately three kilograms of litter were collected.</p>
+</details>
+
+<details>
+<summary><strong>Who supported the event?</strong></summary>
+<p>The cleanup was supported by Tyozy.</p>
+</details>
+
+<details>
+<summary><strong>Will there be another cleanup?</strong></summary>
+<p>The goal is to continue and expand the initiative in future years.</p>
+</details>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+ABOUT TYOZY
+===================================== -->
+
+<section id="about-tyozy">
+
+<div class="container">
+
+<div class="content-card reveal">
+
+<h2>
+About Tyozy
+</h2>
+
+<p>
+Tyozy is a Finnish cleaning and moving company committed to helping individuals, families, organizations, and businesses create cleaner, safer, and more comfortable environments.
+</p>
+
+<p>
+The company provides professional cleaning services, moving assistance, move-out cleaning, deep cleaning, office cleaning, furniture transportation, and related support services across Finland.
+</p>
+
+<p>
+While Tyozy is known for practical services, the company also believes that businesses can contribute positively to the communities where they operate.
+</p>
+
+<p>
+Supporting initiatives such as the Tampere Juhannus Cleanup reflects this philosophy in practice.
+</p>
+
+<p>
+Clean public spaces benefit everyone. Residents enjoy more attractive surroundings, visitors experience a better impression of the city, and communities become stronger and more connected.
+</p>
+
+<p>
+By supporting volunteer-driven projects, Tyozy hopes to encourage environmental responsibility, civic engagement, and long-term community improvement.
+</p>
+
+<p>
+The company views community involvement not as a marketing activity but as an extension of the same values that guide its daily operations: responsibility, reliability, quality, and service.
+</p>
+
+<p>
+As Tyozy continues to grow, supporting local communities and environmental initiatives will remain an important part of its mission.
+</p>
+
+<style>
+
+.service-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:20px;
+
+margin-top:40px;
+
+}
+
+.service-box{
+
+padding:25px;
+
+background:var(--primary-light);
+
+border-radius:20px;
+
+text-align:center;
+
+font-weight:600;
+
+}
+
+@media(max-width:1000px){
+
+.service-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.service-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<div class="service-grid">
+
+<div class="service-box">
+Residential Cleaning
+</div>
+
+<div class="service-box">
+Office Cleaning
+</div>
+
+<div class="service-box">
+Moving Services
+</div>
+
+<div class="service-box">
+Move-Out Cleaning
+</div>
+
+<div class="service-box">
+Deep Cleaning
+</div>
+
+<div class="service-box">
+Furniture Transport
+</div>
+
+<div class="service-box">
+Community Projects
+</div>
+
+<div class="service-box">
+Environmental Initiatives
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+FOOTER
+===================================== -->
+
+<footer
+style="
+background:#0f172a;
+color:white;
+padding:100px 0;
+">
+
+<div class="container">
+
+<h2 style="color:white;">
+Tampere Juhannus Cleanup
+</h2>
+
+<p>
+Community Action • Environmental Responsibility • Volunteer Impact
+</p>
+
+<p>
+Supported by Tyozy
+</p>
+
+<p>
+<a
+href="https://tyozy.fi"
+style="color:white;">
+Tyozy.fi
+</a>
+</p>
+
+<p style="margin-top:40px;">
+© 2026 Tampere Juhannus Cleanup
+</p>
+
+</div>
+
+</footer>
+
+<!-- =====================================
+FLOATING BUTTONS
+===================================== -->
+
+<button id="backToTop">
+↑
+</button>
+
+<a
+href="https://tyozy.fi"
+style="
+position:fixed;
+right:20px;
+bottom:20px;
+background:var(--primary);
+color:white;
+padding:16px 24px;
+border-radius:999px;
+font-weight:700;
+z-index:9999;
+box-shadow:0 15px 35px rgba(11,107,203,.3);
+">
+
+Visit Tyozy →
+
+</a>
+
+<!-- =====================================
+LIGHTBOX
+===================================== -->
+
+<div
+id="lightbox"
+style="
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
+z-index:999999;
+padding:20px;
+">
+
+<img
+id="lightbox-img"
+style="
+max-width:95%;
+max-height:95%;
+border-radius:20px;
+">
+
+</div>
+
+<style>
+
+#backToTop{
+
+position:fixed;
+
+left:20px;
+bottom:20px;
+
+width:60px;
+height:60px;
+
+border:none;
+
+border-radius:50%;
+
+background:var(--primary);
+
+color:white;
+
+font-size:1.3rem;
+
+cursor:pointer;
+
+display:none;
+
+z-index:9999;
+
+}
+
+details{
+
+margin-top:15px;
+
+padding:20px;
+
+border:
+1px solid var(--border);
+
+border-radius:16px;
+
+}
+
+summary{
+
+cursor:pointer;
+
+}
+
+</style>
+
+<script>
+
+/* BACK TO TOP */
+
+const topBtn =
+document.getElementById("backToTop");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY > 600){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+topBtn.addEventListener("click",()=>{
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+});
+
+/* REVEAL */
+
+const observer =
+new IntersectionObserver(
+
+entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("active");
+
+}
+
+});
+
+},
+
+{
+threshold:.12
+}
+
+);
+
+document
+.querySelectorAll(".reveal")
+.forEach(el=>{
+
+observer.observe(el);
+
+});
+
+/* LIGHTBOX */
+
+document
+.querySelectorAll(".gallery img")
+.forEach(img=>{
+
+img.addEventListener("click",()=>{
+
+document
+.getElementById("lightbox")
+.style.display="flex";
+
+document
+.getElementById("lightbox-img")
+.src=img.src;
+
+});
+
+});
+
+document
+.getElementById("lightbox")
+.addEventListener("click",()=>{
+
+document
+.getElementById("lightbox")
+.style.display="none";
+
+});
+
+</script>
+
+</body>
+</html>

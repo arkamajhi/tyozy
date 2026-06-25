@@ -202,49 +202,118 @@
     /* ===============================
        6) CTA BUTTON (Interactive & Pulsing)
        =============================== */
-    .cta-button {
-      position: relative;
-      display: inline-block;
-      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
-      color: #ffffff;
-      font-size: 1.125rem;
-      font-weight: 500;
-      padding: 14px 40px;
-      border-radius: var(--radius-xl);
-      margin-bottom: 48px;
-      overflow: hidden;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      box-shadow: 0 4px 16px var(--shadow-light);
-      animation: fadeInUp 1.2s ease forwards, pulse 2.5s ease-in-out infinite 2s;
-    }
-    .cta-button:hover {
-      transform: translateY(-2px) scale(1.02);
-      box-shadow: 0 6px 24px var(--shadow-light);
-      background: linear-gradient(135deg, #0041a8 0%, #007acc 100%);
-    }
-    .cta-button:active {
-      transform: translateY(0) scale(0.98);
-      box-shadow: 0 3px 12px var(--shadow-light);
-      background: linear-gradient(135deg, #003387 0%, #0066aa 100%);
-    }
-    .cta-button::after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: rgba(255, 255, 255, 0.4);
-      border-radius: 50%;
-      opacity: 0;
-      transform: scale(0);
-      transition: transform 0.4s, opacity 0.8s;
-    }
-    .cta-button:focus::after,
-    .cta-button:active::after {
-      opacity: 1;
-      transform: scale(4);
-      transition: 0s;
-    }
+       /* ===============================
+    FLOATING CTA BUTTON
+    =============================== */
 
+ @keyframes ctaPulse {
+     0% {
+         transform: scale(1);
+         box-shadow: 0 10px 30px rgba(0,82,204,.35);
+     }
+     50% {
+         transform: scale(1.08);
+         box-shadow: 0 14px 40px rgba(0,82,204,.50);
+     }
+     100% {
+         transform: scale(1);
+         box-shadow: 0 10px 30px rgba(0,82,204,.35);
+     }
+ }
+
+ .cta-button{
+
+     position:fixed;
+
+     left:0;
+     right:0;
+     bottom:24px;
+
+     margin:auto;
+     width:max-content;
+
+     z-index:99999;
+
+     display:flex;
+     align-items:center;
+     justify-content:center;
+
+     padding:16px 30px;
+
+     background:linear-gradient(135deg,#0052cc,#0090ff);
+     color:#fff;
+
+     font-size:17px;
+     font-weight:600;
+
+     border:none;
+     border-radius:999px;
+
+     cursor:pointer;
+
+     box-shadow:0 10px 30px rgba(0,82,204,.35);
+
+     animation:ctaPulse 2s ease-in-out infinite;
+
+     transition:
+         background .25s,
+         box-shadow .25s;
+ }
+
+ .cta-button:hover{
+
+     background:linear-gradient(135deg,#0046b3,#0078e6);
+
+ }
+
+ .cta-button:active{
+
+     animation-play-state:paused;
+     transform:scale(.96);
+
+ }
+
+ /* Tablet */
+
+ @media (max-width:991px){
+
+     .cta-button{
+
+         bottom:20px;
+         padding:15px 28px;
+         font-size:16px;
+
+     }
+
+ }
+
+ /* Mobile */
+
+ @media (max-width:600px){
+
+     .cta-button{
+
+         position:fixed;
+
+         bottom:16px;
+
+         left:0;
+         right:0;
+
+         width:fit-content;
+         margin:0 auto;
+
+         max-width:calc(100vw - 40px);
+
+         padding:14px 22px;
+
+         font-size:15px;
+
+         white-space:nowrap;
+
+     }
+
+ }
     /* ===============================
        7) SERVICES GRID
        2 columns on desktop/tablet, 1 column on mobile
@@ -561,6 +630,10 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </div>
 
+<button class="cta-button" onclick="window.open('tel:+358449318824', '_self')" data-translate-key="callNow">
+  Call us now for a Free Quote
+</button>
+
   <div class="container">
     <div id="language-switcher">
 
@@ -580,9 +653,7 @@ document.addEventListener('DOMContentLoaded', () => {
           Your 24/7 solution for room cleaning, furniture pickup, packing & shifting, and laundry in Tampere and Finland. We promise no hidden fees, honest communication, and a worry-free experience.
         </h2>
       </header>
-      <button class="cta-button" onclick="window.open('tel:+358449318824', '_self')" data-translate-key="callNow">
-        Call us now for a Free Quote
-      </button>
+
       <section class="services-grid" aria-label="Our Services">
 
         <a href="moving-services-tampere.html" class="service-item">

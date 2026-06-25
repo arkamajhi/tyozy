@@ -174,70 +174,11 @@
 
 
 
-
-
-
     <url>
         <loc>https://www.tyozy.com/laundry.html</loc>
         <priority>1.0</priority>
         <changefreq>daily</changefreq>
     </url>
-
-
-
-    <url><loc>https://www.tyozy.com/tyozylondon/index.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-
-    <url><loc>https://www.tyozy.com/tyozylondon/angel-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/balham-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/barnet-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/battersea-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/bexley-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/brent-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/brixton-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/bromley-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/camden-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/canary-wharf-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/chelsea-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/chiswick-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/clapham-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/covent-garden-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/croydon-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/crystal-palace-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/dulwich-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/ealing-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/enfield-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/fulham-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/greenwich-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/hackney-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/hammersmith-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/haringey-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/harrow-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/hillingdon-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/hounslow-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/islington-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/kensington-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/kingston-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/lambeth-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/lewisham-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/marylebone-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/mayfair-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/merton-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/newham-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/notting-hill-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/peckham-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/putney-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/redbridge-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/richmond-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/shoreditch-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/soho-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/southwark-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/stratford-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/tooting-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/tower-hamlets-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/twickenham-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/wandsworth-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/westminster-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.tyozy.com/tyozylondon/wimbledon-cleaning-services.html</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
 
 
     <url>

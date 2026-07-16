@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ground Up | Tampere Circular Skincare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root { --bean: #2c2420; --sand: #fbf9f6; --accent: #b8987d; --white: #ffffff; }
+
+        * { box-sizing: border-box; }
+        body { margin: 0; background: var(--sand); color: var(--bean); font-family: 'Inter', sans-serif; line-height: 1.6; overflow-x: hidden; }
+
+        nav { padding: 40px 5%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 600; }
+
+        .hero { padding: 100px 5%; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 80px; min-height: 80vh; }
+        .hero-text h1 { font-family: 'Playfair Display', serif; font-size: 5.5rem; margin: 0; line-height: 0.9; color: var(--bean); }
+        .hero-text p { font-size: 1.3rem; color: #666; margin: 30px 0; max-width: 450px; }
+
+        .hero-img img {
+            width: 100%;
+            max-width: 500px;
+            filter: drop-shadow(0 40px 60px rgba(0,0,0,0.15));
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-30px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .btn { display: inline-block; padding: 20px 45px; background: var(--bean); color: var(--white); text-decoration: none; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; transition: 0.4s; }
+        .btn:hover { background: var(--accent); }
+
+        @media (max-width: 900px) { .hero { grid-template-columns: 1fr; text-align: center; } .hero-text p { margin: 30px auto; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Ground Up</div>
+    <div>Tampere, Finland</div>
+</nav>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Revive.<br>Recycle.<br>Repeat.</h1>
+        <p>Premium, upcycled coffee body scrubs. Cultivated from Tampere roasteries, refined for your skin.</p>
+        <a href="mailto:order@tyozy.fi?subject=Reserve Ground Up Scrub" class="btn">Secure Batch #001</a>
+    </div>
+    <div class="hero-img">
+        <img src="coffee.jpg" alt="Ground Up Coffee Scrub">
+    </div>
+</section>
+
+</body>
+</html>

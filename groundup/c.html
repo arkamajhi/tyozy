@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ground Up | Artisanal Circular Skincare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root { --bean: #2c2420; --sand: #fbf9f6; --accent: #b8987d; --white: #ffffff; }
+
+        * { box-sizing: border-box; }
+        body { margin: 0; background: var(--sand); color: var(--bean); font-family: 'Inter', sans-serif; line-height: 1.6; }
+
+        /* Navigation */
+        nav { padding: 30px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: var(--sand); z-index: 100; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 600; }
+
+        /* Hero */
+        .hero { padding: 100px 5%; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 50px; }
+        .hero-text h1 { font-family: 'Playfair Display', serif; font-size: 5rem; margin: 0; line-height: 1; }
+        .hero-text p { font-size: 1.2rem; color: #666; max-width: 400px; }
+        .hero-img { background: #dcd6ce; height: 500px; width: 100%; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #999; }
+
+        /* Sections */
+        .section { padding: 100px 5%; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+        .feature-card { padding: 30px; background: var(--white); border: 1px solid #eee; }
+
+        .btn { display: inline-block; padding: 18px 40px; background: var(--bean); color: var(--white); text-decoration: none; font-size: 0.9rem; letter-spacing: 1px; transition: 0.3s; }
+        .btn:hover { background: var(--accent); }
+
+        @media (max-width: 768px) { .hero { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Ground Up</div>
+    <div>Tampere, Finland</div>
+</nav>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Revive.<br>Recycle.<br>Repeat.</h1>
+        <p>Premium, upcycled coffee body scrubs. Cultivated from Tampere roasteries, refined for your skin.</p>
+        <a href="mailto:order@tyozy.fi" class="btn">SECURE BATCH #001</a>
+    </div>
+    <div class="hero-img">
+        <img src="coffee.jpg" alt="">
+    </div>
+</section>
+
+<section class="section" style="background: var(--white);">
+    <div class="grid">
+        <div class="feature-card">
+            <h3>Circular Origins</h3>
+            <p>We partner with local roasteries to rescue high-quality grounds before they reach the bin.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Botanical Base</h3>
+            <p>Infused with cold-pressed oils to restore moisture while the coffee naturally exfoliates.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Tampere Crafted</h3>
+            <p>Hand-mixed in small batches to ensure absolute freshness and quality control.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

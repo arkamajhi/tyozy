@@ -1,7 +1,35 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Google tag (gtag.js) -->
+  <script>
+    (function() {
+      // If protocol is "file:", we’re viewing locally—so don’t load gtag
+      if (window.location.protocol === 'file:') return;
+
+      // Otherwise load gtag.js and initialize
+      const gtagScript = document.createElement('script');
+      gtagScript.async = true;
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-JJG4L8LD2N';
+      document.head.appendChild(gtagScript);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-JJG4L8LD2N');
+    })();
+  </script>
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yfdwgm4zne");
+  </script>
+
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="canonical" href="https://www.tyozy.com/privacy-policy.html">
@@ -385,4 +413,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
-```
